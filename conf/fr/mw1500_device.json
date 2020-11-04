@@ -1,0 +1,57 @@
+{
+    "title":"Équipement MW-1500",
+    "module_name":"mw1500_radio",
+    "test_case": ["mw1500_radio"],
+    "test_case_detail":[
+	        {
+	            "case_name": "",
+	            "title": "MW1500radio",
+	            "steps":[
+	            	{"img":"1.jpg","title":"1.Stratégie de test de surveillance","contents":"Configurer la fréquence de test d’équipement à tester (fréquence d’émission : 1350MHz, fréquence de réception : 1850MHz), observer à vue l’interface de surveillance pour comparer et juger les spécifications de performance d’équipement","module": "DialogTest1"},
+	            	{"img":"2.jpg","title":"2.Test de EOW","contents":"Configurer le circulateur de bande de base de l’équipement à tester, l’affichage de taux de code erroné sur l’interface principale de surveillance est zéro, tester la communication via la manette de EOW, appuyer sur le bouton PTT, si on peut entendre clairement sa propre voix, alors EOW est normal, sinon, EOW ou l’unité de contrôle de réseau A8 est en panne.","module": "DialogTest2"},
+	                {"img":"3.jpg","title":"3.Stratégie de test de LNA et de circulateur RF","contents":"Eteindre la source d’alimentation, mettre l’interrupteur à la position d’ARRET et couper le fil d’alimentation de la boîte de distribution d’alimentation","module": "DialogTest3"},
+	                {"img":"4.jpg","title":"4.Stratégie de test de LNA et de circulateur RF","contents":"Dévisser le 12 vis, qui sont encerclés par la couleur rouge comme dans la Figure 37","module": "DialogTest3"},
+	                {"img":"5.jpg","title":"5.Stratégie de test de LNA et de circulateur RF","contents":"Démonter le panneau frontal,Dévisser les 12 vis sur le panneau arrière de boîte avec un tournevis en croix","module": "DialogTest3"},
+	                {"img":"6.jpg","title":"6.Stratégie de test de LNA et de circulateur RF","contents":"Déconnecter le câble XS1 et XS2 sur le panneau A5 de récepteur et d’émetteur, ainsi que le câble XS1 sur le panneau frontal ,Dévisser une vis de fixation","module": "DialogTest3"},
+	                {"img":"","title":"7.Stratégie de test de LNA et de circulateur RF","contents":"Sortir le module de circulateur","module": "DialogTest3"},
+	                {"img":"8.jpg","title":"8.Stratégie de test de LNA et de circulateur RF","contents":"allumer l’interrupteur d’alimentation d’équipement à tester en le mettant à la position de MARCHE","module": "DialogTest3"},
+                                {"img":"","title":"9.Stratégie de test de LNA et de circulateur RF","contents":"Configurer la fréquence d’émission du groupe 1 dans le Tableau 7 comme la fréquence sortie de la source de signal, le niveau sorti est 0 dBm, la fréquence de réception du groupe 1 dans le Tableau 7 est configurée comme la fréquence centrale de spectographe, la largeur de bande est 50MHz, le niveau de référence est 0dBm, lire le niveau sur le spectographe indiqué dans le Tablau 8","module": "DialogTest11"},
+                                {"img":"","title":"10.Test de duplexeur,Test d’unié de filtre d’émission","contents":" Allumer l’équipement, observer la fréquence émise de fonctionnement et la fréquence reçue de fonctionnement en faisant l’enregistrement deux minutes plus tard","module": "DialogTest3"},
+                                {"img":"","title":"11.Test de duplexeur,Test d’unié de filtre d’émission","contents":"Configurer la source de signal en état de scannage, la fréquence de commencement est 1300MHz, celle de fin est 1900MHz, le pas d’avancement de scannage est 1MHz, la puissance sortie est 0dBm","module": "DialogTest12"},
+                                {"img":"12.jpg","title":"12.Test de duplexeur,Test d’unié de filtre d’émission","contents":"Observer le spectographe dans dix minutes pour voir s’il existe la forme indiquée dans la Figure ci-dessous, s’il n’y en a pas, c’est la panne de duplexeur, s’il existe, il faut faire les étapes suivantes ","module": "DialogTest13"},
+                                {"img":"","title":"13.Test de duplexeur,Test d’unié de filtre d’émission","contents":"Appuyer sur le bouton MRK sur le panneau de contrôle de spectographe, appuyer sur le bouton M1 de sous-menu et enregistrer respectivement le fréquence Ft1 et l’amplitude At1 ; appuyer sur le bouton MRK, tourner le bouton de spectographe pour que l’icône de fréquence MK1 arrive à la position indiquée dans la Figure 47, enregistrer respectivement la fréquence Ft2 et l’amplitude At2.","module": "DialogTest3"},
+                                {"img":"","title":"14.Test de duplexeur,Test d’unié de filtre d’émission","contents":"Configurer la quantité d’atténuation de spectographe comme 1Bm par carreau, l’atténuation d’amplitude est mise à la valeur d’atténuation adéquate, il faut lire le domaine de mouvement ΔA de l’ampliude de signal dans la largeur de bande Ft1－Ft2, enregistrer le résultat et le mettre dans le tableau suivant.","module": "DialogTest3"},
+                                {"img":"","title":"15.Test de duplexeur,Test d’unité de filtre de récepteur","contents":"Allumer l’équipement, observer la fréquence émise de fonctionnement et la fréquence reçue de fonctionnement en faisant l’enregistrement deux minutes plus tard","module": "DialogTest3"},
+                                {"img":"","title":"16.Test de duplexeur,Test d’unité de filtre de récepteur","contents":"Configurer la source de signal en état de scannage, la fréquence de commencement est 1300MHz, celle de fin est 1900MHz, le pas d’avancement de scannage est 1MHz, la puissance sortie est 0dBm","module": "DialogTest12"},
+                                {"img":"12.jpg","title":"17.Test de duplexeur,Test d’unité de filtre de récepteur","contents":"Observer le spectographe dans dix minutes pour voir s’il existe la forme indiquée dans la Figure ci-dessous, s’il n’y en a pas, c’est la panne de duplexeur, s’il existe, il faut faire les étapes suivantes","module": "DialogTest13"},
+                                {"img":"","title":"18.Test de duplexeur,Test d’unité de filtre de récepteur","contents":"Observer le spectographe dans dix minutes pour voir s’il existe la forme indiquée dans la Figure ci-dessous, s’il n’y en a pas, c’est la panne de duplexeur, s’il existe, il faut faire les étapes suivantes","module": "DialogTest3"},
+                                {"img":"","title":"19.Test de duplexeur,Test d’unité de filtre de récepteur","contents":"Configurer la quantité d’atténuation de spectographe comme 1Bm par carreau, l’atténuation d’amplitude est mise à la valeur d’atténuation adéquate, il faut lire le domaine de mouvement ΔA de l’ampliude de signal dans la largeur de bande Ft1－Ft2, enregistrer le résultat et le mettre dans le tableau suivant.","module": "DialogTest3"}
+		      ],
+	            "test_para":["1350","1850","0","50","0","1300","1900","1"],
+                            "test_para1":["1350","1450","1550","1650","1750","1850","1850","1750","1650","1550","1450","1350"]
+	        }
+    ],
+
+
+ "test_source": [{
+			"name": "Générateur de signaux vectoriels Keysight",
+			"number": "keysight E8257D",
+			"count": "1",
+			"type": "Instruments"
+	},{
+			"name": " spectographe",
+			"number": "keysight N9030B",
+			"count": "1",
+			"type": "Instruments"
+	},{
+			"name": "Puissance-mètre",
+			"number": "keysight N1911A",
+			"count": "1",
+			"type": "Instruments"
+	},{
+			"name": "Multimètre",
+			"number": "keysight DSOX3012A",
+			"count": "1",
+			"type": "Instruments"
+	}]
+}

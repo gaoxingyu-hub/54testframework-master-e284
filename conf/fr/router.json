@@ -1,0 +1,152 @@
+{
+	"title": "Test de routeur",
+	"module_name": "ROUTER",
+	"test_case": ["case1"],
+	"test_case_detail": [{
+		"case_name": "case1",
+		"title": "Routeur de type ECOM-RT",
+		"steps": [{
+			"img": "1.png",
+			"title": "Test de routeur-préparation de test",
+			"contents": "Le test de routeur de type ECOM-RT commence maintenant, le scéma de test",
+			"module": "DialogPicText",
+			"category": "prepare"
+		}, {
+			"img": "2.png",
+			"title": "Test de routeur-préparation de test",
+			"contents": "Schéma de processus de test",
+			"module": "DialogPicText",
+			"category": "prepare"
+		}, {
+			"img": "3.png",
+			"title": "Test de routeur-démontage",
+			"contents": " Démonter le panneau de commutation",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "4.png",
+			"title": "Test de routeur-démontage",
+			"contents": " Démonter la plaque d’alimentation",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "5.png",
+			"title": "Test de routeur-démontage",
+			"contents": " Démonter le filtre",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "6.png",
+			"title": "Test de routeur-test de démontage",
+			"contents": "Démonter la plaque de port",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "7.jpg",
+			"title": "Test de routeur-démontage",
+			"contents": "Le test de routeur de type ECOM-RT commence maintenant.",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "8.png",
+			"title": "Test de routeur-démontage",
+			"contents": "L’équipement de test est fixé sur place, il faut faire la connection de fils selon le schéma ci-dessous et tester la connection de câble électrique d’Ethernet XS02 et XS03 ;",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "9.png",
+			"title": "Test de routeur-démontage",
+			"contents": "la position de conjonction sur l’équipement à tester est indiquée dans la figure ci-dessous ;",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "",
+			"title": "Test de routeur-démontage",
+			"contents": "allumer l’interrupteur d’alimentation d’équipement à tester et de testeur de taux d’erreur de bit IP ;",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "",
+			"title": "Test de routeur-démontage",
+			"contents": "l’équipement à tester est en cour de démarrer, attendez...(Arrêt obligatoire 30s)",
+			"module": "DialogPicText",
+			"category": "execute"
+		}, {
+			"img": "10.png",
+			"title": "Le voyant ALIM s'allume toujours-test",
+			"contents": "Observer si le voyant \"ALIM\" sur le panneau frontal d’équipement à tester s’allume toujours ;",
+			"module": "DialogSimpleTestProcess2Btn",
+			"category": "execute",
+			"next": ["next", "finish"]
+		}, {
+			"img": "",
+			"title": "Le voyant ALIM s'allume toujours.",
+			"contents": "la fonction d’alimentation est normal",
+			"module": "DialogSimpleTestProcess1Btn",
+			"category": "execute"
+		}, {
+			"img": "11.png",
+			"title": "Routeur-test",
+			"contents": "Observer si le voyant \"FON\" sur le panneau frontal d’équipement à tester clignote ;",
+			"module": "DialogSimpleTestProcess2Btn",
+			"category": "execute",
+			"next": ["next", "finish"]
+		}, {
+			"img": "",
+			"title": "Le voyant FON clignote.",
+			"contents": " CPU fonctionne normal",
+			"module": "DialogSimpleTestProcess1Btn",
+			"category": "execute"
+		}, {
+			"img": "",
+			"title": "Obtension des paramètres configurés",
+			"contents": "obtension des paramètres de configuration est en cours, attendez...",
+			"module": "DialogSimpleTestProcess2Btn",
+			"category": "execute",
+			"next": ["next", "finish"]
+		}, {
+			"img": "",
+			"title": "Réussite d'obtension des paramètres configurés",
+			"contents": "réussite d’obtension des paramètres de configuration ;",
+			"module": "DialogSimpleTestProcess1Btn",
+			"category": "execute"
+		}, {
+			"img": "",
+			"title": "Test de testeur de taux d’erreur de bit IP ",
+			"contents": "",
+			"module": "DialogRouterLanTest",
+			"category": "execute"
+		}]
+	}],
+	"test_source": [{
+			"name": "Testeur de taux d’erreur de bit IP ",
+			"number": "",
+			"count": "1",
+			"type": ""
+		},
+		{
+			"name": "Câble de source d'alimentation AC",
+			"number": "MP-COM-B-003-W001",
+			"count": "1",
+			"type": "Pièces de rechange"
+		},
+		{
+			"name": "Gestion de câble  d'Ethernet ",
+			"number": "MP-COM-B-003-W002",
+			"count": "1",
+			"type": "Pièces de rechange"
+		},
+		{
+			"name": "Fil de terre",
+			"number": "MP-COM-B-003-W003",
+			"count": "1",
+			"type": "Pièces de rechange"
+		},
+		{
+			"name": "Tester le câble  d'Ethernet ",
+			"number": "MP-COM-B-003-W004",
+			"count": "1",
+			"type": "Pièces de rechange"
+		}
+	]
+}

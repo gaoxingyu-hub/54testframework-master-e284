@@ -1,0 +1,69 @@
+{
+    "title":"commutation(échange)module(Tableau de commande principal)",
+    "module_name":"ecom_ns_1",
+    "test_case": ["ecom_ns_1"],
+    "test_case_detail":[
+        {
+            "case_name": "ecom_ns_1",
+            "title": "ommutateur de type ecom_ns_1",
+            "steps": [
+                {"img":"1.png","title":"commutateur de type ecom_ns_1","contents":"Schéma de test","module": "DialogPicText","category": "prepare","next":[2]},
+                {"img":"2.png","title":"commutateur de type ecom_ns_1","contents":"Schéma de processus de test","module": "DialogPicText","category": "prepare","next":[3]},
+                {"img":"3.png","title":"commutateur de type ecom_ns_1-Démonter","contents":"Démonter le panneau de commutation","module": "DialogPicText","category": "disassemble","next":[4]},
+                {"img":"4.png","title":"commutateur de type ecom_ns_1-Démonter","contents":"Démonter la plaque d’alimentation","module": "DialogPicText","category": "disassemble","next":[5]},
+                {"img":"5.png","title":"commutateur de type ecom_ns_1-Démonter","contents":"Démonter le filtre","module": "DialogPicText","category": "disassemble","next":[6]},
+                {"img":"6.png","title":"commutateur de type ecom_ns_1-Démonter","contents":"Démonter la plaque de port","module": "DialogPicText","category": "disassemble","next":[7]},
+                {"img":"7.png","title":"commutateur de type ecom_ns_1-test","contents":"le test de commutateur de type ECOM-NS-1 commence maintenant, équipé du schéma d’équipement à tester ","module": "DialogPicText","category": "testprepare","next":[8]},
+                {"img":"1.png","title":"commutateur de type ecom_ns_1-test","contents":" L’équipement de test est fixé sur place, il faut faire la connection de fils selon le schéma ci-dessous et tester la connection de câble électrique d’Ethernet XS02 et XS03.","module": "DialogPicText","category": "testprepare","next":[9]},
+                {"img":"8.png","title":"commutateur de type ecom_ns_1-test","contents":"la position de conjonction sur l’équipement à tester est indiquée dans la figure ci-dessous ","module": "DialogPicText","category": "testprepare","next":[10]},
+                {"img":"","title":"commutateur de type ecom_ns_1-test","contents":"allumer l’interrupteur d’alimentation d’équipement à tester et de testeur de taux d’erreur de bit IP","module": "DialogPicText","category": "testprepare","next":[11]},
+                {"img":"","title":"commutateur de type ecom_ns_1-test","contents":"l’équipement à tester est en cour de démarrer, attendez...","module": "DialogPicText","category": "execute","next":[12]},
+                {"img":"9.png","title":"commutateur de type ecom_ns_1-Test indicateur ALIM","contents":"Observer si le voyant \"ALIM\" sur le panneau frontal d’équipement à tester s’allume toujours？","module": "DialogSimpleTestProcess2Btn","category": "execute","next":["next","finish"]},
+                {"img":"","title":"le voyant \"ALIM\" s’allume toujours","contents":"la fonction d’alimentation est normal","module": "DialogSimpleTestProcess1Btn","category": "execute","next":[15]},
+                {"img":"10.png","title":"commutateur de type ecom_ns_1-Test indicateur FON","contents":"Observer si le voyant \"FON\" sur le panneau frontal d’équipement à tester clignote ？","module": "DialogSimpleTestProcess2Btn","category": "execute","next":["next","finish"]},
+                {"img":"","title":"le voyant \"FON\" clignote","contents":"CPU fonctionne normal ","module": "DialogSimpleTestProcess1Btn","category": "execute","next":[18]},
+                {"img":"","title":"Obtenir les paramètres de configuration","contents":"obtension des paramètres de configuration est en cours, attendez...","module": "DialogSimpleTestProcess2Btn","category": "execute","next":["next","finish"]},
+                {"img":"","title":"réussite d’obtension des paramètres de configuration ","contents":"réussite d’obtension des paramètres de configuration ","module": "DialogSimpleTestProcess1Btn","category": "execute","next":[21]},
+                {"img":"","title":"Test du taux de perte de paquets","contents":"","module": "DialogEcomNs1KeyTest","category": "execute","next":[21]}
+            ]
+        }
+      ],
+      "test_source": [
+          {
+            "name": "testeur de taux d’erreur de bit IP",
+            "number": "",
+            "count": "1",
+            "type": ""
+        },
+        {
+            "name": "Câble d'alimentation CA",
+            "number": "MP-COM-B-003-W001",
+            "count": "1",
+            "type": "accessoires"
+        },
+        {
+            "name": "Gérer les câbles Ethernet",
+            "number": "MP-COM-B-003-W002",
+            "count": "1",
+            "type": "accessoires"
+        },
+        {
+            "name": "Fil de terre",
+            "number": "MP-COM-B-003-W003",
+            "count": "1",
+            "type": "accessoires"
+        },
+        {
+            "name": "câble pour le test d’Ethernet ",
+            "number": "MP-COM-B-003-W004",
+            "count": "1",
+            "type": "accessoires"
+        },
+        {
+            "name": "câble pour le test d’Ethernet ",
+            "number": "MP-COM-B-003-W005",
+            "count": "1",
+            "type": "accessoires"
+        }
+      ]
+}

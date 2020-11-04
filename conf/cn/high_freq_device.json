@@ -1,0 +1,203 @@
+{
+    "title":"散射高频设备",
+    "module_name":"high_freq_device",
+    "test_case": ["收发单元","低噪声放大器","功放","自环器","滤波器","波导开关","耦合器","监控模块"],
+	"test_source": [{
+			"name": "信号源",
+			"number": "keysight E8257D",
+			"count": "1台",
+			"type": "仪器仪表"
+	},{
+			"name": "频谱仪",
+			"number": "keysight N9030B",
+			"count": "1台",
+			"type": "仪器仪表"
+	},{
+			"name": "矢量网络分析仪",
+			"number": "keysight N9951A",
+			"count": "1台",
+			"type": "仪器仪表"
+	},{
+			"name": "波导开关",
+			"number": "CSD-I",
+			"count": "1个",
+			"type": "测试附件"
+	},{
+			"name": "波导开关控制器",
+			"number": "XCE14T7Z1P40/YL11H26W1007J22",
+			"count": "1根",
+			"type": "测试附件"
+	},{
+			"name": "大功率衰减器",
+			"number": "40dB",
+			"count": "1个",
+			"type": "测试附件"
+	},{
+			"name": "SMA环形器",
+			"number": "",
+			"count": "1个",
+			"type": "测试附件"
+	},{
+			"name": "电源线",
+			"number": "XCD22T3K1P40",
+			"count": "1根",
+			"type": "测试附件"
+	},{
+			"name": "电缆",
+			"number": "BNC-J/BNC-J",
+			"count": "1m，2根",
+			"type": "测试附件"
+	},{
+			"name": "电缆",
+			"number": "N-J/N-J",
+			"count": "1m，2根",
+			"type": "测试附件"
+	},{
+			"name": "电缆",
+			"number": "SMA-J/SMA-JW",
+			"count": "1m，1根",
+			"type": "测试附件"
+	},{
+			"name": "连接器",
+			"number": "N-J/BNC-K",
+			"count": "1个",
+			"type": "测试附件"
+	},{
+			"name": "连接器",
+			"number": "N-KFK",
+			"count": "1个",
+			"type": "测试附件"
+	},{
+			"name": "连接器",
+			"number": "SMA-KFK",
+			"count": "1个",
+			"type": "测试附件"
+	},{
+			"name": "连接器",
+			"number": "N-K/SMA-K",
+			"count": "1个",
+			"type": "测试附件"
+	}],
+	"test_case_detail":[
+	        {
+	            "case_name": "收发单元",
+	            "title": "收发单元故障定位",
+	            "steps":[
+	            	{"img":"1.png","title":"散射高频设备-收/发单元","contents":"收发单元在高频中的位置如下图所示","module": "DialogPic"},
+	            	{"img":"1.png","title":"散射高频设备-收/发单元本振","contents":"高频设备和频谱仪接地","module": "DialogPic"},
+			        {"img":"2.png","title":"散射高频设备-收/发单元本振","contents":"如图所示,高频设备后面板XS03外部接口连接到频谱仪的10MHz参考输出接口","module": "DialogPic"},
+			        {"img":"2.png","title":"散射高频设备-收/发单元本振","contents":"打开高频设备开关查看设备的告警查询，如果有本振告警出现，则收发单元存在本振失锁故障，如果没本振告警，则可以排除收发单元本振问题","module": "DialogPic"},
+			        {"img":"","title":"散射高频设备-收/发单元本振","contents":"填写本振单元状态","module": "MANUAL_TEST_LO"},
+			        {"img":"3.png","title":"散射高频设备-收/发单元接收通道","contents":"拆开高频设备的上盖板，露出收发单元，拧下收发单元的XS4和XS8处的连接线","module": "DialogPic"},
+			        {"img":"3.png","title":"散射高频设备-收/发单元接收通道","contents":"高频设备和信号源、频谱仪接地，接通电源","module": "DialogPic"},
+			        {"img":"3.png","title":"散射高频设备-收/发单元接收通道","contents":"按图连接好高频设备的外部接线，收发单元XS4和XS8按照上图连接到信号源和频谱仪","module": "DialogPic"},
+			        {"img":"3.png","title":"散射高频设备-收/发单元接收通道","contents":"打开高频设备开关查看设备的收发频率，确认高频设备的接收衰减为0dB","module": "DialogPic"},
+			        {"img":"","title":"散射高频设备-收/发单元接收通道","contents":"设置信号源和频谱仪相关参数","module": "AUTO_TEST"},
+			        {"img":"4.png","title":"散射高频设备-收/发单元发射通道","contents":"拆开高频设备的上盖板，露出收发单元，拧下收发单元的XS6和XS7处的连接线","module": "DialogPic"},
+			        {"img":"4.png","title":"散射高频设备-收/发单元发射通道","contents":"高频设备和信号源、频谱仪接地，接通电源","module": "DialogPic"},
+			        {"img":"4.png","title":"散射高频设备-收/发单元发射通道","contents":"按图连接好高频设备的外部接线，收发单元XS6和XS7按照上图连接到信号源和频谱仪","module": "DialogPic"},
+			        {"img":"4.png","title":"散射高频设备-收/发单元发射通道","contents":"打开高频设备开关查看设备的收发频率，工作模式改变到正常工作模式状态","module": "DialogPic"},
+			        {"img":"","title":"散射高频设备-收/发单元发射通道","contents":"设置信号源和频谱仪相关参数","module": "AUTO_TEST_T"}
+			    ],
+			    "test_para":["70","-60","70","100","69","0","70","100"],
+			    "threshold":["无本振告警","-25","-15","2","7"]
+	        },
+	        {
+	            "case_name": "低噪声放大器",
+	            "title": "低噪声放大器故障定位",
+	            "steps":[
+	            	{"img":"5.png","title":"散射高频设备-低噪声放大器","contents":"低噪声放大器在高频中的位置如下图所示","module": "DialogPic"},
+			        {"img":"5.png","title":"散射高频设备-低噪声放大器","contents":"拆开高频设备的下盖板，露出低噪声放大器，拧下低噪声放大器的XS1和XS2处的连接线","module": "DialogPic"},
+			        {"img":"5.png","title":"散射高频设备-低噪声放大器","contents":"高频设备和信号源、频谱仪接地，接通电源","module": "DialogPic"},
+			        {"img":"6.png","title":"散射高频设备-低噪声放大器","contents":"按图连接好高频设备内部低噪声放大器的外部接线，低噪声放大器XS1和XS2按照连接到信号源和频谱仪","module": "DialogPic"},
+			        {"img":"6.png","title":"散射高频设备-低噪声放大器","contents":"打开高频设备开关，确认低噪声放大器VCC处的供电满足+15V","module": "DialogPic"},
+			        {"img":"","title":"散射高频设备-低噪声放大器","contents":"设置信号源和频谱仪相关参数","module": "AUTO_TEST_LNA"}
+			    ],
+			    "test_para":["4700","-30","4700","100"],
+			    "threshold":["-3","10"]
+	        },
+	        {
+	            "case_name": "功放",
+	            "title": "功放故障定位",
+	            "steps":[
+	            	{"img":"7.png","title":"散射高频设备-功放","contents":"功放在高频中的位置如下图所示","module": "DialogPic"},
+			        {"img":"7.png","title":"散射高频设备-功放","contents":"拆开高频设备的下盖板，露出功放，拧下低噪声放大器的XS1和W07处的连接线","module": "DialogPic"},
+			        {"img":"7.png","title":"散射高频设备-功放","contents":"高频设备和信号源、频谱仪接地，接通电源","module": "DialogPic"},
+			        {"img":"8.png","title":"散射高频设备-功放","contents":"按图连接好高频设备外部波导开关的接线，天线接口连接上大功率衰减器，内部功放XS1接口连接到信号源，W07耦合器50dB接口连接到频谱仪","module": "DialogPic"},
+			        {"img":"8.png","title":"散射高频设备-功放","contents":"打开高频设备开关，确认功放XS2处的供电满足+28V","module": "DialogPic"},
+			        {"img":"","title":"散射高频设备-功放","contents":"设置信号源和频谱仪相关参数","module": "AUTO_TEST_PA"}
+			    ],
+			    "test_para":["4700","0","4700","100"],
+			    "threshold":["-3","3"]
+	        }, 
+	        {
+	            "case_name": "自环器",
+	            "title": "自环器故障定位",
+	            "steps":[
+	            	{"img":"9.png","title":"散射高频设备-自环器","contents":"自环器在高频中的位置如下图所示","module": "DialogPic"},
+			        {"img":"9.png","title":"散射高频设备-自环器","contents":"拆开高频设备的下盖板，露出自环器，拧下低噪声放大器的XS5处的连接线","module": "DialogPic"},
+			        {"img":"9.png","title":"散射高频设备-自环器","contents":"高频设备和信号源、频谱仪接地，接通电源","module": "DialogPic"},
+			        {"img":"10.png","title":"散射高频设备-自环器","contents":"按图连接好高频设备的外部接线，自环器XS5按照上图连接到环形器的2口，环形器的1口和3口分别接到信号源、频谱仪上","module": "DialogPic"},
+			        {"img":"10.png","title":"散射高频设备-自环器","contents":"打开高频设备开关查看设备的收发频率","module": "DialogPic"},
+			        {"img":"","title":"散射高频设备-自环器","contents":"设置信号源和频谱仪相关参数","module": "AUTO_TEST_LOOP"}
+			    ],
+			    "test_para":["4700","10","4700","100"],
+			    "threshold":["-55","-35"]
+	        },
+	        {
+	            "case_name": "滤波器",
+	            "title": "滤波器故障定位",
+	            "steps":[
+	            	{"img":"11.png","title":"散射高频设备-滤波器","contents":"滤波器在高频中的位置如下图所示，有两个，分为收滤波器和发滤波器","module": "DialogPic"},
+			        {"img":"11.png","title":"散射高频设备-滤波器","contents":"拆开高频设备的下盖板，露出滤波器，拧下滤波器的XS1和XS2处的连接线","module": "DialogPic"},
+			        {"img":"11.png","title":"散射高频设备-滤波器","contents":"高频设备和矢量网络分析仪接地，打开矢量网络分析仪电源，对仪器进行校准","module": "DialogPic"},
+			        {"img":"12.png","title":"散射高频设备-滤波器","contents":"按图连接好高频设备内部滤波器器的外部接线，滤波器XS1和XS2连接到矢量网络分析仪","module": "DialogPic"},
+			        {"img":"12.png","title":"散射高频设备-滤波器","contents":"打开高频设备开关，确认高频设备的收发频率","module": "DialogPic"},
+			        {"img":"","title":"散射高频设备-滤波器","contents":"设置矢量网络分析仪相关参数","module": "AUTO_TEST_FILTER"}
+			    ],
+			    "test_para":["4700","800"],
+			    "threshold":["-9999","-15","-2","0"]
+	        },
+	        {
+	            "case_name": "波导开关",
+	            "title": "波导开关故障定位",
+	            "steps":[
+	            	{"img":"13.png","title":"散射高频设备-波导开关","contents":"如图所示，波导开关没有在高频设备里面，安装在通信方舱内部","module": "DialogPic"},
+			        {"img":"13.png","title":"散射高频设备-波导开关","contents":"高频设备接地，接通电源","module": "DialogPic"},
+			        {"img":"14.png","title":"散射高频设备-波导开关","contents":"按图连接好高频设备的外部接线，波导开关控制接口和高频设备后面板的XS08按照上图连接","module": "DialogPic"},
+			        {"img":"14.png","title":"散射高频设备-波导开关","contents":"打开高频设备开关，更换设备的发射、接收频率，观测波导开关是否有切换动作","module": "DialogPic"},
+			        {"img":"14.png","title":"散射高频设备-波导开关","contents":"如果波导开关有切换动作，并且高频设备可以完成改频，则认为波导开关正常","module": "DialogPic"},
+			        {"img":"14.png","title":"散射高频设备-波导开关","contents":"如果波导开关没动作，则高频断电，打开波导开关的电机保护罩，手动旋转电机，看看手动是否旋转灵活，如果卡住不能旋转，则断定波导开关故障","module": "DialogPic"},
+			        {"img":"","title":"散射高频设备-波导开关","contents":"填写波导开关状态","module": "MANUAL_TEST_SWITCH"}
+			    ],
+			    "threshold":["波导开关正常","波导开关故障"]
+	        },
+	        {
+	            "case_name": "耦合器",
+	            "title": "耦合器故障定位",
+	            "steps":[
+	            	{"img":"15.png","title":"散射高频设备-耦合器","contents":"耦合器在高频中的位置如下图所示","module": "DialogPic"},
+			        {"img":"15.png","title":"散射高频设备-耦合器","contents":"拆开高频设备的上盖板，露出耦合器，拧下耦合器XS3处的连接线","module": "DialogPic"},
+			        {"img":"15.png","title":"散射高频设备-耦合器","contents":"矢量网络分析仪接地，接通电源，选择通道S21，中心频率设置为4700MHz，带宽设置为800MHz，1dB/DIV，REFERENCE VALUE： -40 dB，仪器接SMA电缆进行校准","module": "DialogPic"},
+			        {"img":"16.png","title":"散射高频设备-耦合器","contents":"按图连接好高频设备天线口和内部耦合器的接线","module": "DialogPic"},
+			        {"img":"","title":"散射高频设备-耦合器","contents":"设置矢量网络分析仪相关参数","module": "AUTO_TEST_COUPLER"}
+			    ],
+			    "test_para":["4700","800"],
+			    "threshold":["-47","-33"]
+	        },
+	        {
+	            "case_name": "监控模块",
+	            "title": "监控模块故障定位",
+	            "steps":[
+	            	{"img":"17.png","title":"散射高频设备-监控模块","contents":"监控模块在高频中的位置如下图所示，监控模块故障定位方法采用目测法","module": "DialogPic"},
+			        {"img":"17.png","title":"散射高频设备-监控模块","contents":"拆开高频设备的上盖板，露出监控模块","module": "DialogPic"},
+			        {"img":"17.png","title":"散射高频设备-监控模块","contents":"高频设备接通电源，高频设备接地，打开高频设备前面板的开关","module": "DialogPic"},
+			        {"img":"17.png","title":"散射高频设备-监控模块","contents":"观察监控模块连接器JL35-4供电接口处V2发光二极管是否亮起，如果不亮说明监控供电不正常，需要排查监控+5V供电情况","module": "DialogPic"},
+			        {"img":"17.png","title":"散射高频设备-监控模块","contents":"观察监控模块发光二极管V3、V4、V5、V6是否闪烁，如果这四个发光二极管都不亮，说明监控单元没有程序运行","module": "DialogPic"},
+			        {"img":"17.png","title":"散射高频设备-监控模块","contents":"V8、V9、V10、V11、V12、V13是网络连接指示灯，其中：V8是网口物理连接指示灯，物理连接正常指示灯亮起；V13是发数据指示灯，发一组数据亮起一次；V12是收数据指示灯， 收一组数据亮起一次；V11是数据冲突指示灯；V10是全双工和半双工指示灯，全双工工作时亮起；V9是传输速率指示灯，传输100Mbps速率时亮起，10Mbps速率时灭。","module": "DialogPic"},
+			        {"img":"","title":"散射高频设备-监控模块","contents":"填写监控模块状态","module": "MANUAL_TEST_MONITOR"}
+			    ],
+			    "threshold":["监控供电正常","监控供电故障"]
+	        }
+    ]
+}

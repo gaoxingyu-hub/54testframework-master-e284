@@ -1,0 +1,33 @@
+{
+    "step2name":{
+        "0": "系统拆机详解",
+        "1": "搭建测试系统",
+        "2": "执行测试",
+        "3": "测试数据管理"
+    },
+    "menu": [
+
+    ],
+    "menu2module": {
+    "通信分系统:散射高频设备": "HIGH_FREQ_DEVICE",
+    "通信分系统：MW-1500微波电台": "MW1500_DEVICE",
+    "通信分系统:路由器":"RouterDialog",
+    "通信分系统:ECOM_NS_1型交换机": "EcomNs1Main",
+    "通信分系统:ECOM_NS_2型交换机": "EcomNs2Main",
+    "通信分系统:VHF电台": "VHF_RADIO",
+    "通信分系统:通信控制设备": "COM_CONTROL_DEVICE",
+    "通信分系统:自组网微波通信设备": "DialogMvComDevice"
+    },
+    "menuindex2module": {
+        "0": "HIGH_FREQ_DEVICE",
+        "1": "MW1500_DEVICE",
+        "2": "EcomNs1Main",
+        "3": "EcomNs2Main",
+        "4": "VHF_RADIO",
+        "5": "DialogMvComDevice",
+        "6": "DialogSdslMain",
+        "7": "DialogSecurityMain",
+        "8": "COM_CONTROL_DEVICE",
+        "9": "RouterDialog"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "steps": [
+        {"contents":"LAN1 d’équipement à tester est connecté avec le port 1 de testeur de taux d’erreur de bit IP et LAN2 avec le port 2 de testeur de taux d’erreur de bit IP","button": "l’étape suivante","status": "before"},
+        {"contents":"LAN1 et LAN2 sont en cours de test, cela va durer quelques minutes, soyez patient…","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN1 et LAN2, le résultat de test est: ","button": "l’étape suivante","status": "result"},
+        {"contents":"LAN3 d’équipement à tester est connecté avec le port 1 de testeur de taux d’erreur de bit IP et LAN4 avec le port 2 de testeur de taux d’erreur de bit IP","button": "l’étape suivante","status": "before"},
+        {"contents":"LAN3 et LAN4 sont en cours de test, cela va durer quelques minutes, soyez patient…","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN3 et LAN4, le résultat de test est: ","button": "l’étape suivante","status": "result"},
+        {"contents":"LAN5 d’équipement à tester est connecté avec le port 1 de testeur de taux d’erreur de bit IP et LAN6 avec le port 2 de testeur de taux d’erreur de bit IP","button": "l’étape suivante","status": "before"},
+        {"contents":"LAN5 et LAN6 sont en cours de test, cela va durer quelques minutes, soyez patient…","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN5 et LAN6, le résultat de test est: ","button": "l’étape suivante","status": "result"},
+        {"contents":"LAN7 d’équipement à tester est connecté avec le port 1 de testeur de taux d’erreur de bit IP et LAN8 avec le port 2 de testeur de taux d’erreur de bit IP","button": "l’étape suivante","status": "before"},
+        {"contents":"LAN7 et LAN8 sont en cours de test, cela va durer quelques minutes, soyez patient…","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN7 et LAN8, le résultat de test est: ","button": "l’étape suivante","status": "result"},
+        {"contents":"LAN9 d’équipement à tester est connecté avec le port 1 de testeur de taux d’erreur de bit IP et LAN10 avec le port 2 de testeur de taux d’erreur de bit IP","button": "l’étape suivante","status": "before"},
+        {"contents":"LAN9 et LAN10 sont en cours de test, cela va durer quelques minutes, soyez patient…","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN9 et LAN10, le résultat de test est: ","button": "l’étape suivante","status": "result"},
+        {"contents":"LAN11 d’équipement à tester est connecté avec le port 1 de testeur de taux d’erreur de bit IP et LAN12 avec le port 2 de testeur de taux d’erreur de bit IP","button": "l’étape suivante","status": "before"},
+        {"contents":"LAN11 et LAN12 sont en cours de test, cela va durer quelques minutes, soyez patient…","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN11 et LAN12, le résultat de test est: ","button": "l’étape suivante","status": "result"},
+        {"contents":"LAN13 d’équipement à tester est connecté avec le port 1 de testeur de taux d’erreur de bit IP et LAN14 avec le port 2 de testeur de taux d’erreur de bit IP","button": "l’étape suivante","status": "before"},
+        {"contents":"LAN13 et LAN14 sont en cours de test, cela va durer quelques minutes, soyez patient…","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN13 et LAN14, le résultat de test est: ","button": "l’étape suivante","status": "result"},
+        {"contents":"LAN15 d’équipement à tester est connecté avec le port 1 de testeur de taux d’erreur de bit IP et LAN16 avec le port 2 de testeur de taux d’erreur de bit IP","button": "l’étape suivante","status": "before"},
+        {"contents":"LAN15 et LAN16 sont en cours de test, cela va durer quelques minutes, soyez patient…","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN15 et LAN16, le résultat de test est: ","button": "l’étape suivante","status": "result"}
+    ]
+}

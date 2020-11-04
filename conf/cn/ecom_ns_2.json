@@ -1,0 +1,69 @@
+{
+    "title":"切换(交换)模块(主控板)",
+    "module_name":"ecom_ns_2",
+    "test_case": ["ecom_ns_2"],
+    "test_case_detail":[
+        {
+            "case_name": "ecom_ns_2",
+            "title": "ecom_ns_2型交换机",
+            "steps": [
+                {"img":"1.png","title":"ecom_ns_2型交换机测试","contents":"ECOM-NS-2型交换机除电源测试需开盖测试外，只需要从外部接口测试。现在给出拆开盖板对电源测试的例子。","module": "DialogPicText","category": "disassemble"},
+                {"img":"2.png","title":"ecom_ns_2型交换机测试","contents":"拧开四个将设备固定在机柜上的螺钉，将设备从机柜上抽出","module": "DialogPicText","category": "disassemble"},
+                {"img":"3.png","title":"ecom_ns_2型交换机测试","contents":"保险丝安装于机箱后面板，具体见图5，将保险丝后盖（与保险丝连接在一起）旋出","module": "DialogPicText","category": "disassemble"},
+                {"img":"4.png","title":"ecom_ns_2型交换机测试","contents":"旋出后的见图","module": "DialogPicText","category": "disassemble"},
+                {"img":"5.png","title":"ecom_ns_2型交换机测试","contents":"参照图打开设备上盖板，就可以看到设备内部布局","module": "DialogPicText","category": "disassemble"},
+                {"img":"6.png","title":"ecom_ns_2型交换机测试","contents":"电源模块进行拆装时，需要将电源接线端子松开（红色方框内），并将六个固定螺母旋开（红色圆圈）","module": "DialogPicText","category": "disassemble"},
+                {"img":"7.png","title":"ecom_ns_2型交换机测试","contents":"网线","module": "DialogPicText","category": "testprepare"},
+                {"img":"8.png","title":"ecom_ns_2型交换机测试","contents":"网线连接位置","module": "DialogPicText","category": "testprepare"},
+                {"img":"9.png","title":"ecom_ns_2型交换机测试","contents":"便携式军用加固计算机","module": "DialogPicText","category": "testprepare"},
+                {"img":"10.png","title":"ecom_ns_2型交换机测试","contents":"对于ECOM-NS-2型交换机的测试而言，需要一台便携式军用加固计算机、一台IP误码仪和一个数字万用表","module": "DialogPicText","category": "testprepare"},
+                {"img":"","title":"ecom_ns_2型交换机测试-模块或整机测试","contents":"ECOM-NS-2型交换机维修清单里虽然都没有包含电源，但是需要将将保险丝和电源部分的故障首先排除。","module": "DialogPicText","category": "execute"},
+                {"img":"","title":"ecom_ns_2型交换机测试-保险丝部分测试","contents":"电源指示灯不亮的时候，首先检查保险丝管是否完好，如果已经熔断请首先更换保险丝。此处应该跳转到保险丝更换画面或者相应拆机指导。","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"保险丝部分正常","contents":"保险丝部分正常","module": "DialogSimpleTestProcess1Btn","category": "execute"},
+                {"img":"","title":"ecom_ns_2型交换机测试-电源部分","contents":"更换保险丝后，继续进行电源模块的输出电压测试，ECOM-NS-2型交换机的电源模块XS4的第1、2脚为+12V，第3、4脚为GND，使用万用表测试是否在规定范围内。如果电源电压不在规定范围内，请更换改电源模块，如果故障仍未排除，请继续进行后续测试。","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"电源部分正常","contents":"电源部分正常","module": "DialogSimpleTestProcess1Btn","category": "execute"},
+                {"img":"","title":"Ping测试-设备CTRL口","contents":"将笔记本计算机网口连接至设备CTRL口，将笔记本计算机的ip地址设置为192.168.1.10/24，输入192.168.1.205，点击ping按钮","module": "EcomNs2Ping","category": "execute"},
+                {"img":"","title":"Ping测试-设备LAN16","contents":"将笔记本计算机网口连接至设备LAN16，将笔记本计算机的ip地址设置为192.168.1.10/24，输入192.168.1.205，点击ping按钮","module": "EcomNs2Ping","category": "execute"},
+                {"img":"","title":"IP误码仪测试-以太网接口","contents":"使用网线连接设备LAN1至IP误码仪测试端口1，使用网线连接设备LAN2至IP误码仪测试端口2","module": "DialogEcomNs2KeyTest","category": "execute"}
+            ]
+        }
+    ],
+    "test_source": [
+        {
+            "name": "IP误码仪",
+            "number": "",
+            "count": "1",
+            "type": ""
+        },
+        {
+            "name": "交流电源电缆",
+            "number": "MP-COM-B-003-W001",
+            "count": "1",
+            "type": "配件"
+        },
+        {
+            "name": "管理以太网电缆",
+            "number": "MP-COM-B-003-W002",
+            "count": "1",
+            "type": "配件"
+        },
+        {
+            "name": "地线",
+            "number": "MP-COM-B-003-W003",
+            "count": "1",
+            "type": "配件"
+        },
+        {
+            "name": "测试以太网电缆",
+            "number": "MP-COM-B-003-W004",
+            "count": "1",
+            "type": "配件"
+        },
+        {
+            "name": "测试以太网电缆",
+            "number": "MP-COM-B-003-W005",
+            "count": "1",
+            "type": "配件"
+        }
+    ]
+}

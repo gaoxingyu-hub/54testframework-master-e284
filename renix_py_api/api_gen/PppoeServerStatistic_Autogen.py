@@ -1,0 +1,757 @@
+"""
+Auto-generated File 
+Create Time: 2019-12-27 02:33:26
+"""
+from .ROMEnum_Autogen import *
+from renix_py_api.renix_common_api import *
+from renix_py_api import rom_manager
+from .Result_Autogen import Result
+
+
+@rom_manager.rom
+class PppoeServerStatistic(Result):
+    def __init__(self, **kwargs):
+        self._PppoeServerBlockId = ''  # PPPoE Server Block Name, not editable
+        self._PppoeServerId = 0  # PPPoE Server Index, not editable
+        self._IpcpState = 'None'  # IPCP State, not editable
+        self._Ipv6cpState = 'None'  # IPv6CP State, not editable
+        self._MacAddress = ''  # MAC Address, not editable
+        self._PeerMacAddress = ''  # Peer MAC Address, not editable
+        self._PppoeSessionId = '0000'  # PPPoE Session ID, not editable
+        self._VlanId = ''  # VLAN ID, not editable
+        self._InnerVlanId = ''  # Inner VLAN ID, not editable
+        self._Ipv4Address = ''  # IPv4 Address, not editable
+        self._PeerIpv4Address = ''  # Peer IPv4 Address, not editable
+        self._Ipv6LinklocalAddress = ''  # IPv6 Link-Local Address, not editable
+        self._PeerIpv6LinklocalAddress = ''  # Peer IPv6 Link-Local Address, not editable
+        self._SuccessfulConnects = 0  # Successful Connections, not editable
+        self._FailedConnects = 0  # Failed Connections, not editable
+        self._SucessfulDisconnects = 0  # Successful Disconnections, not editable
+        self._FailedDisconnects = 0  # Failed Disconnections, not editable
+        self._SetupTime = 0  # Setup Time (ms), not editable
+        self._RxPadi = 0  # Rx PADI, not editable
+        self._TxPado = 0  # Tx PADO, not editable
+        self._RxPadr = 0  # Rx PADR, not editable
+        self._TxPads = 0  # Tx PADS, not editable
+        self._TxPadt = 0  # Tx PADT, not editable
+        self._RxPadt = 0  # Rx PADT, not editable
+        self._TxLcpConfigRequest = 0  # Tx LCP Configure Request, not editable
+        self._RxLcpConfigRequest = 0  # Rx LCP Configure Request, not editable
+        self._TxLcpConfigAck = 0  # Tx LCP Configure Ack, not editable
+        self._RxLcpConfigAck = 0  # Rx LCP Configure Ack, not editable
+        self._TxLcpConfigNak = 0  # Tx LCP Configure Nak, not editable
+        self._RxLcpConfigNak = 0  # Rx LCP Configure Nak, not editable
+        self._TxLcpConfigReject = 0  # Tx LCP Configure Reject, not editable
+        self._RxLcpConfigReject = 0  # Rx LCP Configure Reject, not editable
+        self._TxLcpEchoRequest = 0  # Tx LCP Echo Request, not editable
+        self._RxLcpEchoRequest = 0  # Rx LCP Echo Request, not editable
+        self._TxLcpEchoReply = 0  # Tx LCP Echo Reply, not editable
+        self._RxLcpEchoReply = 0  # Rx LCP Echo Reply, not editable
+        self._TxLcpTerminateRequest = 0  # Tx LCP Terminate Request, not editable
+        self._RxLcpTerminateRequest = 0  # Rx LCP Terminate Request, not editable
+        self._TxLcpTerminateAck = 0  # Tx LCP Terminate Ack, not editable
+        self._RxLcpTerminateAck = 0  # Rx LCP Terminate Ack, not editable
+        self._TxChap = 0  # Tx CHAP, not editable
+        self._RxChap = 0  # Rx CHAP, not editable
+        self._TxPap = 0  # Tx PAP, not editable
+        self._RxPap = 0  # Rx PAP, not editable
+        self._TxIpcp = 0  # Tx IPCP, not editable
+        self._RxIpcp = 0  # Rx IPCP, not editable
+        self._TxIpv6cp = 0  # Tx IPv6CP, not editable
+        self._RxIpv6cp = 0  # Rx IPv6CP, not editable
+
+        properties = kwargs.copy()
+
+        # call base class function, and it will send message to renix server to create a class.
+        super(PppoeServerStatistic, self).__init__(**properties)
+
+    def delete(self):
+        """
+        call to delete itself
+        """
+        return self._finalize()
+
+    @property
+    def PppoeServerBlockId(self):
+        """
+        get the value of property _PppoeServerBlockId
+        """
+        if self.force_auto_sync:
+            self.get('PppoeServerBlockId')
+        return self._PppoeServerBlockId
+
+    @property
+    def PppoeServerId(self):
+        """
+        get the value of property _PppoeServerId
+        """
+        if self.force_auto_sync:
+            self.get('PppoeServerId')
+        return self._PppoeServerId
+
+    @property
+    def IpcpState(self):
+        """
+        get the value of property _IpcpState
+        """
+        if self.force_auto_sync:
+            self.get('IpcpState')
+        return self._IpcpState
+
+    @property
+    def Ipv6cpState(self):
+        """
+        get the value of property _Ipv6cpState
+        """
+        if self.force_auto_sync:
+            self.get('Ipv6cpState')
+        return self._Ipv6cpState
+
+    @property
+    def MacAddress(self):
+        """
+        get the value of property _MacAddress
+        """
+        if self.force_auto_sync:
+            self.get('MacAddress')
+        return self._MacAddress
+
+    @property
+    def PeerMacAddress(self):
+        """
+        get the value of property _PeerMacAddress
+        """
+        if self.force_auto_sync:
+            self.get('PeerMacAddress')
+        return self._PeerMacAddress
+
+    @property
+    def PppoeSessionId(self):
+        """
+        get the value of property _PppoeSessionId
+        """
+        if self.force_auto_sync:
+            self.get('PppoeSessionId')
+        return self._PppoeSessionId
+
+    @property
+    def VlanId(self):
+        """
+        get the value of property _VlanId
+        """
+        if self.force_auto_sync:
+            self.get('VlanId')
+        return self._VlanId
+
+    @property
+    def InnerVlanId(self):
+        """
+        get the value of property _InnerVlanId
+        """
+        if self.force_auto_sync:
+            self.get('InnerVlanId')
+        return self._InnerVlanId
+
+    @property
+    def Ipv4Address(self):
+        """
+        get the value of property _Ipv4Address
+        """
+        if self.force_auto_sync:
+            self.get('Ipv4Address')
+        return self._Ipv4Address
+
+    @property
+    def PeerIpv4Address(self):
+        """
+        get the value of property _PeerIpv4Address
+        """
+        if self.force_auto_sync:
+            self.get('PeerIpv4Address')
+        return self._PeerIpv4Address
+
+    @property
+    def Ipv6LinklocalAddress(self):
+        """
+        get the value of property _Ipv6LinklocalAddress
+        """
+        if self.force_auto_sync:
+            self.get('Ipv6LinklocalAddress')
+        return self._Ipv6LinklocalAddress
+
+    @property
+    def PeerIpv6LinklocalAddress(self):
+        """
+        get the value of property _PeerIpv6LinklocalAddress
+        """
+        if self.force_auto_sync:
+            self.get('PeerIpv6LinklocalAddress')
+        return self._PeerIpv6LinklocalAddress
+
+    @property
+    def SuccessfulConnects(self):
+        """
+        get the value of property _SuccessfulConnects
+        """
+        if self.force_auto_sync:
+            self.get('SuccessfulConnects')
+        return self._SuccessfulConnects
+
+    @property
+    def FailedConnects(self):
+        """
+        get the value of property _FailedConnects
+        """
+        if self.force_auto_sync:
+            self.get('FailedConnects')
+        return self._FailedConnects
+
+    @property
+    def SucessfulDisconnects(self):
+        """
+        get the value of property _SucessfulDisconnects
+        """
+        if self.force_auto_sync:
+            self.get('SucessfulDisconnects')
+        return self._SucessfulDisconnects
+
+    @property
+    def FailedDisconnects(self):
+        """
+        get the value of property _FailedDisconnects
+        """
+        if self.force_auto_sync:
+            self.get('FailedDisconnects')
+        return self._FailedDisconnects
+
+    @property
+    def SetupTime(self):
+        """
+        get the value of property _SetupTime
+        """
+        if self.force_auto_sync:
+            self.get('SetupTime')
+        return self._SetupTime
+
+    @property
+    def RxPadi(self):
+        """
+        get the value of property _RxPadi
+        """
+        if self.force_auto_sync:
+            self.get('RxPadi')
+        return self._RxPadi
+
+    @property
+    def TxPado(self):
+        """
+        get the value of property _TxPado
+        """
+        if self.force_auto_sync:
+            self.get('TxPado')
+        return self._TxPado
+
+    @property
+    def RxPadr(self):
+        """
+        get the value of property _RxPadr
+        """
+        if self.force_auto_sync:
+            self.get('RxPadr')
+        return self._RxPadr
+
+    @property
+    def TxPads(self):
+        """
+        get the value of property _TxPads
+        """
+        if self.force_auto_sync:
+            self.get('TxPads')
+        return self._TxPads
+
+    @property
+    def TxPadt(self):
+        """
+        get the value of property _TxPadt
+        """
+        if self.force_auto_sync:
+            self.get('TxPadt')
+        return self._TxPadt
+
+    @property
+    def RxPadt(self):
+        """
+        get the value of property _RxPadt
+        """
+        if self.force_auto_sync:
+            self.get('RxPadt')
+        return self._RxPadt
+
+    @property
+    def TxLcpConfigRequest(self):
+        """
+        get the value of property _TxLcpConfigRequest
+        """
+        if self.force_auto_sync:
+            self.get('TxLcpConfigRequest')
+        return self._TxLcpConfigRequest
+
+    @property
+    def RxLcpConfigRequest(self):
+        """
+        get the value of property _RxLcpConfigRequest
+        """
+        if self.force_auto_sync:
+            self.get('RxLcpConfigRequest')
+        return self._RxLcpConfigRequest
+
+    @property
+    def TxLcpConfigAck(self):
+        """
+        get the value of property _TxLcpConfigAck
+        """
+        if self.force_auto_sync:
+            self.get('TxLcpConfigAck')
+        return self._TxLcpConfigAck
+
+    @property
+    def RxLcpConfigAck(self):
+        """
+        get the value of property _RxLcpConfigAck
+        """
+        if self.force_auto_sync:
+            self.get('RxLcpConfigAck')
+        return self._RxLcpConfigAck
+
+    @property
+    def TxLcpConfigNak(self):
+        """
+        get the value of property _TxLcpConfigNak
+        """
+        if self.force_auto_sync:
+            self.get('TxLcpConfigNak')
+        return self._TxLcpConfigNak
+
+    @property
+    def RxLcpConfigNak(self):
+        """
+        get the value of property _RxLcpConfigNak
+        """
+        if self.force_auto_sync:
+            self.get('RxLcpConfigNak')
+        return self._RxLcpConfigNak
+
+    @property
+    def TxLcpConfigReject(self):
+        """
+        get the value of property _TxLcpConfigReject
+        """
+        if self.force_auto_sync:
+            self.get('TxLcpConfigReject')
+        return self._TxLcpConfigReject
+
+    @property
+    def RxLcpConfigReject(self):
+        """
+        get the value of property _RxLcpConfigReject
+        """
+        if self.force_auto_sync:
+            self.get('RxLcpConfigReject')
+        return self._RxLcpConfigReject
+
+    @property
+    def TxLcpEchoRequest(self):
+        """
+        get the value of property _TxLcpEchoRequest
+        """
+        if self.force_auto_sync:
+            self.get('TxLcpEchoRequest')
+        return self._TxLcpEchoRequest
+
+    @property
+    def RxLcpEchoRequest(self):
+        """
+        get the value of property _RxLcpEchoRequest
+        """
+        if self.force_auto_sync:
+            self.get('RxLcpEchoRequest')
+        return self._RxLcpEchoRequest
+
+    @property
+    def TxLcpEchoReply(self):
+        """
+        get the value of property _TxLcpEchoReply
+        """
+        if self.force_auto_sync:
+            self.get('TxLcpEchoReply')
+        return self._TxLcpEchoReply
+
+    @property
+    def RxLcpEchoReply(self):
+        """
+        get the value of property _RxLcpEchoReply
+        """
+        if self.force_auto_sync:
+            self.get('RxLcpEchoReply')
+        return self._RxLcpEchoReply
+
+    @property
+    def TxLcpTerminateRequest(self):
+        """
+        get the value of property _TxLcpTerminateRequest
+        """
+        if self.force_auto_sync:
+            self.get('TxLcpTerminateRequest')
+        return self._TxLcpTerminateRequest
+
+    @property
+    def RxLcpTerminateRequest(self):
+        """
+        get the value of property _RxLcpTerminateRequest
+        """
+        if self.force_auto_sync:
+            self.get('RxLcpTerminateRequest')
+        return self._RxLcpTerminateRequest
+
+    @property
+    def TxLcpTerminateAck(self):
+        """
+        get the value of property _TxLcpTerminateAck
+        """
+        if self.force_auto_sync:
+            self.get('TxLcpTerminateAck')
+        return self._TxLcpTerminateAck
+
+    @property
+    def RxLcpTerminateAck(self):
+        """
+        get the value of property _RxLcpTerminateAck
+        """
+        if self.force_auto_sync:
+            self.get('RxLcpTerminateAck')
+        return self._RxLcpTerminateAck
+
+    @property
+    def TxChap(self):
+        """
+        get the value of property _TxChap
+        """
+        if self.force_auto_sync:
+            self.get('TxChap')
+        return self._TxChap
+
+    @property
+    def RxChap(self):
+        """
+        get the value of property _RxChap
+        """
+        if self.force_auto_sync:
+            self.get('RxChap')
+        return self._RxChap
+
+    @property
+    def TxPap(self):
+        """
+        get the value of property _TxPap
+        """
+        if self.force_auto_sync:
+            self.get('TxPap')
+        return self._TxPap
+
+    @property
+    def RxPap(self):
+        """
+        get the value of property _RxPap
+        """
+        if self.force_auto_sync:
+            self.get('RxPap')
+        return self._RxPap
+
+    @property
+    def TxIpcp(self):
+        """
+        get the value of property _TxIpcp
+        """
+        if self.force_auto_sync:
+            self.get('TxIpcp')
+        return self._TxIpcp
+
+    @property
+    def RxIpcp(self):
+        """
+        get the value of property _RxIpcp
+        """
+        if self.force_auto_sync:
+            self.get('RxIpcp')
+        return self._RxIpcp
+
+    @property
+    def TxIpv6cp(self):
+        """
+        get the value of property _TxIpv6cp
+        """
+        if self.force_auto_sync:
+            self.get('TxIpv6cp')
+        return self._TxIpv6cp
+
+    @property
+    def RxIpv6cp(self):
+        """
+        get the value of property _RxIpv6cp
+        """
+        if self.force_auto_sync:
+            self.get('RxIpv6cp')
+        return self._RxIpv6cp
+
+    def _set_pppoeserverblockid_with_str(self, value):
+        self._PppoeServerBlockId = value
+
+    def _set_pppoeserverid_with_str(self, value):
+        try:
+            self._PppoeServerId = int(value)
+        except ValueError:
+            self._PppoeServerId = hex(int(value, 16))
+
+    def _set_ipcpstate_with_str(self, value):
+        self._IpcpState = value
+
+    def _set_ipv6cpstate_with_str(self, value):
+        self._Ipv6cpState = value
+
+    def _set_macaddress_with_str(self, value):
+        self._MacAddress = value
+
+    def _set_peermacaddress_with_str(self, value):
+        self._PeerMacAddress = value
+
+    def _set_pppoesessionid_with_str(self, value):
+        self._PppoeSessionId = value
+
+    def _set_vlanid_with_str(self, value):
+        self._VlanId = value
+
+    def _set_innervlanid_with_str(self, value):
+        self._InnerVlanId = value
+
+    def _set_ipv4address_with_str(self, value):
+        self._Ipv4Address = value
+
+    def _set_peeripv4address_with_str(self, value):
+        self._PeerIpv4Address = value
+
+    def _set_ipv6linklocaladdress_with_str(self, value):
+        self._Ipv6LinklocalAddress = value
+
+    def _set_peeripv6linklocaladdress_with_str(self, value):
+        self._PeerIpv6LinklocalAddress = value
+
+    def _set_successfulconnects_with_str(self, value):
+        try:
+            self._SuccessfulConnects = int(value)
+        except ValueError:
+            self._SuccessfulConnects = hex(int(value, 16))
+
+    def _set_failedconnects_with_str(self, value):
+        try:
+            self._FailedConnects = int(value)
+        except ValueError:
+            self._FailedConnects = hex(int(value, 16))
+
+    def _set_sucessfuldisconnects_with_str(self, value):
+        try:
+            self._SucessfulDisconnects = int(value)
+        except ValueError:
+            self._SucessfulDisconnects = hex(int(value, 16))
+
+    def _set_faileddisconnects_with_str(self, value):
+        try:
+            self._FailedDisconnects = int(value)
+        except ValueError:
+            self._FailedDisconnects = hex(int(value, 16))
+
+    def _set_setuptime_with_str(self, value):
+        try:
+            self._SetupTime = int(value)
+        except ValueError:
+            self._SetupTime = hex(int(value, 16))
+
+    def _set_rxpadi_with_str(self, value):
+        try:
+            self._RxPadi = int(value)
+        except ValueError:
+            self._RxPadi = hex(int(value, 16))
+
+    def _set_txpado_with_str(self, value):
+        try:
+            self._TxPado = int(value)
+        except ValueError:
+            self._TxPado = hex(int(value, 16))
+
+    def _set_rxpadr_with_str(self, value):
+        try:
+            self._RxPadr = int(value)
+        except ValueError:
+            self._RxPadr = hex(int(value, 16))
+
+    def _set_txpads_with_str(self, value):
+        try:
+            self._TxPads = int(value)
+        except ValueError:
+            self._TxPads = hex(int(value, 16))
+
+    def _set_txpadt_with_str(self, value):
+        try:
+            self._TxPadt = int(value)
+        except ValueError:
+            self._TxPadt = hex(int(value, 16))
+
+    def _set_rxpadt_with_str(self, value):
+        try:
+            self._RxPadt = int(value)
+        except ValueError:
+            self._RxPadt = hex(int(value, 16))
+
+    def _set_txlcpconfigrequest_with_str(self, value):
+        try:
+            self._TxLcpConfigRequest = int(value)
+        except ValueError:
+            self._TxLcpConfigRequest = hex(int(value, 16))
+
+    def _set_rxlcpconfigrequest_with_str(self, value):
+        try:
+            self._RxLcpConfigRequest = int(value)
+        except ValueError:
+            self._RxLcpConfigRequest = hex(int(value, 16))
+
+    def _set_txlcpconfigack_with_str(self, value):
+        try:
+            self._TxLcpConfigAck = int(value)
+        except ValueError:
+            self._TxLcpConfigAck = hex(int(value, 16))
+
+    def _set_rxlcpconfigack_with_str(self, value):
+        try:
+            self._RxLcpConfigAck = int(value)
+        except ValueError:
+            self._RxLcpConfigAck = hex(int(value, 16))
+
+    def _set_txlcpconfignak_with_str(self, value):
+        try:
+            self._TxLcpConfigNak = int(value)
+        except ValueError:
+            self._TxLcpConfigNak = hex(int(value, 16))
+
+    def _set_rxlcpconfignak_with_str(self, value):
+        try:
+            self._RxLcpConfigNak = int(value)
+        except ValueError:
+            self._RxLcpConfigNak = hex(int(value, 16))
+
+    def _set_txlcpconfigreject_with_str(self, value):
+        try:
+            self._TxLcpConfigReject = int(value)
+        except ValueError:
+            self._TxLcpConfigReject = hex(int(value, 16))
+
+    def _set_rxlcpconfigreject_with_str(self, value):
+        try:
+            self._RxLcpConfigReject = int(value)
+        except ValueError:
+            self._RxLcpConfigReject = hex(int(value, 16))
+
+    def _set_txlcpechorequest_with_str(self, value):
+        try:
+            self._TxLcpEchoRequest = int(value)
+        except ValueError:
+            self._TxLcpEchoRequest = hex(int(value, 16))
+
+    def _set_rxlcpechorequest_with_str(self, value):
+        try:
+            self._RxLcpEchoRequest = int(value)
+        except ValueError:
+            self._RxLcpEchoRequest = hex(int(value, 16))
+
+    def _set_txlcpechoreply_with_str(self, value):
+        try:
+            self._TxLcpEchoReply = int(value)
+        except ValueError:
+            self._TxLcpEchoReply = hex(int(value, 16))
+
+    def _set_rxlcpechoreply_with_str(self, value):
+        try:
+            self._RxLcpEchoReply = int(value)
+        except ValueError:
+            self._RxLcpEchoReply = hex(int(value, 16))
+
+    def _set_txlcpterminaterequest_with_str(self, value):
+        try:
+            self._TxLcpTerminateRequest = int(value)
+        except ValueError:
+            self._TxLcpTerminateRequest = hex(int(value, 16))
+
+    def _set_rxlcpterminaterequest_with_str(self, value):
+        try:
+            self._RxLcpTerminateRequest = int(value)
+        except ValueError:
+            self._RxLcpTerminateRequest = hex(int(value, 16))
+
+    def _set_txlcpterminateack_with_str(self, value):
+        try:
+            self._TxLcpTerminateAck = int(value)
+        except ValueError:
+            self._TxLcpTerminateAck = hex(int(value, 16))
+
+    def _set_rxlcpterminateack_with_str(self, value):
+        try:
+            self._RxLcpTerminateAck = int(value)
+        except ValueError:
+            self._RxLcpTerminateAck = hex(int(value, 16))
+
+    def _set_txchap_with_str(self, value):
+        try:
+            self._TxChap = int(value)
+        except ValueError:
+            self._TxChap = hex(int(value, 16))
+
+    def _set_rxchap_with_str(self, value):
+        try:
+            self._RxChap = int(value)
+        except ValueError:
+            self._RxChap = hex(int(value, 16))
+
+    def _set_txpap_with_str(self, value):
+        try:
+            self._TxPap = int(value)
+        except ValueError:
+            self._TxPap = hex(int(value, 16))
+
+    def _set_rxpap_with_str(self, value):
+        try:
+            self._RxPap = int(value)
+        except ValueError:
+            self._RxPap = hex(int(value, 16))
+
+    def _set_txipcp_with_str(self, value):
+        try:
+            self._TxIpcp = int(value)
+        except ValueError:
+            self._TxIpcp = hex(int(value, 16))
+
+    def _set_rxipcp_with_str(self, value):
+        try:
+            self._RxIpcp = int(value)
+        except ValueError:
+            self._RxIpcp = hex(int(value, 16))
+
+    def _set_txipv6cp_with_str(self, value):
+        try:
+            self._TxIpv6cp = int(value)
+        except ValueError:
+            self._TxIpv6cp = hex(int(value, 16))
+
+    def _set_rxipv6cp_with_str(self, value):
+        try:
+            self._RxIpv6cp = int(value)
+        except ValueError:
+            self._RxIpv6cp = hex(int(value, 16))
+

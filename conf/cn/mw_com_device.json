@@ -1,0 +1,60 @@
+{
+    "title":"自组网微波通信设备",
+    "module_name":"mw_com_device",
+    "test_case": ["outer_unit"],
+    "test_ip": ["192.168.1.8"],
+    "test_case_detail":[
+        {
+            "case_name": "outer_unit",
+            "title": "室外单元",
+            "steps": [
+                {"img":"1.png","title":"测试框图","contents":"","module": "DialogPicText","category": "disassemble"},
+                {"img":"2.png","title":"测试流程","contents":"","module": "DialogPicText","category": "disassemble"},
+                {"img":"3.png","title":"被测设备室内机俯视示意图","contents":"","module": "DialogPicText","category": "execute"},
+                {"img":"4.png","title":"被测设备室内机前视示意图","contents":"","module": "DialogPicText","category": "execute"},
+                {"img":"5.png","title":"被测设备室外机示意图","contents":"","module": "DialogPicText","category": "execute"},
+                {"img":"6.png","title":"被测光电混传缆示意图","contents":"","module": "DialogPicText","category": "execute"},
+                {"img":"1.png","title":"被测设备原位固定","contents":"被测设备原位固定，按图进行接线，测试以太网电缆连接XS10","module": "DialogPicText","category": "execute"},
+                {"img":"","title":"打开被测设备和网络误码仪电源开关","contents":"打开被测设备和网络误码仪电源开关","module": "DialogPicText","category": "execute"},
+                {"img":"","title":"被测设备正在启动，请稍后……","contents":"被测设备正在启动，请稍后……","module": "DialogPicText","category": "execute"},
+                {"img":"7.png","title":"ALIM指示灯","contents":"观察被测设备前面板指示灯“ALIM”","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"保险丝部分是否正常","contents":"保险丝部分正常","module": "DialogSimpleTestProcess1Btn","category": "execute"},
+                {"img":"8.png","title":"设置MAC自环","contents":"通过本机监控进入维护界面自环设置中设置T/R自环","module": "DialogPicText","category": "execute"},
+                {"img":"","title":"MAC自环测试","contents":"观察被测设备液晶面板以及网络误码仪是否正常","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"数字信号处理单元是否正常","contents":"数字信号处理单元正常","module": "DialogSimpleTestProcess1Btn","category": "execute"},
+                {"img":"9.png","title":"设置基带自环","contents":"通过本机监控进入维护界面自环设置中设置基带自环","module": "DialogPicText","category": "execute"},
+                {"img":"","title":"基带自环测试","contents":"观察被测设备液晶面板以及网络误码仪是否正常","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"光电混传缆是否正常","contents":"光电混传缆单元正常","module": "DialogSimpleTestProcess1Btn","category": "execute"},
+                {"img":"10.png","title":"设置T/R自环","contents":"通过本机监控进入维护界面自环设置中设置基带自环","module": "DialogPicText","category": "execute"},
+                {"img":"","title":"T/R自环测试","contents":"观察被测设备液晶面板以及网络误码仪是否正常","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"室外机是否正常","contents":"室外机单元正常","module": "DialogSimpleTestProcess1Btn","category": "execute_finish"}
+            ]
+        }
+    ],
+    "test_source": [
+        {
+            "name": "交流电源电缆",
+            "number": "待定",
+            "count": "1",
+            "type": "配件"
+        },
+        {
+            "name": "测试以太网电缆",
+            "number": "待定",
+            "count": "1",
+            "type": "配件"
+        },
+        {
+            "name": "地线",
+            "number": "待定",
+            "count": "1",
+            "type": "配件"
+        },
+        {
+            "name": "网络误码仪",
+            "number": "BigTao200",
+            "count": "1",
+            "type": ""
+        }
+    ]
+}

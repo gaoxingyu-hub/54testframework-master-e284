@@ -1,0 +1,28 @@
+{
+    "steps": [
+        {"contents":"被测设备LAN1连接IP误码仪端口1，被测设备LAN2连接IP误码仪端口2","button": "下一步","status": "before"},
+        {"contents":"LAN1和LAN2测试中，此过程可能持续数分钟，请耐心等待……","button": "","status": "execute"},
+        {"contents":"LAN1和LAN2测试结束，测试结果为：","button": "下一步","status": "result"},
+        {"contents":"被测设备LAN3连接IP误码仪端口1，被测设备LAN4连接IP误码仪端口2","button": "下一步","status": "before"},
+        {"contents":"LAN3和LAN4测试中，此过程可能持续数分钟，请耐心等待……","button": "","status": "execute"},
+        {"contents":"LAN3和LAN4测试结束，测试结果为：","button": "下一步","status": "result"},
+        {"contents":"被测设备LAN5连接IP误码仪端口1，被测设备LAN6连接IP误码仪端口2","button": "下一步","status": "before"},
+        {"contents":"LAN5和LAN6测试中，此过程可能持续数分钟，请耐心等待……","button": "","status": "execute"},
+        {"contents":"LAN5和LAN6测试结束，测试结果为：","button": "下一步","status": "result"},
+        {"contents":"被测设备LAN7连接IP误码仪端口1，被测设备LAN8连接IP误码仪端口2","button": "下一步","status": "before"},
+        {"contents":"LAN7和LAN8测试中，此过程可能持续数分钟，请耐心等待……","button": "","status": "execute"},
+        {"contents":"LAN7和LAN8测试结束，测试结果为：","button": "下一步","status": "result"},
+        {"contents":"被测设备LAN9连接IP误码仪端口1，被测设备LAN10连接IP误码仪端口2","button": "下一步","status": "before"},
+        {"contents":"LAN9和LAN10测试中，此过程可能持续数分钟，请耐心等待……","button": "","status": "execute"},
+        {"contents":"LAN9和LAN10测试结束，测试结果为：","button": "下一步","status": "result"},
+        {"contents":"被测设备LAN11连接IP误码仪端口1，被测设备LAN12连接IP误码仪端口2","button": "下一步","status": "before"},
+        {"contents":"LAN11和LAN12测试中，此过程可能持续数分钟，请耐心等待……","button": "","status": "execute"},
+        {"contents":"LAN11和LAN12测试结束，测试结果为：","button": "下一步","status": "result"},
+        {"contents":"被测设备LAN13连接IP误码仪端口1，被测设备LAN14连接IP误码仪端口2","button": "下一步","status": "before"},
+        {"contents":"LAN13和LAN14测试中，此过程可能持续数分钟，请耐心等待……","button": "","status": "execute"},
+        {"contents":"LAN13和LAN14测试结束，测试结果为：","button": "下一步","status": "result"},
+        {"contents":"被测设备LAN15连接IP误码仪端口1，被测设备LAN16连接IP误码仪端口2","button": "下一步","status": "before"},
+        {"contents":"LAN15和LAN16测试中，此过程可能持续数分钟，请耐心等待……","button": "","status": "execute"},
+        {"contents":"LAN15和LAN16测试结束，测试结果为：","button": "下一步","status": "result"}
+    ]
+}

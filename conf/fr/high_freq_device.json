@@ -1,0 +1,203 @@
+{
+    "title":"Haute fréquence troposphérique",
+    "module_name":"high_freq_device",
+    "test_case": ["Unité de réception et d'émission ","Amplificateur à bas bruit","Amplificateur de puissance ","Circulateur ","Filtre","Interrupteur de guide d'onde","Coupleur ","Module de surveillance"],
+	"test_source": [{
+			"name": "Source de signal",
+			"number": "keysight E8257D",
+			"count": "1",
+			"type": "Instrumentation "
+	},{
+			"name": "Spectographe",
+			"number": "keysight N9030B",
+			"count": "1",
+			"type": "Instrumentation "
+	},{
+			"name": "Analyseur de réseau vectoriel portable",
+			"number": "keysight N9951A",
+			"count": "1",
+			"type": "Instrumentation "
+	},{
+			"name": "Interrupteur de guide d’onde",
+			"number": "CSD-I",
+			"count": "1",
+			"type": "Accessoires de test "
+	},{
+			"name": "Fil de contrôle d’interrupteur de guide d’onde",
+			"number": "XCE14T7Z1P40/YL11H26W1007J22",
+			"count": "1",
+			"type": "Accessoires de test "
+	},{
+			"name": "Atténuateur à haute puissance",
+			"number": "40dB",
+			"count": "1",
+			"type": "Accessoires de test "
+	},{
+			"name": "Circulateur SMA",
+			"number": "",
+			"count": "1",
+			"type": "Accessoires de test "
+	},{
+			"name": "Fil de source d’alimentation",
+			"number": "XCD22T3K1P40",
+			"count": "1",
+			"type": "Accessoires de test "
+	},{
+			"name": "Câble électrique",
+			"number": "BNC-J/BNC-J",
+			"count": "1m，2",
+			"type": "Accessoires de test "
+	},{
+			"name": "Câble électrique",
+			"number": "N-J/N-J",
+			"count": "1m，2",
+			"type": "Accessoires de test "
+	},{
+			"name": "Câble électrique",
+			"number": "SMA-J/SMA-JW",
+			"count": "1m，1",
+			"type": "Accessoires de test "
+	},{
+			"name": "Connecteur",
+			"number": "N-J/BNC-K",
+			"count": "1",
+			"type": "Accessoires de test "
+	},{
+			"name": "Connecteur",
+			"number": "N-KFK",
+			"count": "1",
+			"type": "Accessoires de test "
+	},{
+			"name": "Connecteur",
+			"number": "SMA-KFK",
+			"count": "1",
+			"type": "Accessoires de test "
+	},{
+			"name": "Connecteur",
+			"number": "N-K/SMA-K",
+			"count": "1",
+			"type": "Accessoires de test "
+	}],
+	"test_case_detail":[
+	        {
+	            "case_name": "Unité de réception et d'émission ",
+	            "title": "Localisation de panne de l'unité de réception et d'émission ",
+	            "steps":[
+	            	{"img":"1.png","title":"Haute fréquence troposphérique-Unité de réception et d'émission ","contents":"La position de l’unité de réception et d’émission dans l’équipement à haute fréquence se refère de la figure suivante.","module": "DialogPic"},
+	            	{"img":"1.png","title":"Haute fréquence troposphérique-Oscillation locale de l'unité de réception et d'émission ","contents":"Mettre à la terre l’équipement à haute fréquence et le spectographe ","module": "DialogPic"},
+			        {"img":"2.png","title":"Haute fréquence troposphérique-Oscillation locale de l'unité de réception et d'émission ","contents":"Connecter le port extérieur du panneau arrière XS03 de l’équipement à haute fréquence et le port de sortie référencielle 10MHz du spectographe selon le schéma de test dans la Figure 1","module": "DialogPic"},
+			        {"img":"2.png","title":"Haute fréquence troposphérique-Oscillation locale de l'unité de réception et d'émission ","contents":"Allumer l’interruptur de l’équipement à haute fréquence pour vérifier la consultation d’alerte de l’équipement, s’il existe l’alerte d’oscillation locale, alors il y a la panne de défaillance de verrouillage sur l’oscillation locale, sinon, il n’y en a pas.","module": "DialogPic"},
+			        {"img":"","title":"Haute fréquence troposphérique-Oscillation locale de l'unité de réception et d'émission ","contents":"Remplissez l'état de l'unité d'oscillation locale.","module": "MANUAL_TEST_LO"},
+			        {"img":"3.png","title":"Haute fréquence troposphérique-Canal de réception de l'unité de réception et d'émission ","contents":"Ouvrir le couvercle haut de l’équipement à haute fréquence pour montrer l’unité de réception et d’émission, dévisser le fil de connection entre XS4 et XS8 de l’unité de réception et d’émission","module": "DialogPic"},
+			        {"img":"3.png","title":"Haute fréquence troposphérique-Canal de réception de l'unité de réception et d'émission ","contents":"Mettre à la terre l’équipement à haute fréquence, la source de signal et le spectographe, allumer la source d’alimentation","module": "DialogPic"},
+			        {"img":"3.png","title":"Haute fréquence troposphérique-Canal de réception de l'unité de réception et d'émission ","contents":"Connecter les fils extérieurs de l’équipement à haute fréquence, et connecter XS4 et XS8 de l’unité de réception et d’émission à la source de signal et au spectographe selon la Figure 2","module": "DialogPic"},
+			        {"img":"3.png","title":"Haute fréquence troposphérique-Canal de réception de l'unité de réception et d'émission ","contents":"Allumer l’interrupteur de l’équipement à haute fréquence pour consulter la fréquence de réception et d’émission de l’équipement à haute fréquence et confirmer que l’atténuation de réception de l’équipement est 0dB","module": "DialogPic"},
+			        {"img":"","title":"Haute fréquence troposphérique-Canal de réception de l'unité de réception et d'émission ","contents":"Configurer la fréquence de réception de l’équipement à haute fréquence comme la fréquence d’émission de la source de signal, la puissance d’émission est -60dBm, la fréquence centrale de spectographe est 70MHz, la largeur de bande est 100MHz ;","module": "AUTO_TEST"},
+			        {"img":"4.png","title":"Haute fréquence troposphérique-Canal d'émission de l'unité de réception et d'émission ","contents":"Ouvrir le couvercle haut de l’équipement à haute fréquence pour montrer l’unité de réception et d’émission, dévisser le fil de connection entre XS6 et XS7 de l’unité de réception et d’émission","module": "DialogPic"},
+			        {"img":"4.png","title":"Haute fréquence troposphérique-Canal d'émission de l'unité de réception et d'émission ","contents":"Mettre à la terre l’équipement à haute fréquence, la source de signal et le spectographe, allumer la source d’alimentation ","module": "DialogPic"},
+			        {"img":"4.png","title":"Haute fréquence troposphérique-Canal d'émission de l'unité de réception et d'émission ","contents":"Connecter les fils extérieurs de l’équipement à haute fréquence, et connecter XS6 et XS7 de l’unité de réception et d’émission à la source de signal et au spectographe selon la Figure 3","module": "DialogPic"},
+			        {"img":"4.png","title":"Haute fréquence troposphérique-Canal d'émission de l'unité de réception et d'émission ","contents":"Allumer l’interrupteur de l’équipement à haute fréquence pour consulter la fréquence de réception et d’émission, le mode de fonctionnement modifie en état de fonctionnement noraml","module": "DialogPic"},
+			        {"img":"","title":"Haute fréquence troposphérique-Canal d'émission de l'unité de réception et d'émission ","contents":"Pour la source de signal, sa fréquence d’émission est 69MHz, sa puissance d’émission est 0dBm, configurer la fréquence d’émission de l’ équipement à haute fréquence comme la fréquence centrale de spectographe, sa largeur de bande est 100MHz","module": "AUTO_TEST_T"}
+			    ],
+			    "test_para":["70","-60","70","100","69","0","70","100"],
+			    "threshold":["Aucune alarme d’oscillation locale.","-25","-15","2","7"]
+	        },
+	        {
+	            "case_name": "Amplificateur à bas bruit",
+	            "title": "Localisation de panne de l'amplificateur à bas bruit",
+	            "steps":[
+	            	{"img":"5.png","title":"Haute fréquence troposphérique-Amplificateur à bas bruit","contents":"La position de l’unité de réception et d’émission dans l’équipement à haute fréquence se refère de la figure suivante.","module": "DialogPic"},
+			        {"img":"5.png","title":"Haute fréquence troposphérique-Amplificateur à bas bruit","contents":"Ouvrir le couvercle bas de l’équipement à haute fréquence pour montrer l’amplificateur de bas bruit, dévisser le fil de connection entre XS1 et XS2 de l’amplificateur de bas bruit","module": "DialogPic"},
+			        {"img":"5.png","title":"Haute fréquence troposphérique-Amplificateur à bas bruit","contents":"Mettre à la terre l’équipement à haute fréquence, la source de signal et le spectographe, allumer la source d’alimentation","module": "DialogPic"},
+			        {"img":"6.png","title":"Haute fréquence troposphérique-Amplificateur à bas bruit","contents":"Connecter les fils extérieurs de l’amplificateur de bas bruit à l’intérieur de l’équipement à haute fréquence, et connecter XS1 et XS2 de l’amplificateur de bas bruit à la source de signal et au spectographe selon la Figure 5","module": "DialogPic"},
+			        {"img":"6.png","title":"Haute fréquence troposphérique-Amplificateur à bas bruit","contents":"Allumer l’interrupteur de l’équipement à haute fréquence, confirmer que l’alimentation VCC de l’amplificateur de bas bruit est satisfait à +15V","module": "DialogPic"},
+			        {"img":"","title":"Haute fréquence troposphérique-Amplificateur à bas bruit","contents":"Configurer la fréquence d’émission de la source de signal comme 4700MHz, sa puissance d’émission est -30dBm, configurer la fréquence centrale de spectographe est 4700MHz, sa largeur de bande est 100MHz","module": "AUTO_TEST_LNA"}
+			    ],
+			    "test_para":["4700","-30","4700","100"],
+			    "threshold":["-3","10"]
+	        },
+	        {
+	            "case_name": "Amplificateur de puissance ",
+	            "title": "Localisation de panne de l'amplificateur de puissance",
+	            "steps":[
+	            	{"img":"7.png","title":"Haute fréquence troposphérique-Amplificateur de puissance","contents":"Possition d’amplificateur de puissance","module": "DialogPic"},
+			        {"img":"7.png","title":"Haute fréquence troposphérique-Amplificateur de puissance","contents":"Démontez le capot bas de l'équipment à haute fréquence pour montrer l'amplificateur de puissance, dévissez le fil de connection entre XS1 et W07 de l'amplificateur à bas bruit. ","module": "DialogPic"},
+			        {"img":"7.png","title":"Haute fréquence troposphérique-Amplificateur de puissance","contents":"Mettre à la terre l’équipement à haute fréquence, la source de signal et le spectographe, allumer la source d’alimentation","module": "DialogPic"},
+			        {"img":"8.png","title":"Haute fréquence troposphérique-Amplificateur de puissance","contents":"Connecter les fils extérieurs de l’interrupteur de guide d’onde à l’intérieur de l’équipement à haute fréquence, et connecter le port d’antenne à l’atténuateur à haute puissance, le port intérieur d’amplificateur de puissance XS1 à la source de signal, et le port 50dB de coupleur au spectographe selon la Figure 7","module": "DialogPic"},
+			        {"img":"8.png","title":"Haute fréquence troposphérique-Amplificateur de puissance","contents":"Allumer l’interrupteur de l’équipement à haute fréquence, confirmer que l’alimentation XS2 de l’amplificateur de puissance est satisfait à +28V","module": "DialogPic"},
+			        {"img":"","title":"Haute fréquence troposphérique-Amplificateur de puissance","contents":"Configurer la fréquence d’émission de la source de signal comme 4700MHz, sa puissance d’émission est 0dBm, configurer la fréquence centrale de spectographe est 4700MHz, sa largeur de bande est 100MHz","module": "AUTO_TEST_PA"}
+			    ],
+			    "test_para":["4700","0","4700","100"],
+			    "threshold":["-3","3"]
+	        }, 
+	        {
+	            "case_name": "Circulateur ",
+	            "title": "Localisation de panne du circulateur",
+	            "steps":[
+	            	{"img":"9.png","title":"Haute fréquence troposphérique-Circulateur ","contents":"La position de circulateur de signal se refère dans la figure suivante","module": "DialogPic"},
+			        {"img":"9.png","title":"Haute fréquence troposphérique-Circulateur ","contents":"Ouvrir le couvercle haut de l’équipement à haute fréquence pour montrer le circulateur, dévisser le fil de connection à la position de XS5 sur le circulateur","module": "DialogPic"},
+			        {"img":"9.png","title":"Haute fréquence troposphérique-Circulateur ","contents":"Mettre à la terre l’équipement à haute fréquence, la source de signal et le spectographe, allumer la source d’alimentation","module": "DialogPic"},
+			        {"img":"10.png","title":"Haute fréquence troposphérique-Circulateur ","contents":"Connecter les fils extérieurs de l’équipement à haute fréquence, et connecter le circulateur de signal XS5 au port 2 de boucle selon la figure, le port 1 et le port 3 de boucle sont connectés respectivement à la source de signal et au spectographe","module": "DialogPic"},
+			        {"img":"10.png","title":"Haute fréquence troposphérique-Circulateur ","contents":"Allumer l’interrupteur de l’équipement à haute fréquence et observer la fréquence de réception et d’émission","module": "DialogPic"},
+			        {"img":"","title":"Haute fréquence troposphérique-Circulateur ","contents":"La fréquence d’émission de la source de signal est la fréquence d’émission de l’équipement à haute fréquence, la puisance d’émission est +10dBm, configurer la fréquence de réception de l’équipement à haute fréquece comme la fréquence centrale de spectographe, la largeur de bande est 100MHz","module": "AUTO_TEST_LOOP"}
+			    ],
+			    "test_para":["4700","10","4700","100"],
+			    "threshold":["-55","-35"]
+	        },
+	        {
+	            "case_name": "Filtre",
+	            "title": "Localisation de panne du filtre",
+	            "steps":[
+	            	{"img":"11.png","title":"Haute fréquence troposphérique-Filtre","contents":"La position de filtre dans la partie à haute fréquence est illustrée dans la figure ci-cessous, il y a deux filtres : filtre de réception et filtre d'émission. ","module": "DialogPic"},
+			        {"img":"11.png","title":"Haute fréquence troposphérique-Filtre","contents":"Ouvrir le couvercle haut de l’équipement à haute fréquence pour montrer le filtre d’onde, dévisser le fil de connection entre XS1 et XS2 sur le filtre d’onde","module": "DialogPic"},
+			        {"img":"11.png","title":"Haute fréquence troposphérique-Filtre","contents":"Mettre à la terre l’équipement à haute fréquence et l’analyseur de réseau vectoriel portable, allumer la source d’alimentation d’analyseur de réseau vectoriel portable, configurer la fréquence centrale comme 4700MHz, la largeur de bande est 800MHz, et puis rectifier les appareils","module": "DialogPic"},
+			        {"img":"12.png","title":"Haute fréquence troposphérique-Filtre","contents":"Connecter les fils extérieurs de filtre d’onde à l’intérieur de l’équipement à haute fréquence, et connecter XS1 et XS2 de filtre d’onde à l’analyseur de réseau vectoriel portable selon la Figure 11","module": "DialogPic"},
+			        {"img":"12.png","title":"Haute fréquence troposphérique-Filtre","contents":"Allumer l’interrupteur de l’équipement à haute fréquence et confirmer sa fréquence de réception et d’émission","module": "DialogPic"},
+			        {"img":"","title":"Haute fréquence troposphérique-Filtre","contents":"Observer la forme d’onde de filtre d’onde (celui de réception et d’émission) sur l’analyseur de réseau vectoriel portable","module": "AUTO_TEST_FILTER"}
+			    ],
+			    "test_para":["4700","800"],
+			    "threshold":["-9999","-15","-2","0"]
+	        },
+	        {
+	            "case_name": "Interrupteur de guide d'onde",
+	            "title": "Localisation de panne de l'interrupteur de guide d'onde",
+	            "steps":[
+	            	{"img":"13.png","title":"Haute fréquence troposphérique-Interrupteur de guide d'onde","contents":"L'interrupteur de guide d'onde ne se trouve pas dans l'équipement à haute fréquence comme illustrée dans la figure, il est installé à l'intérieur de shelter.","module": "DialogPic"},
+			        {"img":"13.png","title":"Haute fréquence troposphérique-Interrupteur de guide d'onde","contents":"Mettre à la terre l’équipement à haute fréquence et allumer la source d’alimentation","module": "DialogPic"},
+			        {"img":"14.png","title":"Haute fréquence troposphérique-Interrupteur de guide d'onde","contents":"Connecter les fils extérieurs de l’équipement à haute fréquence, et connecter XS08 du panneau arrière de l’équipement à haute fréquence au port de contrôle d’interrupteur de guide d’onde","module": "DialogPic"},
+			        {"img":"14.png","title":"Haute fréquence troposphérique-Interrupteur de guide d'onde","contents":"Allumer l’interrupteur de l’équipement à haute fréquence, changer la fréquence d’émission et de réception de l’ équipement, observer si l’interrupteur de guide d’onde dispose du mouvement de modification","module": "DialogPic"},
+			        {"img":"14.png","title":"Haute fréquence troposphérique-Interrupteur de guide d'onde","contents":"Si l’interrupteur de guide d’onde dispose du mouvement de modification et que l’équipement à haute fréquence puisse effectuer le changement de fréquence, alors l’interrupteur de guide d’onde fonctionne normalement","module": "DialogPic"},
+			        {"img":"14.png","title":"Haute fréquence troposphérique-Interrupteur de guide d'onde","contents":"Si l’interrupteur de guide d’onde ne bouge pas, alors l’équipement à haute fréquence sera coupé, ouvrir le capot de protection de moteur d’interrupteur de guide d’onde, tourner manuellement le moteur pour voir si la modification manuelle est flexible, si elle est bloquée, alors l’interrupteur de guide d’onde est en panne","module": "DialogPic"},
+			        {"img":"","title":"Haute fréquence troposphérique-Interrupteur de guide d'onde","contents":"Remplissez l'état de l'interrupteur de guide d'onde.","module": "MANUAL_TEST_SWITCH"}
+			    ],
+			    "threshold":["L'interrupteur de guide d'onde est normal.","L'interrupteur de guide d'onde est en panne."]
+	        },
+	        {
+	            "case_name": "Coupleur ",
+	            "title": "Localisation de panne du coupleur",
+	            "steps":[
+	            	{"img":"15.png","title":"Haute fréquence troposphérique-Coupleur","contents":"La position de coupleur dans la partie à haute fréquence est illustrée dans la figure ci-cessous.","module": "DialogPic"},
+			        {"img":"15.png","title":"Haute fréquence troposphérique-Coupleur","contents":"Ouvrir le couvercle haut de l’équipement à haute fréquence pour montrer le coupleur, dévisser le fil de connection XS3 sur le coupleur","module": "DialogPic"},
+			        {"img":"15.png","title":"Haute fréquence troposphérique-Coupleur","contents":"Mettre à la terre l’analyseur de réseau vectoriel portable et allumer la source d’alimentation, sélectionner le canal S21, la fréquence centrale est configurée comme 4700MHz, la largeur de bande est 800MHz, 1dB/DIV, REFERENCE VALUE : -40 dB, l’apareil est connecté au câble SMA pour rectifier","module": "DialogPic"},
+			        {"img":"16.png","title":"Haute fréquence troposphérique-Coupleur","contents":"Connecter le fil entre le port d’antenne de l’équipement à haute fréquence et le coupleur intérieur selon la Figure 15","module": "DialogPic"},
+			        {"img":"","title":"Haute fréquence troposphérique-Coupleur","contents":"Configurez les paramètres relatifs de l'analyseur de réseau vectoriel.","module": "AUTO_TEST_COUPLER"}
+			    ],
+			    "test_para":["4700","800"],
+			    "threshold":["-47","-33"]
+	        },
+	        {
+	            "case_name": "Module de surveillance",
+	            "title": "Localisation de panne du module de surveillance",
+	            "steps":[
+	            	{"img":"17.png","title":"Haute fréquence troposphérique-Module de surveillance","contents":"La position de module de surveillance dans la partie à haute fréquence est illustrée dans la figure ci-cessous, la localisation de sa panne dépend de la méthode à vue.","module": "DialogPic"},
+			        {"img":"17.png","title":"Haute fréquence troposphérique-Module de surveillance","contents":"Ouvrir le couvercle haut de l’équipement à haute fréquence pour montrer le module de surveillance","module": "DialogPic"},
+			        {"img":"17.png","title":"Haute fréquence troposphérique-Module de surveillance","contents":"Allumer la source d’alimentation et mettre à la terre l’équipement à haute fréquence, ouvrir l’interrupteur de panneau frontal de l’équipement à haute fréquence","module": "DialogPic"},
+			        {"img":"17.png","title":"Haute fréquence troposphérique-Module de surveillance","contents":"Observer si le LED V2 à la position du port de connection d’alimentation de connecteur JL35-4 sur le module de surveillance est allumé, s’il n’est pas allumé, alors l’alimentation de surveillance est anormale, il faut vérifier l’alimentation de surveillance +5V","module": "DialogPic"},
+			        {"img":"17.png","title":"Haute fréquence troposphérique-Module de surveillance","contents":"Observer si le LED V3, V4, V5 et V6 clignotent, si les quatres LED ne s’allument pas, alors aucun logiciel fonctionne sur l’unité de surveillance","module": "DialogPic"},
+			        {"img":"17.png","title":"Haute fréquence troposphérique-Module de surveillance","contents":"V8, V9, V10, V11, V12 et V13 sont des voyants de connection de réseau, dont：V8 est le voyant de connection physique de port de réseau, il s’allume quand la connection physique est bien connectée；V13 est le voyant de données d’émission, il s’allume chaque fois avec l’envoi d’un groupe de données；V12 est le voyant de données de réception, il s’allume chaque fois avec la réception d’un groupe de données；V11 est le voyant de conflit de données；V10 est le voyant de duplex intégral et de duplex partiel, il s’allume en état de duplex intégral ；V9 est le voyant de vitesse de transmission, il s’allume quand la vitesse de transmission est 100Mbps, et il s’éteint quand la vitesse de transmission est 10Mbps。","module": "DialogPic"},
+			        {"img":"","title":"Haute fréquence troposphérique-Module de surveillance","contents":"Remplissez l'état du module de surveillance.","module": "MANUAL_TEST_MONITOR"}
+			    ],
+			    "threshold":["L'alimentation de module de surveillance est normale. ","L'alimentation de module de surveillance est en panne. "]
+	        }
+    ]
+}

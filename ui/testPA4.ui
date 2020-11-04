@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1270</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>FKJ通信维修分系统</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QGroupBox{
+font-size:14px;
+font-family:Microsoft YaHei;
+}
+
+QMainWindow::title{
+background-color:rgb(0, 85, 255);
+font-color:rgb(255, 255, 255);
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBoxMenu">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>261</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#D0DAE5;
+color:#666666</string>
+    </property>
+    <property name="title">
+     <string>测试模块</string>
+    </property>
+    <widget class="QTreeWidget" name="treeWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>231</width>
+       <height>561</height>
+      </rect>
+     </property>
+     <property name="headerHidden">
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>散射高频设备</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>收/发单元</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>低噪声放大器</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>功放</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>耦合器</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>自环器</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>滤波器</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>波导开关</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>监控模块</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>散射低频设备</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>辅助复分接器</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>调制解调器器</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>中放AGC</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>监控模块</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>散射天线控制设备</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>显示器</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>键盘和信号灯</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PLC模块</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>伺服控制模块</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>MW-1500微波电台</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>数字处理单元</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>收/发单元</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>LNA和射频自环器</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>功放单元</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>显控单元</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>EOW</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>双工器</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>网络控制单元</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>天馈系统</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>交换机</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>切换(交换)模块(主控板)</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>VHF电台</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>功放模块</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>滤波器模块</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>调谐模块</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>综合业务模块</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>音频模块</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>频率合成模块</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>中频模块</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>自组网微波通信设备</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>协议处理和管理模块</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>室外单元</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>八端口光端机</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>数据处理和光接口模块</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>双端口光端机</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>数据处理和光接口模块</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>SDSL设备</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>数据和线路模块</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>IP调度话</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>调度模块</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>IP保密机</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>加密模块</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>防火墙</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>协议处理模块</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>语音网关</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>话音处理模块</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>通信控制设备</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>协议控制和转换模块</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>VHF车载对讲机</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>主机</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>话柄</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>路由器</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>路由模块</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>铷钟</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>铷原子钟频标模块</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>监控单元</string>
+       </property>
+      </item>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>0</y>
+      <width>1011</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#D0DAE5;
+color:#666666</string>
+    </property>
+    <property name="title">
+     <string>测试项目</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>991</width>
+       <height>581</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout"/>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="iconQrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

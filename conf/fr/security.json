@@ -1,0 +1,187 @@
+{
+	"title": "Test d'équipement de chiffrement IP",
+	"module_name": "SECURITY",
+	"test_case": ["case1"],
+	"test_case_detail": [{
+		"case_name": "case1",
+		"title": "Équipement de chiffrement IP",
+		"steps": [{
+			"img": "1.png",
+			"title": "Test de testeur de taux d’erreur de bit IP-préparation de test",
+			"contents": "Maintenant, commencez à tester le système de chiffrement IP de type CES-ECOM-IP，Schéma de test",
+			"module": "DialogPicText",
+			"category": "prepare"
+		}, {
+			"img": "2.png",
+			"title": "Test de testeur de taux d’erreur de bit IP-démontage",
+			"contents": "Dévisser les quatre vis fixes sur le panneau frontal et sortir l'équipement de l'armoire.",
+			"module": "DialogPicText",
+			"category": "prepare"
+		}, {
+			"img": "3.png",
+			"title": "Test de testeur de taux d’erreur de bit IP-démontage",
+			"contents": "Position de fusible",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "4.png",
+			"title": "Test de testeur de taux d’erreur de bit IP-démontage",
+			"contents": "Tourner et sortir le capot arrière de fusible (connecté avec le fusible).",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "5.png",
+			"title": "Test de testeur de taux d’erreur de bit IP-démontage",
+			"contents": "Dévissez la clé",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "6.png",
+			"title": "Test de testeur de taux d’erreur de bit IP-démontage",
+			"contents": "Ouvrez le capot supérieur de l'équipement.",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "7.jpg",
+			"title": "Test de testeur de taux d’erreur de bit IP-démontage",
+			"contents": "Lors du démontage du module d'alimentation, vous devez desserrer la borne du câblage d'alimentation (dans le carré rouge) et dévisser les six écrous de fixation (cercle rouge).",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "8.png",
+			"title": "Test de testeur de taux d’erreur de bit IP-démontage",
+			"contents": "Lors du démontage du module de chiffrement/déchiffrement, vous devez retirer la fiche (dans le carré rouge) et dévisser les 4 vis de fixation (cercle rouge).",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "9.png",
+			"title": "Test de testeur de taux d’erreur de bit IP-test",
+			"contents": "Maintenant, commencez à tester le système de chiffrement IP de type CES-ECOM-IP.",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "10.png",
+			"title": "Test de testeur de taux d’erreur de bit IP-test",
+			"contents": "Fixez l'équipement à tester en place, connectez comme indiqué dans la figure ci-dessous et le câble de test Ethernet se connecte à XS02, XS03 et XS04.",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "11.png",
+			"title": "Test de testeur de taux d’erreur de bit IP-test",
+			"contents": "emplacement des connecteurs sur l'équipement à tester est indiquée dans la figure ci-dessous.",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "",
+			"title": "Test de testeur de taux d’erreur de bit IP-test",
+			"contents": "Allumez l'interrupteur d'alimentation de l'équipement à tester et du testeur de taux d’erreur de bit IP.",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "",
+			"title": "Test de testeur de taux d’erreur de bit IP-test",
+			"contents": "L'équipement testé est en cours de démarrage, veuillez patienter ...",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "11.png",
+			"title": "Test de testeur de taux d’erreur de bit IP-test",
+			"contents": "Vérifiez si le voyant ALIM sur le panneau frontal de l'équipement testé est toujours allumé?",
+			"module": "DialogSimpleTestProcess2Btn",
+			"category": "execute",
+			"next": ["next", "finish"]
+		}, {
+			"img": "",
+			"title": "Le voyant “ALIM” s'allume toujours.",
+			"contents": "La fonction d'alimentation est normal",
+			"module": "DialogSimpleTestProcess1Btn",
+			"category": "execute"
+		}, {
+			"img": "13",
+			"title": "Test de testeur de taux d’erreur de bit IP-test",
+			"contents": "Vérifiez si l'affichage du panneau frontal de l'équipement testé entre dans l'interface de configuration?",
+			"module": "DialogSimpleTestProcess2Btn",
+			"category": "execute",
+			"next": ["next", "finish"]
+		}, {
+			"img": "",
+			"title": "Entrez dans l'interface de configuration",
+			"contents": "CPU fonctionne normal",
+			"module": "DialogSimpleTestProcess1Btn",
+			"category": "execute"
+		}, {
+			"img": "",
+			"title": "Paramètres de configuration obtenus",
+			"contents": "Obtention des paramètres de configuration, veuillez patienter ...",
+			"module": "DialogPicText",
+			"category": "execute"
+		}, {
+			"img": "",
+			"title": "Paramètres de configuration obtenus",
+			"contents": "Paramètres de configuration obtenus avec succès",
+			"module": "DialogPicText",
+			"category": "execute"
+		}, {
+			"img": "",
+			"title": "Test de testeur de taux d’erreur de bit IP-test",
+			"contents": "XS02 de l'équipement testé est connecté au port 1 du testeur de taux d’erreur de bit IP, XS03 de l'équipement testé est connecté au port XS03 de l'équipement de chiffrement IP de l'atelier mobile de maintenance, et le port XS02 de l'équipement de chiffrement IP de l'atelier mobile de maintenance est connecté au port 2 du testeur de taux d’erreur de bit IP",
+			"module": "DialogPicText",
+			"category": "execute"
+		}, {
+			"img": "",
+			"title": "Test de testeur de taux d’erreur de bit IP-test",
+			"contents": "Cliquez sur le \"commencement\" pour tester le chiffrement et le déchiffrement des données IP, ce processus durera plusieurs minutes, soyez patient.",
+			"module": "DialogTestProcess",
+			"category": "execute"
+		}]
+	}],
+	"test_source": [{
+			"name": "Câble d'alimentation",
+			"number": "ECOM-CES-W001",
+			"count": "1",
+			"type": "Accessoires de test"
+		},
+		{
+			"name": "Câble réseau de test 1",
+			"number": "ECOM- CES -W002",
+			"count": "1",
+			"type": "Accessoires de test"
+		},
+		{
+			"name": "Câble réseau de test 2",
+			"number": "ECOM- CES -W003",
+			"count": "1",
+			"type": "Accessoires de test"
+		},
+		{
+			"name": "Testeur de taux d’erreur de bit IP",
+			"number": "",
+			"count": "1",
+			"type": "Distribution unifiée de l'atelier mobile de maintenance"
+		},
+		{
+			"name": "Multimètre",
+			"number": "",
+			"count": "1",
+			"type": "Distribution unifiée de l'atelier mobile de maintenance"
+		},
+		{
+			"name": "Équipement de chiffrement IP",
+			"number": "",
+			"count": "1",
+			"type": "Distribution unifiée de l'atelier mobile de maintenance"
+		},
+		{
+			"name": "Chargeur de données multifonctionnel",
+			"number": "",
+			"count": "1",
+			"type": "Distribution unifiée de l'atelier mobile de maintenance"
+		},
+		{
+			"name": "Tournevis cruciforme",
+			"number": "",
+			"count": "1",
+			"type": "Distribution unifiée de l'atelier mobile de maintenance"
+		}
+	]
+}

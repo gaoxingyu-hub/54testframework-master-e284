@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>980</width>
+    <height>980</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft YaHei</family>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-color:#E3EAF4;
+margin-top:10px;
+}
+
+QTextBrower{
+background-color:#E3EAF4;
+border-width:0;border-style:outset
+}
+
+QLineEdit{
+background-color:#E3EAF4;
+}
+
+QWidget{
+background-color:#E3EAF4;
+}
+
+QStackedWidget{
+background-color:#E3EAF4;
+}
+
+QLabel{
+font-size:14px;
+font-family:Microsoft YaHei;
+background-color:#E3EAF4;
+}
+
+QGroupBox{
+font-size:14px;
+font-family:Microsoft YaHei;
+border:1px solid rgb(0, 0, 0);
+background-color:#E3EAF4;
+}
+
+
+QToolBar{
+background-color:#D5D5D5;
+height:30px;
+border:None;
+padding:1px;
+}
+/****QTreeWidget****/
+QTreeWidget{
+background-color:#E3EAF4;
+padding-top:20px;
+padding-left:10px;
+margin-top:20px;
+}
+QTreeView::item{
+font: 14px;
+}
+QTreeView::item:selected{
+selection-color: #1F95FF;
+}
+QTreeView::item:hover{
+background-color:#D0DAE5;
+}
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+border-image: none;
+image: url(imgs/common/plus.png);
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  {
+border-image: none;
+image: url(imgs/common/Minus.png);
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+    border-image: url(imgs/common/tree.png);
+}
+QTableWidget{
+outline: none;
+selection-color:#666666;
+alternate-background-color:#F9FAFC;
+}
+QTableCornerButton::section{
+background: #EDF2F8;
+}
+QTableWidget::item{
+font-size:14px;
+line-height:30px;
+border:1px solid #D2D2D2;
+}
+
+QTableWidget::item:hover{
+background-color:#EAF7FF;
+}
+QHeaderView::section:vertical {
+color: #666666;
+text-align:center;
+font: 14px Arial;
+border:1px solid #D2D2D2;
+background: #F9FBFD;
+width: 40px;
+height:30px;
+alternate-background-color:#F9FAFC;
+}
+QHeaderView::section:horizontal {
+color: #666666;
+font: 14px Microsoft YaHei;
+padding: 0px 1px 0 1px;
+text-align:center;
+border:1px solid #D2D2D2;
+background: #EDF2F8;
+height: 30px;
+alternate-background-color:#F9FAFC;
+}
+QScrollBar:vertical{
+border: 5px solid #D5D5D5;
+}
+/****QPushButton****/
+QPushButton{
+width:32px;
+height:32px;
+background-color:#D0DAE5;
+color: #FFFFFF;
+font-size:14px;
+font-family:Microsoft YaHei;
+}
+QPushButton:hover{
+background-color:#2784D6;
+cursor:pointer;
+}
+QPushButton:pressed{
+background-color:#2784D6;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_11">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout_10">
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton_start">
+           <property name="styleSheet">
+            <string notr="true">n</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../iconQrc.qrc">
+             <normaloff>:/newPrefix/icon/start.ico</normaloff>:/newPrefix/icon/start.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>31</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButton_restart">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../iconQrc.qrc">
+             <normaloff>:/newPrefix/icon/stop.ico</normaloff>:/newPrefix/icon/stop.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>31</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="pushButton_close">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../iconQrc.qrc">
+             <normaloff>:/newPrefix/icon/cancel.ico</normaloff>:/newPrefix/icon/cancel.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>31</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,2">
+       <item>
+        <widget class="QGroupBox" name="groupBox_test_modules">
+         <property name="title">
+          <string>测试项目</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <property name="topMargin">
+           <number>20</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>6</number>
+          </property>
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_3" rowstretch="0,3">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="title">
+               <string/>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_2">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_test_duration">
+                 <property name="font">
+                  <font>
+                   <family>Microsoft YaHei</family>
+                   <pointsize>-1</pointsize>
+                   <kerning>false</kerning>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>00:00:00</string>
+                 </property>
+                 <property name="textFormat">
+                  <enum>Qt::PlainText</enum>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QTreeWidget" name="treeWidget">
+              <property name="headerHidden">
+               <bool>true</bool>
+              </property>
+              <column>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_test_resource">
+         <property name="title">
+          <string>测试资源</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <property name="topMargin">
+           <number>20</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="tableWidget_test_resource">
+            <property name="gridStyle">
+             <enum>Qt::DotLine</enum>
+            </property>
+            <attribute name="horizontalHeaderCascadingSectionResizes">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>120</number>
+            </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>2</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string/>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>名称</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>类型</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>编号/型号</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>数量</string>
+             </property>
+            </column>
+            <item row="0" column="1">
+             <property name="text">
+              <string>1</string>
+             </property>
+            </item>
+            <item row="0" column="2">
+             <property name="text">
+              <string>2</string>
+             </property>
+            </item>
+            <item row="0" column="3">
+             <property name="text">
+              <string>2</string>
+             </property>
+            </item>
+            <item row="0" column="4">
+             <property name="text">
+              <string>1</string>
+             </property>
+            </item>
+            <item row="1" column="1">
+             <property name="text">
+              <string>2</string>
+             </property>
+            </item>
+            <item row="1" column="2">
+             <property name="text">
+              <string>2</string>
+             </property>
+            </item>
+            <item row="1" column="3">
+             <property name="text">
+              <string>2</string>
+             </property>
+            </item>
+            <item row="1" column="4">
+             <property name="text">
+              <string>2</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="0">
+      <widget class="QGroupBox" name="groupBox_test_results">
+       <property name="title">
+        <string/>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="tabPosition">
+           <enum>QTabWidget::South</enum>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>ECOM-NS-2测试</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="0" column="0">
+             <widget class="QTableWidget" name="tableWidget_test_results">
+              <attribute name="horizontalHeaderDefaultSectionSize">
+               <number>120</number>
+              </attribute>
+              <attribute name="horizontalHeaderStretchLastSection">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+              <row>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string/>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>测试项</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>测试结果</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>测试结论</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../iconQrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

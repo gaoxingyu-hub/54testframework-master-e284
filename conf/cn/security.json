@@ -1,0 +1,187 @@
+{
+	"title": "IP保密机测试",
+	"module_name": "SECURITY",
+	"test_case": ["case1"],
+	"test_case_detail": [{
+		"case_name": "case1",
+		"title": "IP保密机",
+		"steps": [{
+			"img": "1.png",
+			"title": "IP误码仪测试-测试准备",
+			"contents": "现在开始测试CES-ECOM-IP型IP保密系统，测试框图",
+			"module": "DialogPicText",
+			"category": "prepare"
+		}, {
+			"img": "2.png",
+			"title": "IP误码仪测试-拆机",
+			"contents": "拧开四个将设备固定在机柜上的螺钉，将设备从机柜上抽出",
+			"module": "DialogPicText",
+			"category": "prepare"
+		}, {
+			"img": "3.png",
+			"title": "IP误码仪测试-拆机",
+			"contents": "保险丝位置",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "4.png",
+			"title": "IP误码仪测试-拆机",
+			"contents": "将保险丝后盖（与保险丝连接在一起）旋出",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "5.png",
+			"title": "IP误码仪测试-拆机",
+			"contents": "钥匙拧开",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "6.png",
+			"title": "IP误码仪测试-测试拆机",
+			"contents": "打开设备上盖板",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "7.jpg",
+			"title": "IP误码仪测试-拆机",
+			"contents": "电源模块进行拆装时，需要将电源接线端子松开（红色方框内），并将六个固定螺母旋开（红色圆圈）",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "8.png",
+			"title": "IP误码仪测试-拆机",
+			"contents": "加解密模块进行拆装时，需要将插头拔出（红色方框内），并将4个固定螺钉旋开（红色圆圈）",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "9.png",
+			"title": "IP误码仪测试-测试",
+			"contents": "现在开始测试CES-ECOM-IP型IP保密系统。",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "10.png",
+			"title": "IP误码仪测试-测试",
+			"contents": "被测设备原位固定，按下图进行接线，测试以太网电缆连接XS02、XS03和XS04",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "11.png",
+			"title": "IP误码仪测试-测试",
+			"contents": "被测设备上的接插件位置如下图所示",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "",
+			"title": "IP误码仪测试-测试",
+			"contents": "打开被测设备和IP误码仪电源开关。",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "",
+			"title": "IP误码仪测试-测试",
+			"contents": "被测设备正在启动，请稍后……",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "11.png",
+			"title": "IP误码仪测试-测试",
+			"contents": "观察被测设备前面板指示灯“ALIM”是否常亮？",
+			"module": "DialogSimpleTestProcess2Btn",
+			"category": "execute",
+			"next": ["next", "finish"]
+		}, {
+			"img": "",
+			"title": "指示灯“ALIM”常亮",
+			"contents": "电源功能正常",
+			"module": "DialogSimpleTestProcess1Btn",
+			"category": "execute"
+		}, {
+			"img": "13",
+			"title": "IP误码仪测试-测试",
+			"contents": "观察被测设备前面板显示屏是否进入设置界面？",
+			"module": "DialogSimpleTestProcess2Btn",
+			"category": "execute",
+			"next": ["next", "finish"]
+		}, {
+			"img": "",
+			"title": "进入设置界面",
+			"contents": "CPU工作正常",
+			"module": "DialogSimpleTestProcess1Btn",
+			"category": "execute"
+		}, {
+			"img": "",
+			"title": "获取配置参数",
+			"contents": "正在获取配置参数，请稍后……（30s）",
+			"module": "DialogPicText",
+			"category": "execute"
+		}, {
+			"img": "",
+			"title": "获取配置参数",
+			"contents": "获取配置参数成功",
+			"module": "DialogPicText",
+			"category": "execute"
+		}, {
+			"img": "",
+			"title": "IP误码仪测试-测试",
+			"contents": "被测设备XS02连接IP误码仪端口1，被测设备XS03连接维修车IP保密机XS03口，维修车IP保密机XS02口连接IP误码仪端口2",
+			"module": "DialogPicText",
+			"category": "execute"
+		}, {
+			"img": "",
+			"title": "IP误码仪测试-测试",
+			"contents": "点击开始进行IP数据加解密测试此过程可能持续数分钟，请耐心等待",
+			"module": "DialogTestProcess",
+			"category": "execute"
+		}]
+	}],
+	"test_source": [{
+			"name": "电源线",
+			"number": "ECOM-CES-W001",
+			"count": "1",
+			"type": "测试附件"
+		},
+		{
+			"name": "测试网线1",
+			"number": "ECOM- CES -W002",
+			"count": "1",
+			"type": "测试附件"
+		},
+		{
+			"name": "测试网线2",
+			"number": "ECOM- CES -W003",
+			"count": "1",
+			"type": "测试附件"
+		},
+		{
+			"name": "IP误码仪",
+			"number": "",
+			"count": "1",
+			"type": "维修车统配"
+		},
+		{
+			"name": "万用表",
+			"number": "",
+			"count": "1",
+			"type": "维修车统配"
+		},
+		{
+			"name": "IP保密机",
+			"number": "",
+			"count": "1",
+			"type": "维修车统配"
+		},
+		{
+			"name": "多功能数据加载器",
+			"number": "",
+			"count": "1",
+			"type": "维修车统配"
+		},
+		{
+			"name": "十字螺丝刀",
+			"number": "",
+			"count": "1",
+			"type": "维修车统配"
+		}
+	]
+}

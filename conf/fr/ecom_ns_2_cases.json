@@ -1,0 +1,28 @@
+{
+    "steps": [
+        {"contents":"Connectez LAN1 d'équipement à tester au port 1 de testeur de taux d’erreur de bit IP,  LAN2 d'équipement à tester au port 2 de testeur de taux d’erreur de bit IP","button": "Étape suivante","status": "before"},
+        {"contents":"LAN1 et LAN2 sont en cours de test, ce processus durera plusieurs minutes, soyez patient...","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN1 et LAN2, leur résultat de test est : ","button": "Étape suivante","status": "result"},
+        {"contents":"Connectez LAN3 d'équipement à tester au port 1 de testeur de taux d’erreur de bit IP. Connectez LAN3 d'équipement à tester au port 2 de testeur de taux d’erreur de bit IP.","button": "Étape suivante","status": "before"},
+        {"contents":"LAN3 et LAN4 sont en cours de test, ce processus durera plusieurs minutes, soyez patient...","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN3 et LAN4, leur résultat de test est : ","button": "Étape suivante","status": "result"},
+        {"contents":"Connectez LAN5 d'équipement à tester au port 1 de testeur de taux d’erreur de bit IP,  LAN6 d'équipement à tester au port 2 de testeur de taux d’erreur de bit IP.","button": "Étape suivante","status": "before"},
+        {"contents":"LAN5 et LAN6 sont en cours de test, ce processus durera plusieurs minutes, soyez patient...","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN5 et LAN6, leur résultat de test est : ","button": "Étape suivante","status": "result"},
+        {"contents":"Connectez LAN7 d'équipement à tester au port 1 de testeur de taux d’erreur de bit IP,  LAN8 d'équipement à tester au port 2 de testeur de taux d’erreur de bit IP","button": "Étape suivante","status": "before"},
+        {"contents":"LAN7 et LAN8 sont en cours de test, ce processus durera plusieurs minutes, soyez patient...","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN7 et LAN8, leur résultat de test est : ","button": "Étape suivante","status": "result"},
+        {"contents":"Connectez LAN9 d'équipement à tester au port 1 de testeur de taux d’erreur de bit IP,  LAN10 d'équipement à tester au port 2 de testeur de taux d’erreur de bit IP","button": "Étape suivante","status": "before"},
+        {"contents":"LAN9 et LAN10 sont en cours de test, ce processus durera plusieurs minutes, soyez patient...","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN9 et LAN10, leur résultat de test est : ","button": "Étape suivante","status": "result"},
+        {"contents":"Connectez LAN11 d'équipement à tester au port 1 de testeur de taux d’erreur de bit IP,  LAN12 d'équipement à tester au port 2 de testeur de taux d’erreur de bit IP","button": "Étape suivante","status": "before"},
+        {"contents":"LAN11 et LAN12 sont en cours de test, ce processus durera plusieurs minutes, soyez patient...","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN11 et LAN12, leur résultat de test est : ","button": "Étape suivante","status": "result"},
+        {"contents":"Connectez LAN13 d'équipement à tester au port 1 de testeur de taux d’erreur de bit IP,  LAN14 d'équipement à tester au port 2 de testeur de taux d’erreur de bit IP","button": "Étape suivante","status": "before"},
+        {"contents":"LAN13 et LAN14 sont en cours de test, ce processus durera plusieurs minutes, soyez patient...","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN13 et LAN14, leur résultat de test est : ","button": "Étape suivante","status": "result"},
+        {"contents":"Connectez LAN15 d'équipement à tester au port 1 de testeur de taux d’erreur de bit IP,  LAN16 d'équipement à tester au port 2 de testeur de taux d’erreur de bit IP","button": "Étape suivante","status": "before"},
+        {"contents":"LAN15 et LAN16 sont en cours de test, ce processus durera plusieurs minutes, soyez patient...","button": "","status": "execute"},
+        {"contents":"Fin de test de LAN15 et LAN16, leur résultat de test est : ","button": "Étape suivante","status": "result"}
+    ]
+}

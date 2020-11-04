@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>334</width>
+    <height>145</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft YaHei</family>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-color:#D0DAE5;
+}
+
+QTextBrower{
+background-color:#D0DAE5;
+}
+
+QLineEdit{
+background-color:#D0DAE5;
+}
+
+QWidget{
+background-color:#D0DAE5;
+}
+
+QStackedWidget{
+background-color:#D0DAE5;
+}
+
+QHeaderView{
+background-color:#D0DAE5;
+}
+
+QLabel{
+font-size:12px;
+font-family:Microsoft YaHei;
+background-color:#D0DAE5;
+}
+
+QPushButton{         /*按钮自适应拉伸背景*/
+border-width: 2px 15px 2px 15px;
+background-color:#2884D8;
+color: #FFFFFF;
+font-size:12px;
+font-family:Microsoft YaHei;
+}
+
+QGroupBox{
+font-size:12px;
+font-family:Microsoft YaHei;
+border:1px solid rgb(0, 0, 0); 
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QTextBrowser" name="textBrowser_contents">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>300</width>
+        <height>61</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_control">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>80</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>下一步</string>
+      </property>
+     </widget>
+     <zorder>pushButton_control</zorder>
+     <zorder>textBrowser_contents</zorder>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="iconQrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

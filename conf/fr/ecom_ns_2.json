@@ -1,0 +1,69 @@
+{
+    "title":"Commutez (échangez) le module (tableau de contrôle principal)",
+    "module_name":"ecom_ns_2",
+    "test_case": ["ecom_ns_2"],
+    "test_case_detail":[
+        {
+            "case_name": "ecom_ns_2",
+            "title": "Commutateur de type ecom_ns_2",
+            "steps": [
+                {"img":"1.png","title":"Test de commutateur de type ecom_ns_2","contents":"Le commutateur de type ECOM-NS-2 peut être testé par le port extérieur sauf le test de source d'alimentation qui nécessite d'ouvrir le couvercle. L'exemple suivant est celui de test de source d'alimentation en ouvrant le couvercle.","module": "DialogPicText","category": "disassemble"},
+                {"img":"2.png","title":"Test de commutateur de type ecom_ns_2","contents":"Dévisser les quatre vis fixes sur le panneau frontal selon l'indication de la Figure 50 et sortir l'équipement de l'armoire.","module": "DialogPicText","category": "disassemble"},
+                {"img":"3.png","title":"Test de commutateur de type ecom_ns_2","contents":"Le fusible est installé sur le panneau arrière de boîte comme celui qui est indiqué dans la Figure 5. Tourner et sortir le capot arrière de fusible (connecté avec le fusible).","module": "DialogPicText","category": "disassemble"},
+                {"img":"4.png","title":"Test de commutateur de type ecom_ns_2","contents":"Le résultat est indiqué dans la Figure","module": "DialogPicText","category": "disassemble"},
+                {"img":"5.png","title":"Test de commutateur de type ecom_ns_2","contents":"Ouvrir le capot haut d'équipement selon la Figure pour voir la disposition intérieure d'équipement.","module": "DialogPicText","category": "disassemble"},
+                {"img":"6.png","title":"Test de commutateur de type ecom_ns_2","contents":"Lors du démontage du module d'alimentation, vous devez desserrer la borne du câblage d'alimentation (dans le carré rouge) et dévisser les six écrous de fixation (cercle rouge)","module": "DialogPicText","category": "disassemble"},
+                {"img":"7.png","title":"Test de commutateur de type ecom_ns_2","contents":"Câble réseau","module": "DialogPicText","category": "testprepare"},
+                {"img":"8.png","title":"Test de commutateur de type ecom_ns_2","contents":"Position de connection de réseau","module": "DialogPicText","category": "testprepare"},
+                {"img":"9.png","title":"Test de commutateur de type ecom_ns_2","contents":"L'ordinateur portable militarisé","module": "DialogPicText","category": "testprepare"},
+                {"img":"10.png","title":"Test de commutateur de type ecom_ns_2","contents":"Pour le test de commutateur de type ECOM-NS-2, il nécessite un ordinateur militarisé militaire portable, un testeur de taux d’erreur de bit IP et un multimètre numérique.","module": "DialogPicText","category": "testprepare"},
+                {"img":"","title":"Test de commutateur de type ecom_ns_2 - test de module ou de machine","contents":"Dans la liste de maintenance de commutateur de type ECOM-NS-2, il nécessite tout d’abord de dépanner le fusible et l’alimentation même si la liste de maintenance ne contient pas l’alimentation.","module": "DialogPicText","category": "execute"},
+                {"img":"","title":"Test de commutateur de type ecom_ns_2 - test de fusible","contents":"Quand le voyant d’alimentation ne s’allume pas, il faut vérifier tout d’abord si le fusible est bon, il faut le remplacer s’il est déjà coupé. Il faut se reférer au guidage de remplacement de fusible ou de démontage relatif.","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"Le fusible est normal.","contents":"Le fusible est normal","module": "DialogSimpleTestProcess1Btn","category": "execute"},
+                {"img":"","title":"Test de commutateur de type ecom_ns_2-source d'alimentation","contents":"Après le remplacement de fusible, il faut continuer le test de tension sortie de module d'alimentation, la première et la deuxième patte de module d'alimentation de commutateur de type ECOM-NS-2 disposent de la tension +12V, la troisième et la quatrième sont GND, il faut les mesurer avec le multimètre pour voir s'ils se trouvent dans le domaine normal. Si la tension d'alimentation ne se trouve pas dans le domaine exigé, il faut remplacer le module d'alimentation. Si la panne existe encore, il faut continuer le test suivant.","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"La source d'alimentation est normale.","contents":"La source d'alimentation est normal","module": "DialogSimpleTestProcess1Btn","category": "execute"},
+                {"img":"","title":"Test de Ping - port CTRL d'équipement ","contents":"Connecter le port réseau d'ordinateur au port CTRL d'équipement, configurer l'adresse IP d'ordinateur comme 192.168.1.10/24, allumer le signe d'indication de commande et exécuter ping 192.168.1.205 sous ce signe d'indication.","module": "EcomNs2Ping","category": "execute"},
+                {"img":"","title":"Test de Ping - LAN16 d'équipement ","contents":"Connecter le port réseau d'ordinateur au LAN16 d'équipement, configurer l'adresse IP d'ordinateur comme 192.168.1.10/24, allumer le signe d'indication de commande et exécuter ping 192.168.1.205 sous ce signe d'indication.","module": "EcomNs2Ping","category": "execute"},
+                {"img":"","title":"Test de testeur de taux d’erreur de bit IP - interface d'Ethernet","contents":"Connecter LAN1 d'équipement au port 1 de test de testeur de taux d’erreur de bit IP avec le fil réseau, et LAN2 au port 2 de test de testeur de taux d’erreur de bit IP.","module": "DialogEcomNs2KeyTest","category": "execute"}
+            ]
+        }
+    ],
+    "test_source": [
+        {
+            "name": "testeur de taux d'erreur de bit IP",
+            "number": "",
+            "count": "1",
+            "type": ""
+        },
+        {
+            "name": "Câble électrique d'alimentation de courant AC",
+            "number": "MP-COM-B-003-W001",
+            "count": "1",
+            "type": "Pièces de rechange"
+        },
+        {
+            "name": "Gestion de câble électrique de réseau Ethernet",
+            "number": "MP-COM-B-003-W002",
+            "count": "1",
+            "type": "Pièces de rechange"
+        },
+        {
+            "name": "Fil de terre",
+            "number": "MP-COM-B-003-W003",
+            "count": "1",
+            "type": "Pièces de rechange"
+        },
+        {
+            "name": "Câble électrique de test de réseau Ethernet",
+            "number": "MP-COM-B-003-W004",
+            "count": "1",
+            "type": "Pièces de rechange"
+        },
+        {
+            "name": "Câble électrique de test de réseau Ethernet",
+            "number": "MP-COM-B-003-W005",
+            "count": "1",
+            "type": "Pièces de rechange"
+        }
+    ]
+}

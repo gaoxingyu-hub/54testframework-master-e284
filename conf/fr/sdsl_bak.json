@@ -1,0 +1,78 @@
+{
+    "title":"数据和线路模块",
+    "module_name":"sdsl",
+    "test_case": ["sdsl"],
+    "test_case_detail":[
+        {
+            "case_name": "sdsl",
+            "title": "数据和线路模块",
+            "steps": [
+                {"img":"1.png","title":"设备前面板固定螺钉位置示意","contents":"拧开四个将设备固定在机柜上的螺钉，将设备从机柜上抽出","module": "DialogPicText","category": "disassemble"},
+                {"img":"2.png","title":"保险丝座置示意","contents":"保险丝座置示意","module": "DialogPicText","category": "disassemble"},
+                {"img":"3.png","title":"拆装保险丝示意","contents":"保险丝安装于机箱后面板，将保险丝后盖(与保险丝连接在一起)旋出","module": "DialogPicText","category": "disassemble"},
+                {"img":"4.png","title":"设备上盖板拆装示意","contents":"打开设备上盖板，就可以看到设备内部布局","module": "DialogPicText","category": "disassemble"},
+                {"img":"5.png","title":"设备内部示意","contents":"设备内部示意","module": "DialogPicText","category": "disassemble"},
+                {"img":"6.png","title":"电源模块拆装示意","contents":"电源模块进行拆装时，需要将电源接线端子松开(红色方框内)，并将一个固定螺母旋开(左下红色圆圈)以及两个螺钉旋开(右边红色圆圈内)","module": "DialogPicText","category": "disassemble"},
+                {"img":"7.png","title":"DSL主板模块拆装示意","contents":"DSL主板模块拆装时，首先将插头拔出(红色方框内)，并将四个固定螺钉旋开(红色圆圈","module": "DialogPicText","category": "disassemble"},
+                {"img":"8.png","title":"交换板拆装示意","contents":"交换板进行拆装时，首先将插头拔出(红色方框内)，并将四个固定螺钉旋开(红色圆圈)。","module": "DialogPicText","category": "disassemble"},
+                {"img":"9.png","title":"滤波器拆装示意","contents":"滤波器拆装时，首先将连接线焊掉(红色方框内)，再讲螺丝钉旋转开(红色圆圈内)。","module": "DialogPicText","category": "disassemble"},
+                {"img":"10.png","title":"被复线","contents":"被复线","module": "DialogPicText","category": "testprepare"},
+                {"img":"11.png","title":"被复线连接位置","contents":"被复线连接位置","module": "DialogPicText","category": "testprepare"},
+                {"img":"12.png","title":"网线","contents":"网线","module": "DialogPicText","category": "testprepare"},
+                {"img":"13.png","title":"串口配置线","contents":"串口配置线","module": "DialogPicText","category": "testprepare"},
+                {"img":"14.png","title":"测试线连接位置","contents":"测试线连接位置","module": "DialogPicText","category": "testprepare"},
+                {"img":"15.png","title":"便携式军用加固计算机","contents":"便携式军用加固计算机","module": "DialogPicText","category": "testprepare"},
+                {"img":"16.png","title":"测试连接框图","contents":"测试连接框图","module": "DialogPicText","category": "testprepare"},
+                {"img":"","title":"模块或整机测试","contents":"通信分系统维修清单里虽然都没有包含电源，但是我们具体写维修原理的时候都需要将将保险丝和电源部分的故障首先排除","module": "DialogPicText","category": "execute"},
+                {"img":"","title":"保险丝部分测试","contents":"电源指示灯不亮的时候，首先检查保险丝管是否完好，如果已经熔断请首先更换保险丝。此处应该跳转到保险丝更换画面或者相应拆机指导。","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"保险丝部分正常","contents":"保险丝部分正常","module": "DialogSimpleTestProcess1Btn","category": "execute"},
+                {"img":"","title":"电源部分","contents":"更换保险丝后，继续进行电源模块的输出电压测试，ECOM-NS-2型交换机的电源模块XS4的第1、2脚为+12V，第3、4脚为GND，使用万用表测试是否在规定范围内。如果电源电压不在规定范围内，请更换改电源模块，如果故障仍未排除，请继续进行后续测试。","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"电源部分正常","contents":"电源部分正常","module": "DialogSimpleTestProcess1Btn","category": "execute"},
+                {"img":"",
+                    "title":"网络测试",
+                    "contents":"网络测试包含了交换板与DSL主板，因此按照指导要求，用被复线将两台SDSL设备连接，两台分别接网线以及串口线，然后SDSL设备开机，两台设备的ALIM灯常亮，FON灯慢闪，且直到两台SDSL设备DSL指示下的LINK指示灯常亮(DONNEES为DSL有数据则亮，没数据则灭)。分别将笔记本计算机1网口连接至SDSL设备1的LAN口，将笔记本计算机2的网口连接至SDSL设备2的LAN口，等待指示灯常亮。",
+                    "module": "DialogPicText",
+                    "category": "execute"},
+                {"img":"","title":"串口测试","contents":"将串口232接到SDSL设备的串口接口上","module": "DialogSdslCom","category": "execute"}
+            ]
+        }
+    ],
+    "test_source": [
+        {
+            "name": "IP误码仪",
+            "number": "",
+            "count": "1",
+            "type": ""
+        },
+        {
+            "name": "交流电源电缆",
+            "number": "MP-COM-B-003-W001",
+            "count": "1",
+            "type": "配件"
+        },
+        {
+            "name": "管理以太网电缆",
+            "number": "MP-COM-B-003-W002",
+            "count": "1",
+            "type": "配件"
+        },
+        {
+            "name": "地线",
+            "number": "MP-COM-B-003-W003",
+            "count": "1",
+            "type": "配件"
+        },
+        {
+            "name": "测试以太网电缆",
+            "number": "MP-COM-B-003-W004",
+            "count": "1",
+            "type": "配件"
+        },
+        {
+            "name": "测试以太网电缆",
+            "number": "MP-COM-B-003-W005",
+            "count": "1",
+            "type": "配件"
+        }
+    ]
+}

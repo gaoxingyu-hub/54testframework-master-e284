@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>792</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft YaHei</family>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-color:#D0DAE5;
+}
+
+QTextBrower{
+background-color:#D0DAE5;
+}
+
+QLineEdit{
+background-color:#D0DAE5;
+}
+
+QWidget{
+background-color:#D0DAE5;
+}
+
+QStackedWidget{
+background-color:#D0DAE5;
+}
+
+QHeaderView{
+background-color:#D0DAE5;
+}
+
+QLabel{
+font-size:12px;
+font-family:Microsoft YaHei;
+background-color:#D0DAE5;
+}
+
+QPushButton{         /*按钮自适应拉伸背景*/
+border-width: 2px 15px 2px 15px;
+background-color:#2884D8;
+color: #FFFFFF;
+font-size:12px;
+font-family:Microsoft YaHei;
+}
+
+QGroupBox{
+font-size:12px;
+font-family:Microsoft YaHei;
+border:1px solid rgb(0, 0, 0); 
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string>信号源</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>地址</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" colspan="2">
+          <widget class="QComboBox" name="comboBox_sg_addr">
+           <item>
+            <property name="text">
+             <string>LAN</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="3" colspan="3">
+          <widget class="QLineEdit" name="lineEdit_addr_sg"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>频率</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_freq_sg"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="QComboBox" name="comboBox_sg_freq">
+           <item>
+            <property name="text">
+             <string>MHz</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>功率</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLineEdit" name="lineEdit_power_sg"/>
+         </item>
+         <item row="1" column="5">
+          <widget class="QComboBox" name="comboBox_sg_power">
+           <item>
+            <property name="text">
+             <string>dBm</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>调制</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_freq_sg_2"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QComboBox" name="comboBox_sg_freq_2">
+           <item>
+            <property name="text">
+             <string>kHz</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>频偏</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLineEdit" name="lineEdit_power_sg_2"/>
+         </item>
+         <item row="2" column="5">
+          <widget class="QComboBox" name="comboBox_sg_power_2">
+           <item>
+            <property name="text">
+             <string>kHz</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string>测试结果</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QTextBrowser" name="textBrowser"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QComboBox" name="comboBox">
+           <item>
+            <property name="text">
+             <string>正常</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>异常</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>133</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="0">
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="title">
+         <string>操作面板</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="2">
+          <widget class="QPushButton" name="pushButton_next">
+           <property name="text">
+            <string>下一步</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButton_excute">
+           <property name="text">
+            <string>执行</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="iconQrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

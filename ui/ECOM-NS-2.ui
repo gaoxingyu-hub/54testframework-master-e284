@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1057</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft YaHei</family>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-color:#D0DAE5;
+}
+QTextBrower{
+background-color:#D0DAE5;
+}
+
+QHeaderView{
+background-color:#D0DAE5;
+}
+
+QLabel{
+font-size:14px;
+font-family:Microsoft YaHei;
+}
+
+QPushButton{         /*按钮自适应拉伸背景*/
+border-width: 2px 15px 2px 15px;
+background-color:#2884D8;
+color: #FFFFFF;
+font-size:14px;
+font-family:Microsoft YaHei;
+}</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>1051</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <widget class="QWidget" name="page_disassemble">
+       <widget class="QLabel" name="label_disassemble_imageview">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>821</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::RichText</enum>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_disassemble_previous">
+        <property name="geometry">
+         <rect>
+          <x>850</x>
+          <y>50</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>上一步</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_disassemble_next">
+        <property name="geometry">
+         <rect>
+          <x>850</x>
+          <y>90</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>下一步</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="textBrowser_disassemble">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>370</y>
+          <width>821</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Devanagari</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_testdevice">
+       <widget class="QLabel" name="label_testdevice_imageview">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>821</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_testdevice_previous">
+        <property name="geometry">
+         <rect>
+          <x>850</x>
+          <y>50</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>上一步</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_testdevice_next">
+        <property name="geometry">
+         <rect>
+          <x>850</x>
+          <y>90</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>下一步</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="textBrowser_testdevice">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>370</y>
+          <width>821</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Devanagari</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_testexecute">
+       <widget class="QPushButton" name="pushButton_testexecute_next">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>5</y>
+          <width>81</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>下一步</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_testexecute_last">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>5</y>
+          <width>81</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>上一步</string>
+        </property>
+       </widget>
+       <widget class="QStackedWidget" name="stackedWidget_testexecute">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>1031</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Devanagari</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <widget class="QWidget" name="testexecute_page1">
+         <widget class="QLabel" name="testexecute_page1_label">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>70</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>保险丝测试</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QTextBrowser" name="testexecute_page1_textBrowser">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>911</width>
+            <height>371</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Adobe Devanagari</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="testexecute_page2">
+         <property name="font">
+          <font>
+           <family>Adobe Devanagari</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <widget class="QLabel" name="testexecute_page2_label">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>84</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>电源部分测试</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QTextBrowser" name="testexecute_page2_textBrowser">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>911</width>
+            <height>371</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Adobe Devanagari</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="testexecute_page3">
+         <widget class="QTextBrowser" name="testexecute_page3_textBrowser">
+          <property name="geometry">
+           <rect>
+            <x>157</x>
+            <y>80</y>
+            <width>568</width>
+            <height>331</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="testexecute_page3_label_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>153</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Ping测试</string>
+          </property>
+         </widget>
+         <widget class="QSplitter" name="splitter_2">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>40</y>
+            <width>561</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <widget class="QLabel" name="testexecute_page3_label_3">
+           <property name="font">
+            <font>
+             <family>Microsoft YaHei</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>IP地址</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="testexecute_page3_lineEdit"/>
+          <widget class="QPushButton" name="testexecute_page3_pushButton">
+           <property name="text">
+            <string>ping</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="testexecute_page4">
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>191</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Adobe Devanagari</family>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="title">
+           <string>交换机类型</string>
+          </property>
+          <widget class="QSplitter" name="splitter_5">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>181</width>
+             <height>161</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <widget class="QListWidget" name="listWidget_2">
+            <item>
+             <property name="text">
+              <string>ECOM-NS-2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>其他交换机</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QSplitter" name="splitter_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <widget class="QPushButton" name="testexecute_page4_pushButton_execute">
+             <property name="text">
+              <string>执行测试</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="testexecute_page4_pushButton_last">
+             <property name="text">
+              <string>上一步</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="testexecute_page4_pushButton_next">
+             <property name="text">
+              <string>下一步</string>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>30</y>
+            <width>791</width>
+            <height>235</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="1" column="0">
+            <widget class="QGroupBox" name="testexecute_page4_groupBox_ip_port2">
+             <property name="font">
+              <font>
+               <family>Microsoft YaHei</family>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>IP误码仪测试端口2</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="1" column="6">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan15">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN15</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan3">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN3</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan1">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN1</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan5">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN5</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan4">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN4</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="7">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan16">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan10">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN10</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="5">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan6">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN6</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan12">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN12</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="5">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan14">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN14</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan2">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN2</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="6">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan7">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN7</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="7">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan8">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN8</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan9">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN9</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan11">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN11</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="4">
+               <widget class="QCheckBox" name="ip_port2_checkBox_lan13">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN13</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QGroupBox" name="testexecute_page4_groupBox_ip_port1">
+             <property name="font">
+              <font>
+               <family>Microsoft YaHei</family>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>IP误码仪测试端口1</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_7">
+              <item row="0" column="0">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan1">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN1</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan2">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN2</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan3">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN3</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan4">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN4</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan5">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN5</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="5">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan6">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN6</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="6">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan7">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN7</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="7">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan8">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN8</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan9">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN9</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan10">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN10</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan11">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN11</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan12">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN12</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="4">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan13">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN13</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="5">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan14">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN14</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="6">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan15">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN15</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="7">
+               <widget class="QCheckBox" name="ip_port1_checkBox_lan16">
+                <property name="font">
+                 <font>
+                  <family>Microsoft YaHei</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>LAN16</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>270</y>
+            <width>1001</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="title">
+           <string>测试说明</string>
+          </property>
+          <widget class="QTextBrowser" name="testexecute_page4_textBrowser">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>901</width>
+             <height>171</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="testexecute_page4_label">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>0</y>
+            <width>153</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>IP误码仪测试以太网接口</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="testexecute_page3_label">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>30</y>
+          <width>153</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei</family>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>交换主控板测试</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="pageTestData">
+       <widget class="QPushButton" name="pushButton_TestData_export">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>100</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>数据导出</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_TestData_upload">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>150</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>数据上传</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="test_data_tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>80</y>
+          <width>831</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>交换机型号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Com1</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Com2</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>测试指标</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>丢包数</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>测试结果</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>ECOM-NS-2</string>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>LAN1</string>
+         </property>
+        </item>
+        <item row="0" column="2">
+         <property name="text">
+          <string>LAN2</string>
+         </property>
+        </item>
+        <item row="0" column="3">
+         <property name="text">
+          <string>流量带宽1000M，包长128bytes，测试时间60s</string>
+         </property>
+        </item>
+        <item row="0" column="4">
+         <property name="text">
+          <string>10</string>
+         </property>
+        </item>
+        <item row="0" column="5">
+         <property name="text">
+          <string>通过</string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>ECOM-NS-2</string>
+         </property>
+        </item>
+        <item row="1" column="1">
+         <property name="text">
+          <string>LAN3</string>
+         </property>
+        </item>
+        <item row="1" column="2">
+         <property name="text">
+          <string>LAN4</string>
+         </property>
+        </item>
+        <item row="1" column="3">
+         <property name="text">
+          <string>流量带宽1000M，包长128bytes，测试时间60s</string>
+         </property>
+        </item>
+        <item row="1" column="4">
+         <property name="text">
+          <string>103</string>
+         </property>
+        </item>
+        <item row="1" column="5">
+         <property name="text">
+          <string>不通过</string>
+         </property>
+        </item>
+        <item row="2" column="0">
+         <property name="text">
+          <string>ECOM-NS-2</string>
+         </property>
+        </item>
+        <item row="2" column="1">
+         <property name="text">
+          <string>LAN6</string>
+         </property>
+        </item>
+        <item row="2" column="2">
+         <property name="text">
+          <string>LAN7</string>
+         </property>
+        </item>
+        <item row="2" column="3">
+         <property name="text">
+          <string>流量带宽1000M，包长128bytes，测试时间60s</string>
+         </property>
+        </item>
+        <item row="2" column="4">
+         <property name="text">
+          <string>56</string>
+         </property>
+        </item>
+        <item row="2" column="5">
+         <property name="text">
+          <string>通过</string>
+         </property>
+        </item>
+        <item row="3" column="0">
+         <property name="text">
+          <string>ECOM-NS-2</string>
+         </property>
+        </item>
+        <item row="3" column="1">
+         <property name="text">
+          <string>LAN8</string>
+         </property>
+        </item>
+        <item row="3" column="2">
+         <property name="text">
+          <string>LAN9</string>
+         </property>
+        </item>
+        <item row="3" column="3">
+         <property name="text">
+          <string>流量带宽1000M，包长128bytes，测试时间60s</string>
+         </property>
+        </item>
+        <item row="3" column="4">
+         <property name="text">
+          <string>23</string>
+         </property>
+        </item>
+        <item row="3" column="5">
+         <property name="text">
+          <string>通过</string>
+         </property>
+        </item>
+        <item row="4" column="0">
+         <property name="text">
+          <string>ECOM-NS-2</string>
+         </property>
+        </item>
+        <item row="4" column="1">
+         <property name="text">
+          <string>LAN10</string>
+         </property>
+        </item>
+        <item row="4" column="2">
+         <property name="text">
+          <string>LAN11</string>
+         </property>
+        </item>
+        <item row="4" column="3">
+         <property name="text">
+          <string>流量带宽1000M，包长128bytes，测试时间60s</string>
+         </property>
+        </item>
+        <item row="4" column="4">
+         <property name="text">
+          <string>76</string>
+         </property>
+        </item>
+        <item row="4" column="5">
+         <property name="text">
+          <string>通过</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>20</y>
+          <width>84</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>测试数据管理</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_sytem_test_procedure_label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>0</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>系统拆机演示</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_label_sytem_test_procedure">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>测试流程：</string>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>0</width>
+     <height>0</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>0</width>
+     <height>0</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter_3">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>1</y>
+     <width>132</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton_last">
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/newPrefix/icon/last4.ico</normaloff>:/newPrefix/icon/last4.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>31</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_next">
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/newPrefix/icon/next4.ico</normaloff>:/newPrefix/icon/next4.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>31</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_close">
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/newPrefix/icon/close4.ico</normaloff>:/newPrefix/icon/close4.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>31</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="iconQrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

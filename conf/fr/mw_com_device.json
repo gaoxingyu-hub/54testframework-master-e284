@@ -1,0 +1,60 @@
+{
+    "title":"Équipement de transmission via Radio FH Ad hoc network",
+    "module_name":"mw_com_device",
+    "test_case": ["outer_unit"],
+    "test_ip": ["192.168.1.8"],
+    "test_case_detail":[
+        {
+            "case_name": "outer_unit",
+            "title": "Unité extérieure",
+            "steps": [
+                {"img":"1.png","title":"Schéma synoptique de test","contents":"","module": "DialogPicText","category": "disassemble"},
+                {"img":"2.png","title":"Schéma de procédure de test","contents":"","module": "DialogPicText","category": "disassemble"},
+                {"img":"3.png","title":"Figure de dessus de l'armoire intérieure d'équipement à tester","contents":"","module": "DialogPicText","category": "execute"},
+                {"img":"4.png","title":"Figure frontale de l'armoire intérieure d'équipement à tester","contents":"","module": "DialogPicText","category": "execute"},
+                {"img":"5.png","title":"Figure de l'armoire extérieure d'équipement à tester","contents":"","module": "DialogPicText","category": "execute"},
+                {"img":"6.png","title":"Figure de câble mixte de transmission optronique à tester","contents":"","module": "DialogPicText","category": "execute"},
+                {"img":"1.png","title":"Fixez l'équipement à tester en place","contents":"Fixez l'équipement à tester en place, connectez comme indiqué dans la figure ci-dessous et le câble de test Ethernet se connecte à XS10.","module": "DialogPicText","category": "execute"},
+                {"img":"","title":"Allumez l'interrupteur d'alimentation de l'équipement à tester et du testeur de taux d'erreur de bit IP.","contents":"Allumez l'interrupteur d'alimentation de l'équipement à tester et du testeur de taux d'erreur de bit IP.","module": "DialogPicText","category": "execute"},
+                {"img":"","title":"L'équipement testé est en cours de démarrage, veuillez patienter ...","contents":"L'équipement testé est en cours de démarrage, veuillez patienter ...","module": "DialogPicText","category": "execute"},
+                {"img":"7.png","title":"voyant ALIM","contents":"Observez le voyant “ALIM” sur le panneau frontal d'équipement à tester.","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"Si le fusible est normal ?","contents":"Le fusible est normal","module": "DialogSimpleTestProcess1Btn","category": "execute"},
+                {"img":"8.png","title":"Configurez la boucle MAC.","contents":"Entrez dans la configuration d'interface d'entretien via la surveillance de cette machine pour configurer la boucle T/R.","module": "DialogPicText","category": "execute"},
+                {"img":"","title":"Test de boucle MAC","contents":"Observez si le panneau cristal aux liquides et le testeur de taux d’erreur de bit de réseau d'équipement à tester sont normaux.","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"Si l'unité de traitement des siganux numériques est normale ? ","contents":"L'unité de traitement des siganux numériques est normal","module": "DialogSimpleTestProcess1Btn","category": "execute"},
+                {"img":"9.png","title":"Configurer le circulateur de bande de base","contents":"Entrez dans la configuration d'interface d'entretien via la surveillance de cette machine pour configurer la boucle de bande de base.","module": "DialogPicText","category": "execute"},
+                {"img":"","title":"Test de boucle de bande de base","contents":"Observez si le panneau cristal aux liquides et le testeur de taux d’erreur de bit de réseau d'équipement à tester sont normaux.","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"Si le câble mixte de transmission optronique est normal ?","contents":"L'unité de câble mixte de transmission optronique est normal","module": "DialogSimpleTestProcess1Btn","category": "execute"},
+                {"img":"10.png","title":"Configurez la boucle T/R.","contents":"Entrez dans la configuration d'interface d'entretien via la surveillance de cette machine pour configurer la boucle de bande de base.","module": "DialogPicText","category": "execute"},
+                {"img":"","title":"Test de boucle T/R","contents":"Observez si le panneau cristal aux liquides et le testeur de taux d’erreur de bit de réseau d'équipement à tester sont normaux.","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"Si l'armoire extérieure est normale ?","contents":"L'unité d'armoire extérieure est normal","module": "DialogSimpleTestProcess1Btn","category": "execute_finish"}
+            ]
+        }
+    ],
+    "test_source": [
+        {
+            "name": "Câble électrique d'alimentation  de courant AC",
+            "number": "À déterminer",
+            "count": "1",
+            "type": "Pièces de rechange"
+        },
+        {
+            "name": "Câble électrique de test de réseau Ethernet",
+            "number": "À déterminer",
+            "count": "1",
+            "type": "Pièces de rechange"
+        },
+        {
+            "name": "Fil de terre",
+            "number": "À déterminer",
+            "count": "1",
+            "type": "Pièces de rechange"
+        },
+        {
+            "name": "Testeur de taux d’erreur de bit de réseau",
+            "number": "BigTao200",
+            "count": "1",
+            "type": ""
+        }
+    ]
+}

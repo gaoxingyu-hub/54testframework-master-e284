@@ -1,0 +1,97 @@
+<descriptions>
+	<startup-settings>
+		<ld-library-path-env>
+			<!-- 设置LD_LIBRARY_PATH环境变量开关。false[default]|true -->
+			<enable>false</enable>
+
+			<!-- 使用相对或绝对路径。相对路径以可执行程序所在路径为基本路径。-->
+			<path>./lib</path>
+		</ld-library-path-env>
+		
+	</startup-settings>
+	<!-- 适用的站型列表。一个TPS软件可检测多个站型的设备。
+		站型的有效集为：
+			pcrge：电子战团自动化指挥所
+			pcc-1/2/3：多功能机载雷达干扰群组自动化指挥所
+			srrt：无线电技术侦察站
+			sbrb：多功能机载雷达干扰站
+			sbop：无源光电干扰站
+			sbla：有源激光干扰站
+			sbrm：毫米波雷达干扰站
+			pcc-4：指挥及导航对抗群组自动化指挥所
+			sdlc-1：远距离探测及控制系统雷达干扰站（SDLC-1）
+			sdlc-2：远距离探测及控制系统雷达干扰站（SDLC-2）
+			sbnav：无线电导航、敌我识别、数据链及无人机测控链路干扰站
+			sbv/uhf：地空及空空V/UHF通信干扰站
+			sbsar-l：合成孔径雷达（SAR）干扰站（L波段）
+			sbsar-sc：合成孔径雷达（SAR）干扰站（SC波段）
+			sbsar-xku：合成孔径雷达（SAR）干扰站（XKu波段）
+			srp：三维无源侦察系统（无源雷达）
+			sr2vb：远程雷达站
+			sr18c：中程雷达站
+			amrb：侦察和干扰设备维修车
+			ame：电源设备维修车
+			mpdr：备品备件车
+		-->
+	<stations>
+	
+		<station>pcrge</station>
+		<station>pcc-1/2/3</station>
+		<station>srrt</station>
+		<station>sbrb</station>
+		<station>sbop</station>
+		<station>sbla</station>
+		<station>sbrm</station>
+		<station>pcc-4</station>
+		<station>sdlc-1</station>
+		<station>sdlc-2</station>
+		<station>sbnav</station>
+		<station>sbv/uhf</station>
+		<station>sbsar-l</station>
+		<station>sbsar-sc</station>
+		<station>sbsar-xku</station>
+		<station>srp</station>
+		<station>sr2vb</station>
+		<station>sr18c</station>
+		<station>amrb</station>
+		<station>ame</station>
+
+	</stations>
+	
+	<!-- 适用的设备种类列表。一个TPS软件可检测多个种类的设备。
+		种类的有效集为：
+			station：用于专装TPS软件，表示整机及除通信分系统外各分机；
+			communication：用于通信分系统TPS软件，表示通信分系统分机；
+			power-suply：用于通装TPS软件，表示电源设备；
+			servo：用于通装TPS软件，表示伺服设备；
+			hydraulic-antenna：用于通装TPS软件，表示液压举升机构设备；
+			liquid-cooling：用于通装TPS软件，表示液冷设备；
+			air-conditioner：用于通装TPS软件，表示空调设备；
+			oil-machine：用于通装TPS软件，表示油机设备；
+			electric-leveling：用于通装TPS软件，表示电动调平设备；
+			vehicle：用于通装TPS软件，表示载车设备；
+			ups：用于通装TPS软件，表示UPS设备；
+			antenna-mast：用于通装TPS软件，表示天线杆设备；
+			lifting-platform：用于通装TPS软件，表示升降平台设备。
+	 -->
+	 <!--
+	<categories>
+		<category>station</category>
+		<category>communication</category>
+		<category>power-suply</category>
+		<category>servo</category>
+		<category>hydraulic-antenna</category>
+		<category>liquid-cooling</category>
+		<category>air-conditioner</category>
+		<category>oil-machine</category>
+		<category>electric-leveling</category>
+		<category>vehicle</category>
+		<category>ups</category>
+		<category>antenna-mast</category>
+		<category>lifting-platform</category>
+	</categories>
+	-->
+	<categories>
+		<category>communication</category>
+	</categories>
+</descriptions>

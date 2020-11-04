@@ -1,0 +1,152 @@
+{
+	"title": "路由器测试",
+	"module_name": "ROUTER",
+	"test_case": ["case1"],
+	"test_case_detail": [{
+		"case_name": "case1",
+		"title": "ECOM-RT型路由器",
+		"steps": [{
+			"img": "1.png",
+			"title": "路由器测试-测试准备",
+			"contents": "现在开始测试ECOM-RT型路由器，测试框图",
+			"module": "DialogPicText",
+			"category": "prepare"
+		}, {
+			"img": "2.png",
+			"title": "路由器测试-测试准备",
+			"contents": "测试流程图",
+			"module": "DialogPicText",
+			"category": "prepare"
+		}, {
+			"img": "3.png",
+			"title": "路由器测试-拆机",
+			"contents": "拆交换板",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "4.png",
+			"title": "路由器测试-拆机",
+			"contents": "拆电源板",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "5.png",
+			"title": "路由器测试-拆机",
+			"contents": "拆滤波器",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "6.png",
+			"title": "路由器测试-测试拆机",
+			"contents": "拆接口板",
+			"module": "DialogPicText",
+			"category": "disassemble"
+		}, {
+			"img": "7.jpg",
+			"title": "路由器测试-测试",
+			"contents": "现在开始测试ECOM-RT型路由器",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "8.png",
+			"title": "路由器测试-测试",
+			"contents": "被测设备原位固定，按下图进行接线，测试以太网电缆连接XS02和XS03",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "9.png",
+			"title": "路由器测试-测试",
+			"contents": "被测设备上的接插件位置如下图所示",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "",
+			"title": "路由器测试-测试",
+			"contents": "打开被测设备和IP误码仪电源开关电源开关",
+			"module": "DialogPicText",
+			"category": "testprepare"
+		}, {
+			"img": "",
+			"title": "路由器测试-测试",
+			"contents": "被测设备正在启动，请稍后……(强制停止30s)",
+			"module": "DialogPicText",
+			"category": "execute"
+		}, {
+			"img": "10.png",
+			"title": "指示灯ALIM常亮-测试",
+			"contents": "观察被测设备前面板指示灯ALIM是否常亮？",
+			"module": "DialogSimpleTestProcess2Btn",
+			"category": "execute",
+			"next": ["next", "finish"]
+		}, {
+			"img": "",
+			"title": "指示灯ALIM常亮",
+			"contents": "电源功能正常",
+			"module": "DialogSimpleTestProcess1Btn",
+			"category": "execute"
+		}, {
+			"img": "11.png",
+			"title": "路由器-测试",
+			"contents": "观察被测设备前面板前面板指示灯FON是否闪烁？",
+			"module": "DialogSimpleTestProcess2Btn",
+			"category": "execute",
+			"next": ["next", "finish"]
+		}, {
+			"img": "",
+			"title": "指示灯FON闪烁",
+			"contents": "CPU工作正常",
+			"module": "DialogSimpleTestProcess1Btn",
+			"category": "execute"
+		}, {
+			"img": "",
+			"title": "获取配置参数",
+			"contents": "正在获取配置参数，请稍后……",
+			"module": "DialogSimpleTestProcess2Btn",
+			"category": "execute",
+			"next": ["next", "finish"]
+		}, {
+			"img": "",
+			"title": "获取配置参数成功",
+			"contents": "获取配置参数成功",
+			"module": "DialogSimpleTestProcess1Btn",
+			"category": "execute"
+		}, {
+			"img": "",
+			"title": "IP误码仪测试",
+			"contents": "",
+			"module": "DialogRouterLanTest",
+			"category": "execute"
+		}]
+	}],
+	"test_source": [{
+			"name": "IP误码仪",
+			"number": "",
+			"count": "1",
+			"type": ""
+		},
+		{
+			"name": "交流电源电缆",
+			"number": "MP-COM-B-003-W001",
+			"count": "1",
+			"type": "配件"
+		},
+		{
+			"name": "管理以太网电缆",
+			"number": "MP-COM-B-003-W002",
+			"count": "1",
+			"type": "配件"
+		},
+		{
+			"name": "地线",
+			"number": "MP-COM-B-003-W003",
+			"count": "1",
+			"type": "配件"
+		},
+		{
+			"name": "测试以太网电缆",
+			"number": "MP-COM-B-003-W004",
+			"count": "1",
+			"type": "配件"
+		}
+	]
+}

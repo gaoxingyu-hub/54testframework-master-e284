@@ -1,0 +1,63 @@
+{
+    "title":"Module de donnée et de fil",
+    "module_name":"sdsl",
+    "test_case": ["sdsl"],
+    "test_case_detail":[
+        {
+            "case_name": "sdsl",
+            "title": "Module de donnée et de fil",
+            "steps": [
+                {"img":"16.png","title":"Schéma synoptique de connexion de test","contents":"Schéma synoptique de connexion de test","module": "DialogPicText","category": "testprepare"},
+                {"img":"","title":"Test de module ou de machine","contents":"La liste de maintenance du sous-système de transmission ne contient pas la maintenance de source d'alimentation, mais il faut dépanner tout d'abord le fusible et la source d'alimentation en écrivant le principe de maintenance. ","module": "DialogPicText","category": "execute"},
+                {"img":"","title":"test de fusible","contents":"Quand le voyant d'alimentation ne s'allume pas, il faut vérifier tout d'abord si le fusible est bon, il faut le remplacer s'il est déjà coupé. Il faut se reférer au guidage de remplacement de fusible ou de démontage relatif.","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"Le fusible est normal. ","contents":"Le fusible est normal","module": "DialogSimpleTestProcess1Btn","category": "execute"},
+                {"img":"","title":"Test de source d'alimentation","contents":"Après le remplacement de fusible, il faut continuer le test de tension sortie de module d'alimentation, la première et la deuxième patte de module d'alimentation de commutateur de type ECOM-NS-2 disposent de la tension +12V, la troisième et la quatrième sont GND, il faut les mesurer avec le multimètre pour voir s'ils se trouvent dans le domaine normal. Si la tension d'alimentation ne se trouve pas dans le domaine exigé, il faut remplacer le module d'alimentation. Si la panne existe encore, il faut continuer le test suivant.","module": "DialogSimpleTestProcess2Btn","category": "execute"},
+                {"img":"","title":"La source d'alimentation est normale.","contents":"La source d'alimentation est normal","module": "DialogSimpleTestProcess1Btn","category": "execute"},
+                {"img":"",
+                    "title":"Test de réseau",
+                    "contents":"Le test de réseau contient le test de panneau de commutateur et celui de DSL, donc, selon l'exigence, il faut connecter les deux équipements SDSL avec le câble doublé, les deux équipements sont connectés respectivement avec le fil de réseau et le fil de port série ; puis allumez l'équipement SDSL, le voyant ALIM des deux équipements s'allume toujours, le voyant FON clignote lentement lorsque le voyant LINK de l'indication DSL de deux équipements  s'allume toujours (DONNEES s'allume quand DSL est pourvu de données, sinon, il s'éteint). Connectez respectivement le port réseau d'ordinateur 1 au port LAN d'équipement SDSL 1, et le port réseau d'ordinateur 2 au port LAN d'équipement SDSL 2 en attandant que le voyant s'allume. ",
+                    "module": "DialogSdslPing",
+                    "category": "execute"},
+                {"img":"","title":"Test de port série","contents":"Connectez le port série 232 à l'interface de port série d'équipement SDSL.","module": "DialogSdslCom","category": "execute"}
+            ]
+        }
+    ],
+    "test_source": [
+        {
+            "name": "Testeur de taux d'erreur de bit IP",
+            "number": "",
+            "count": "1",
+            "type": ""
+        },
+        {
+            "name": "Câble d'alimentation AC",
+            "number": "MP-COM-B-003-W001",
+            "count": "1",
+            "type": "Pièces de rechange"
+        },
+        {
+            "name": "Câble de gestion",
+            "number": "MP-COM-B-003-W002",
+            "count": "1",
+            "type": "Pièces de rechange"
+        },
+        {
+            "name": "Fil de terre",
+            "number": "MP-COM-B-003-W003",
+            "count": "1",
+            "type": "Pièces de rechange"
+        },
+        {
+            "name": "Câble de test Ethernet",
+            "number": "MP-COM-B-003-W004",
+            "count": "1",
+            "type": "Pièces de rechange"
+        },
+        {
+            "name": "Câble de campagne",
+            "number": "MP-COM-B-003-W005",
+            "count": "1",
+            "type": "Pièces de rechange"
+        }
+    ]
+}

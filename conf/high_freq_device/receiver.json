@@ -1,0 +1,10 @@
+{
+    "title":"散射高频设备-收/发单元接收通道",
+    "module_name":"high_freq_device",
+    "steps":[
+        {"img":"1.png","title":"散射高频设备","contents":"拆开高频设备的上盖板，露出收发单元，拧下收发单元的XS4和XS8处的连接线","module": "DialogPicText"},
+        {"img":"2.png","title":"散射高频设备","contents":"高频设备和信号源、频谱仪接地，接通电源","module": "DialogPicText"},
+        {"img":"3.png","title":"散射高频设备","contents":"按图连接好高频设备的外部接线，收发单元XS4和XS8按照上图连接到信号源和频谱仪","module": "DialogPicText"},
+        {"img":"4.png","title":"散射高频设备","contents":"打开高频设备开关查看设备的收发频率，确认高频设备的接收衰减为0dB","module": "DialogPicText"}
+    ]
+}

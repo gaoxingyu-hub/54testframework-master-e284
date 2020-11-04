@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>993</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-color:#E3EAF4;
+margin-top:10px;
+}
+QLabel{
+font-size:14px;
+font-family:Microsoft YaHei;
+background-color:#E3EAF4;
+}
+QGroupBox{
+font-size:14px;
+font-family:Microsoft YaHei;
+border:1px solid rgb(0, 0, 0);
+background-color:#E3EAF4;
+}
+QTextBrowser{
+border-width:0;
+border-style:outset;
+background-color:#E3EAF4;
+}
+QWidget{
+background-color:#E3EAF4;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_8">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_lan1">
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="title">
+           <string>IP误码仪端口1</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <property name="topMargin">
+            <number>20</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QListWidget" name="listWidget_port1">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>Lan1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan3</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan4</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan5</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan6</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan7</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan8</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan9</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan10</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan11</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan12</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan13</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan14</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan15</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan16</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox_lan1_2">
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="title">
+           <string>IP误码仪端口2</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <property name="topMargin">
+            <number>20</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QListWidget" name="listWidget_port2">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>Lan1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan3</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan4</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan5</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan6</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan7</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan8</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan9</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan10</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan11</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan12</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan13</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan14</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan15</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lan16</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2" rowspan="2">
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>日志</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <property name="topMargin">
+            <number>20</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QTextBrowser" name="textBrowser_log">
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun'; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>提示信息</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <property name="topMargin">
+            <number>20</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QTextBrowser" name="textBrowser_tips"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="3">
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="topMargin">
+           <number>12</number>
+          </property>
+          <item row="0" column="2">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton_process">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+height:32px;
+background-color:#2884D8;
+color: #FFFFFF;
+font-size:14px;
+font-family:Microsoft YaHei;
+}</string>
+            </property>
+            <property name="text">
+             <string>下一步</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

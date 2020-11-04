@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-5.1.dtd">
+<!-- eric project file for project ui -->
+<!-- Saved: 2020-03-23, 18:14:45 -->
+<!-- Copyright (C) 2020 ,  -->
+<Project version="5.1">
+  <Language>en_US</Language>
+  <Hash>013527dd1c9b2d327291f4929b2c11f5368c6559</Hash>
+  <ProgLanguage mixed="0">Python3</ProgLanguage>
+  <ProjectType>PyQt5</ProjectType>
+  <Version>0.1</Version>
+  <Author></Author>
+  <Email></Email>
+  <Eol index="0"/>
+  <Sources>
+    <Source>MainWindowAction.py</Source>
+    <Source>PIC_TEXT.py</Source>
+    <Source>QMess.py</Source>
+    <Source>Router.py</Source>
+    <Source>SIMPLE_TEST_PROCESS_1BTN.py</Source>
+    <Source>SIMPLE_TEST_PROCESS_2BTN.py</Source>
+    <Source>TEST_PROCEDURE_CONTROL.py</Source>
+    <Source>Ui_AUTO_TEST.py</Source>
+    <Source>Ui_AUTO_TEST_COUPLER.py</Source>
+    <Source>Ui_AUTO_TEST_FILTER.py</Source>
+    <Source>Ui_AUTO_TEST_LNA.py</Source>
+    <Source>Ui_AUTO_TEST_LOOP.py</Source>
+    <Source>Ui_AUTO_TEST_PA.py</Source>
+    <Source>Ui_AUTO_TEST_T.py</Source>
+    <Source>Ui_Demo.py</Source>
+    <Source>Ui_ECOM-NS-2.py</Source>
+    <Source>Ui_LO_TEST.py</Source>
+    <Source>Ui_MONITOR_TEST.py</Source>
+    <Source>Ui_MainWindow.py</Source>
+    <Source>Ui_PIC_TEXT.py</Source>
+    <Source>Ui_QMess.py</Source>
+    <Source>Ui_Router.py</Source>
+    <Source>Ui_SIMPLE_TEST_PROCESS_1BTN.py</Source>
+    <Source>Ui_SIMPLE_TEST_PROCESS_2BTN.py</Source>
+    <Source>Ui_SWITCH_TEST.py</Source>
+    <Source>Ui_TEST_PROCEDURE_CONTROL.py</Source>
+    <Source>Ui_high_freq_device.py</Source>
+    <Source>__init__.py</Source>
+    <Source>control_device/COM_CONTROL_DEVICE_EXECUTE1.py</Source>
+    <Source>control_device/COM_CONTROL_DEVICE_EXECUTE2.py</Source>
+    <Source>control_device/COM_CONTROL_DEVICE_EXECUTE3.py</Source>
+    <Source>control_device/COM_CONTROL_DEVICE_EXECUTE4.py</Source>
+    <Source>control_device/COM_CONTROL_DEVICE_PA2.py</Source>
+    <Source>control_device/Ui_COM_CONTROL_DEVICE.py</Source>
+    <Source>control_device/Ui_COM_CONTROL_DEVICE_EXECUTE1.py</Source>
+    <Source>control_device/Ui_COM_CONTROL_DEVICE_EXECUTE2.py</Source>
+    <Source>control_device/Ui_COM_CONTROL_DEVICE_EXECUTE3.py</Source>
+    <Source>control_device/Ui_COM_CONTROL_DEVICE_EXECUTE4.py</Source>
+    <Source>control_device/Ui_COM_CONTROL_DEVICE_PA2.py</Source>
+    <Source>ecom-ns-1/ECOM_NS1_KEY_TEST.py</Source>
+    <Source>ecom-ns-1/Ui_ECOM_NS1_KEY_TEST.py</Source>
+    <Source>ecom-ns-1/Ui_ECOM_NS1_MAIN.py</Source>
+    <Source>ecom-ns-2/ECOM_NS2_EXECUTE1.py</Source>
+    <Source>ecom-ns-2/ECOM_NS2_KEY_TEST.py</Source>
+    <Source>ecom-ns-2/ECOM_NS2_MAIN.py</Source>
+    <Source>ecom-ns-2/ECOM_NS2_Ping.py</Source>
+    <Source>ecom-ns-2/Ui_ECOM_NS2_EXECUTE1.py</Source>
+    <Source>ecom-ns-2/Ui_ECOM_NS2_KEY_TEST.py</Source>
+    <Source>ecom-ns-2/Ui_ECOM_NS2_MAIN.py</Source>
+    <Source>ecom-ns-2/Ui_ECOM_NS2_Ping.py</Source>
+    <Source>high_freq/Ui_AUTO_TEST.py</Source>
+    <Source>high_freq/Ui_AUTO_TEST_COUPLER.py</Source>
+    <Source>high_freq/Ui_AUTO_TEST_FILTER.py</Source>
+    <Source>high_freq/Ui_AUTO_TEST_LNA.py</Source>
+    <Source>high_freq/Ui_AUTO_TEST_LOOP.py</Source>
+    <Source>high_freq/Ui_AUTO_TEST_PA.py</Source>
+    <Source>high_freq/Ui_AUTO_TEST_T.py</Source>
+    <Source>high_freq/Ui_LO_TEST.py</Source>
+    <Source>high_freq/Ui_SWITCH_TEST.py</Source>
+    <Source>iconQrc_rc.py</Source>
+    <Source>mv_com_device/MV_COM_DEVICE_MAIN.py</Source>
+    <Source>mv_com_device/Ui_MV_COM_DEVICE_MAIN.py</Source>
+    <Source>mw1500_device/Ui_AUTO_TEST_TR_R.py</Source>
+    <Source>mw1500_device/Ui_AUTO_TEST_TR_T.py</Source>
+    <Source>mw1500_device/Ui_mw1500_device.py</Source>
+    <Source>router/Router.py</Source>
+    <Source>router/Router_Lan_test.py</Source>
+    <Source>router/Ui_Router.py</Source>
+    <Source>router/Ui_Router_Lan_test.py</Source>
+    <Source>sdsl/SDSL_COM.py</Source>
+    <Source>sdsl/SDSL_MAIN.py</Source>
+    <Source>sdsl/SDSL_Ping.py</Source>
+    <Source>sdsl/Ui_SDSL_COM.py</Source>
+    <Source>sdsl/Ui_SDSL_MAIN.py</Source>
+    <Source>sdsl/Ui_SDSL_Ping.py</Source>
+    <Source>security_machine/SecurityMain.py</Source>
+    <Source>security_machine/TestProcess.py</Source>
+    <Source>security_machine/Ui_TestProcess.py</Source>
+    <Source>security_machine/Ui_security.py</Source>
+    <Source>security_machine/__init__.py</Source>
+    <Source>vhf_radio/Ui_Low_Power_Test.py</Source>
+    <Source>vhf_radio/Ui_Ui_VHF_RADIO_MAIN.py</Source>
+    <Source>vhf_radio/Ui_VHF_Test.py</Source>
+    <Source>vhf_radio/Ui_VHF_Test_result_confirm.py</Source>
+  </Sources>
+  <Forms>
+    <Form>Demo.ui</Form>
+    <Form>ECOM-NS-2.ui</Form>
+    <Form>MONITOR_TEST.ui</Form>
+    <Form>MainWindow.ui</Form>
+    <Form>PIC_TEXT.ui</Form>
+    <Form>QMess.ui</Form>
+    <Form>Router.ui</Form>
+    <Form>SIMPLE_TEST_PROCESS_1BTN.ui</Form>
+    <Form>SIMPLE_TEST_PROCESS_2BTN.ui</Form>
+    <Form>TEST_PROCEDURE_CONTROL.ui</Form>
+    <Form>VHF_Test.ui</Form>
+    <Form>control_device/COM_CONTROL_DEVICE.ui</Form>
+    <Form>control_device/COM_CONTROL_DEVICE_EXECUTE1.ui</Form>
+    <Form>control_device/COM_CONTROL_DEVICE_EXECUTE2.ui</Form>
+    <Form>control_device/COM_CONTROL_DEVICE_EXECUTE3.ui</Form>
+    <Form>control_device/COM_CONTROL_DEVICE_EXECUTE4.ui</Form>
+    <Form>control_device/COM_CONTROL_DEVICE_PA2.ui</Form>
+    <Form>ecom-ns-1/ECOM_NS1_KEY_TEST.ui</Form>
+    <Form>ecom-ns-1/ECOM_NS1_MAIN.ui</Form>
+    <Form>ecom-ns-2/ECOM_NS2_EXECUTE1.ui</Form>
+    <Form>ecom-ns-2/ECOM_NS2_KEY_TEST.ui</Form>
+    <Form>ecom-ns-2/ECOM_NS2_MAIN.ui</Form>
+    <Form>ecom-ns-2/ECOM_NS2_Ping.ui</Form>
+    <Form>high_freq/AUTO_TEST.ui</Form>
+    <Form>high_freq/AUTO_TEST_COUPLER.ui</Form>
+    <Form>high_freq/AUTO_TEST_FILTER.ui</Form>
+    <Form>high_freq/AUTO_TEST_LNA.ui</Form>
+    <Form>high_freq/AUTO_TEST_LOOP.ui</Form>
+    <Form>high_freq/AUTO_TEST_PA.ui</Form>
+    <Form>high_freq/AUTO_TEST_T.ui</Form>
+    <Form>high_freq/LO_TEST.ui</Form>
+    <Form>high_freq/SWITCH_TEST.ui</Form>
+    <Form>high_freq/high_freq_device.ui</Form>
+    <Form>module.ui</Form>
+    <Form>mv_com_device/MV_COM_DEVICE_MAIN.ui</Form>
+    <Form>mw1500_device/AUTO_TEST_TR_R.ui</Form>
+    <Form>mw1500_device/AUTO_TEST_TR_T.ui</Form>
+    <Form>mw1500_device/mw1500_device.ui</Form>
+    <Form>router/Router.ui</Form>
+    <Form>router/Router_Lan_test.ui</Form>
+    <Form>sdsl/SDSL_COM.ui</Form>
+    <Form>sdsl/SDSL_MAIN.ui</Form>
+    <Form>sdsl/SDSL_Ping.ui</Form>
+    <Form>security_machine/TestProcess.ui</Form>
+    <Form>security_machine/security.ui</Form>
+    <Form>testInfo.ui</Form>
+    <Form>testPA4.ui</Form>
+    <Form>vhf_radio/Low_Power_Test.ui</Form>
+    <Form>vhf_radio/Ui_VHF_RADIO_MAIN.ui</Form>
+    <Form>vhf_radio/VHF_Test.ui</Form>
+    <Form>vhf_radio/VHF_Test_result_confirm.ui</Form>
+  </Forms>
+  <Resources>
+    <Resource>iconQrc.qrc</Resource>
+  </Resources>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.e4p" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES"/>
+    <FiletypeAssociation pattern="*.md" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.proto" type="PROTOCOLS"/>
+    <FiletypeAssociation pattern="*.py" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.py3" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.pyw3" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS"/>
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES"/>
+    <FiletypeAssociation pattern="*.rst" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS"/>
+    <FiletypeAssociation pattern="*.txt" type="OTHERS"/>
+    <FiletypeAssociation pattern="*.ui" type="FORMS"/>
+    <FiletypeAssociation pattern="GNUmakefile" type="OTHERS"/>
+    <FiletypeAssociation pattern="Makefile" type="OTHERS"/>
+    <FiletypeAssociation pattern="README" type="OTHERS"/>
+    <FiletypeAssociation pattern="README.*" type="OTHERS"/>
+    <FiletypeAssociation pattern="makefile" type="OTHERS"/>
+  </FiletypeAssociations>
+</Project>
