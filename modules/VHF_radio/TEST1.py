@@ -26,7 +26,6 @@ class DialogTest1(QDialog, Ui_Dialog):
         self.action = 'finish_all'
 
     def set_contents(self, title, contents, img_file_path):
-
         try:
             self.setWindowTitle(title)
             self.textBrowser_contents.setText(contents)
@@ -40,6 +39,7 @@ class DialogTest1(QDialog, Ui_Dialog):
         except:
             pass
         return
+
 
     @pyqtSlot()
     def on_pushButton_next_clicked(self):

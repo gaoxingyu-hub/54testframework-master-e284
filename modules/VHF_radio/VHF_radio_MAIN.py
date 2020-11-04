@@ -82,8 +82,6 @@ class VHFradioMain(QDialog, Ui_Dialog):
             SETUP_DIR, "conf", "system.json")
 
         self.test_config = TestModuleConfigNew(self.config_file_path)
-        self.pic_file_path = os.path.join(
-            SETUP_DIR, "imgs", "vhf_radio")
 
         self.system_config = SystemConfig(self.system_config_file_path)
         self.steps2Name = self.system_config.step2name
@@ -226,6 +224,8 @@ class VHFradioMain(QDialog, Ui_Dialog):
                         self.current_test_step_dialog = globals()[temp_test_process['module']]()
                         if temp_test_process['module']=='DialogTest1' or temp_test_process['module'] == "DialogTest7point1":
                             self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
+                            print( os.path.join(
+                                    self.pic_file_path, temp_test_process['img']))
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))
