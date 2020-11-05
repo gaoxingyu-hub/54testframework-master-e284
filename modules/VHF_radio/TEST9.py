@@ -210,7 +210,7 @@ class DialogTest9(QDialog, Ui_Dialog):
                 temp.append(float(55+ np.random.random(1)))
                 temp.append(float(27+ np.random.random(1)))
             elif self.state=='10.1':
-                temp.append(float(55 + np.random.random(1)))
+                temp.append(float(5500 + np.random.random(1)))
                 temp.append(float(27 + np.random.random(1)))
             elif self.state=='10.3':
                 temp.append(float(30.025 + np.random.random(1)))

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'Ui_TEST28.UI'
+# Form implementation generated from reading ui file 'Ui_TEST28.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.1
 #
@@ -9,12 +9,13 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from constant_trans import TransConstants
 
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(600, 600)
+        Dialog.resize(582, 582)
         Dialog.setStyleSheet("QDialog{\n"
 "background-color:#E3EAF4;\n"
 "margin-top:10px;\n"
@@ -38,7 +39,7 @@ class Ui_Dialog(object):
 "font-family:Microsoft YaHei;\n"
 "}")
         self.groupBox = QtWidgets.QGroupBox(Dialog)
-        self.groupBox.setGeometry(QtCore.QRect(9, 9, 582, 582))
+        self.groupBox.setGeometry(QtCore.QRect(9, 9, 562, 562))
         font = QtGui.QFont()
         font.setFamily("Microsoft YaHei")
         font.setPointSize(-1)
@@ -49,7 +50,7 @@ class Ui_Dialog(object):
         self.groupBox.setCheckable(False)
         self.groupBox.setObjectName("groupBox")
         self.textBrowser_contents = QtWidgets.QTextBrowser(self.groupBox)
-        self.textBrowser_contents.setGeometry(QtCore.QRect(11, 1, 560, 69))
+        self.textBrowser_contents.setGeometry(QtCore.QRect(11, 1, 541, 69))
         self.textBrowser_contents.setStyleSheet("QTextBrowser{\n"
 "border-width:0;\n"
 "border-style:outset;\n"
@@ -64,9 +65,13 @@ class Ui_Dialog(object):
         self.groupBox_2.setTitle("")
         self.groupBox_2.setObjectName("groupBox_2")
         self.pushButton_next = QtWidgets.QPushButton(self.groupBox)
-        self.pushButton_next.setGeometry(QtCore.QRect(250, 540, 75, 30))
+        self.pushButton_next.setGeometry(QtCore.QRect(240, 510, 120, 40))
         self.pushButton_next.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.pushButton_next.setObjectName("pushButton_next")
+        self.label_img = QtWidgets.QLabel(self.groupBox)
+        self.label_img.setGeometry(QtCore.QRect(10, 120, 541, 311))
+        self.label_img.setText("")
+        self.label_img.setObjectName("label_img")
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -74,4 +79,15 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.pushButton_next.setText(_translate("Dialog", "Fin"))
+        self.pushButton_next.setText(_translate("Dialog", TransConstants.BUTTON_CONTENTS_FINISH))
+import res.iconQrc_rc
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Dialog = QtWidgets.QDialog()
+    ui = Ui_Dialog()
+    ui.setupUi(Dialog)
+    Dialog.show()
+    sys.exit(app.exec_())
