@@ -3,11 +3,11 @@
 block_cipher = None
 
 
-src_dir="E:\\tianheng_projects\\54\\54testframework\\"
+src_dir="C:\\Users\Administrator\\54testframework-master-e284\\54testframework-master-e284\\"
 a = Analysis(['main.py'],
-             pathex=['E:\\tianheng_projects\\54\\54testframework'],
+             pathex=['C:\\Users\\Administrator\\54testframework-master-e284\\54testframework-master-e284'],
              binaries=[],
-             datas=[(src_dir+'logs','logs'),(src_dir+'imgs','imgs'),(src_dir+'langs','langs'),(src_dir+'conf','conf'),(src_dir+'data','data')，(src_dir+'langs','langs')],
+             datas=[(src_dir+'logs','logs'),(src_dir+'imgs','imgs'),(src_dir+'langs','langs'),(src_dir+'conf','conf'),(src_dir+'data','data'),(src_dir+'langs','langs')],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],

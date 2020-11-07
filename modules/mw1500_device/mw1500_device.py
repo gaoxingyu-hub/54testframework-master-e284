@@ -20,15 +20,16 @@ import frozen_dir
 from modules.mw1500_device.TEST1 import DialogTest1
 from modules.mw1500_device.TEST2 import DialogTest2
 from modules.mw1500_device.TEST3 import DialogTest3
-from modules.mw1500_device.TEST11 import DialogTest11
-from modules.mw1500_device.TEST12 import DialogTest12
-from modules.mw1500_device.TEST13 import DialogTest13
 import time
 from common.logConfig import Logger
 from common.th_thread_model import ThThreadTimerUpdateTestTime
 from modules.mw1500_device.mw1500_constant import ModuleConstants
 from modules.mw1500_device.Ui_mw1500_device import Ui_Dialog
 from datetime import datetime
+if SystemLanguage.LANGUAGE == SystemLanguage.fr_FR:
+    from modules.high_freq_device.high_freq_constant import ModuleConstants
+else:
+    from modules.high_freq_device.high_freq_constant_fr import ModuleConstants
 
 
 #test
@@ -42,8 +43,6 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
     signalTitle = pyqtSignal(str)
     signalStatus = pyqtSignal(str)
     debug_model = True
-    start_test_flag = False
-
     def __init__(self, parent=None):
         """
         Constructor
@@ -83,7 +82,6 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
 
         self.last_test_case_status = ""
         self.last_test_case_result = ""
-
         # init tree widget for test cases 树形控件
 
         self.treeWidget.clear()
@@ -91,54 +89,69 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
         parent.setText(0, self.test_config.title)
         parent.setFlags(parent.flags() | Qt.ItemIsTristate | Qt.ItemIsUserCheckable)
 
-        # insert test resource data
-        self.tableWidget_test_resource.setRowCount(len(self.test_config.test_source))
-        # load test resource
-        for x in range(len(self.test_config.test_source)):
+        length = len(self.test_config.test_source)
+        self.tableWidget_test_resource.setRowCount(length)
+        for x in range(length):
             item = QTableWidgetItem(str(x + 1))
             self.tableWidget_test_resource.setItem(x, 0, item)
             # name
             item = QTableWidgetItem(str(self.test_config.test_source[x]["name"]))
             self.tableWidget_test_resource.setItem(x, 1, item)
-            # type
+            # number
             item = QTableWidgetItem(str(self.test_config.test_source[x]["type"]))
             self.tableWidget_test_resource.setItem(x, 2, item)
-            # number
+            # count
             item = QTableWidgetItem(str(self.test_config.test_source[x]["number"]))
             self.tableWidget_test_resource.setItem(x, 3, item)
-            # count
+            # note
             item = QTableWidgetItem(str(self.test_config.test_source[x]["count"]))
             self.tableWidget_test_resource.setItem(x, 4, item)
-            # set font center
-            for a in range(0, 5):
-                self.tableWidget_test_resource.item(x, a).setTextAlignment(Qt.AlignCenter)
-
-            # set vertical header center
+            # set tablewidget vertical header font center
             item = QTableWidgetItem(str(x + 1))
             self.tableWidget_test_resource.setVerticalHeaderItem(x, item)
             self.tableWidget_test_resource.verticalHeaderItem(x).setTextAlignment(Qt.AlignCenter)
+            # set font center
+            for a in range(0, 5):
+                self.tableWidget_test_resource.item(x, a).setTextAlignment(Qt.AlignCenter)
 
         for x in range(len(self.test_config.test_case)):
             child = QTreeWidgetItem(parent)
             child.setFlags(child.flags() | Qt.ItemIsUserCheckable)
             child.setText(0, self.test_config.test_case_detail[x]["title"])
             child.setCheckState(0, Qt.Unchecked)
-        # table widget 自适应
-        self.tableWidget_test_resource.horizontalHeader().setSectionResizeMode(QHeaderView.Fixed)
-        self.tableWidget_test_results.horizontalHeader().setSectionResizeMode(QHeaderView.Fixed)
-        # remove grid
+
+        # Grid AlterColor
         self.tableWidget_test_resource.setShowGrid(False)
-        self.tableWidget_test_results.setShowGrid(False)
-        # set alter color
+        self.tableWidget_test_results_jk.setShowGrid(False)
+        self.tableWidget_test_results_qwh.setShowGrid(False)
+        self.tableWidget_test_results_sf.setShowGrid(False)
+
+
+
         self.tableWidget_test_resource.setAlternatingRowColors(True)
-        self.tableWidget_test_results.setAlternatingRowColors(True)
+        self.tableWidget_test_results_jk.setAlternatingRowColors(True)
+        self.tableWidget_test_results_qwh.setAlternatingRowColors(True)
+        self.tableWidget_test_results_sf.setAlternatingRowColors(True)
+
+        self.tableWidget_test_resource.horizontalHeader().setSectionResizeMode(QHeaderView.Fixed)
+        self.tableWidget_test_results_jk.horizontalHeader().setSectionResizeMode(QHeaderView.Fixed)
+        self.tableWidget_test_results_qwh.horizontalHeader().setSectionResizeMode(QHeaderView.Fixed)
+        self.tableWidget_test_results_sf.horizontalHeader().setSectionResizeMode(QHeaderView.Fixed)
+        # set column width
         self.tableWidget_test_resource.setColumnWidth(0, 30)
-        self.tableWidget_test_resource.setColumnWidth(2, 60)
-        self.tableWidget_test_resource.setColumnWidth(3, 150)
-        self.tableWidget_test_results.setColumnWidth(0, 30)
-        self.tableWidget_test_results.setColumnWidth(1, 300)
-        self.test_result = {}
-        logger.info("VHF_radio inited")
+        self.tableWidget_test_resource.setColumnWidth(1, 120)
+        self.tableWidget_test_resource.setColumnWidth(2, 80)
+        self.tableWidget_test_resource.setColumnWidth(3, 120)
+        self.tableWidget_test_results_jk.setColumnWidth(0, 30)
+        self.tableWidget_test_results_jk.setColumnWidth(1, 120)
+        self.tableWidget_test_results_jk.setColumnWidth(2, 200)
+        self.tableWidget_test_results_qwh.setColumnWidth(0, 30)
+        self.tableWidget_test_results_qwh.setColumnWidth(1, 120)
+        self.tableWidget_test_results_sf.setColumnWidth(0, 30)
+        self.tableWidget_test_results_sf.setColumnWidth(1, 120)
+        logger.info("mw1500 inited")
+        self.tabWidget.setCurrentIndex(0)
+        self.record_table_init()
 
     @pyqtSlot()
     def on_pushButton_start_clicked(self):
@@ -146,7 +159,7 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
         Slot documentation goes here.
         """
         self.selected_test_cases = self.get_checked_test_cases()
-
+        print('self.selected_test_cases:',self.selected_test_cases)
         if len(self.selected_test_cases) == 0:
             QMessageBox.warning(self, ModuleConstants.QMESSAGEBOX_WARN, ModuleConstants.QMESSAGEBOX_WARN_SELECTED_TEST)
             return
@@ -159,11 +172,16 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
                     temp["current"] = 1
                     temp["max"] = len(self.test_config.test_case_detail[x]["steps"])
                     self.test_cases_records[item] = temp
-
         self.current_test_step = 1
         self.start_test_flag = True
         self.start_caculate_test_duration()
-        self.test_process_control(ModuleConstants.PROCESS_CONTROL_NEXT)
+        if self.selected_test_cases[0] == '监控测试策略':
+            self.test_process_control(ModuleConstants.PROCESS_CONTROL_NEXT)
+        else:
+            if DialogTest2.to_other==True:
+                self.test_process_control(ModuleConstants.PROCESS_CONTROL_NEXT)
+            else:
+                QMessageBox.information(self,"提示","勤务话测试,如测试不正常，提示“监控单元故障”，更换监控单元", QMessageBox.Ok)
         logger.info("ecom ns1 test process start")
 
     @pyqtSlot()
@@ -201,7 +219,6 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
     # 进入测试进程
     def test_process_control(self, action, action2=""):
         if action == "next":
-            print('next')
             for case, step in self.test_cases_records.items():
                 if action2 == 'finish':
                     step["current"] = step["max"] + 1
@@ -216,27 +233,24 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
                         print(self.current_test_step_dialog)
 
                         if temp_test_process['module'] == 'DialogTest1':
+                            self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
+                            self.current_test_step_dialog.set_contents(temp_test_process['title'],
+                                                                       temp_test_process['contents'], os.path.join(
+                                    self.pic_file_path, temp_test_process['img']))
+                        elif temp_test_process['module'] == 'DialogTest2':
                             self.current_test_step_dialog.initUi(self.test_config)
-                            self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
-                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh)
+                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_jk)
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))
-                        if temp_test_process['module'] == 'DialogTest2':
-                            self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
-                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh)
-                            self.current_test_step_dialog.set_contents(temp_test_process['title'],
-                                                                       temp_test_process['contents'], os.path.join(
-                                    self.pic_file_path, temp_test_process['img']))
-                        if temp_test_process['module'] == 'DialogTest3':
-                            self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
+                        elif temp_test_process['module'] == 'DialogTest3':
+                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_qwh)
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))
                         if temp_test_process['module'] == 'DialogTest11':
                             self.current_test_step_dialog.initUi(self.test_config)
-                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh)
-                            self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
+                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_)
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))
@@ -270,54 +284,7 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
                 self.test_process_control("next", None)
 
 
-    def deal_signal_test_next2(self, flag, para):
-        if self.current_test_step_dialog:
-            self.current_test_step_dialog.action = 'next'
-            self.current_test_step_dialog.close()
-            if flag == 'finish_all':
-                self.test_process_control('next', 'finish')
-            else:
-                self.test_cases_records[self.current_test_case]["current"] = \
-                    self.test_cases_records[self.current_test_case]["current"] + 2
-                time.sleep(0.1)
-                self.test_process_control("next", None)
 
-    #
-    def deal_signal_test_next6(self, flag, para):
-        if self.current_test_step_dialog:
-            self.current_test_step_dialog.action = 'next'
-            self.current_test_step_dialog.close()
-            if flag == 'finish_all':
-                self.test_process_control('next', 'finish')
-            else:
-                self.test_cases_records[self.current_test_case]["current"] = \
-                    self.test_cases_records[self.current_test_case]["current"] + 6
-                time.sleep(0.1)
-                self.test_process_control("next", None)
-
-    def deal_signal_test_next10(self, flag, para):
-        if self.current_test_step_dialog:
-            self.current_test_step_dialog.action = 'next'
-            self.current_test_step_dialog.close()
-            if flag == 'finish_all':
-                self.test_process_control('next', 'finish')
-            else:
-                self.test_cases_records[self.current_test_case]["current"] = \
-                    self.test_cases_records[self.current_test_case]["current"] + 10
-                time.sleep(0.1)
-                self.test_process_control("next", None)
-
-    def deal_signal_test_next11(self, flag, para):
-        if self.current_test_step_dialog:
-            self.current_test_step_dialog.action = 'next'
-            self.current_test_step_dialog.close()
-            if flag == 'finish_all':
-                self.test_process_control('next', 'finish')
-            else:
-                self.test_cases_records[self.current_test_case]["current"] = \
-                    self.test_cases_records[self.current_test_case]["current"] + 11
-                time.sleep(0.1)
-                self.test_process_control("next", None)
 
     def deal_signal_test_up1(self, flag, para):
         if self.current_test_step_dialog:
@@ -331,46 +298,42 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
                 time.sleep(0.1)
                 self.test_process_control("next", None)
 
-    def deal_signal_test_up2(self, flag, para):
-        if self.current_test_step_dialog:
-            self.current_test_step_dialog.action = 'next'
-            self.current_test_step_dialog.close()
-            if flag == 'finish_all':
-                self.test_process_control('next', 'finish')
-
-            else:
-                self.test_cases_records[self.current_test_case]["current"] = \
-                    self.test_cases_records[self.current_test_case]["current"] - 2
-                time.sleep(0.1)
-                self.test_process_control("next", None)
-
-    def deal_signal_test_up10(self, flag, para):
-        if self.current_test_step_dialog:
-            self.current_test_step_dialog.action = 'next'
-            self.current_test_step_dialog.close()
-            if flag == 'finish_all':
-                self.test_process_control('next', 'finish')
-            else:
-                self.test_cases_records[self.current_test_case]["current"] = \
-                    self.test_cases_records[self.current_test_case]["current"] - 10
-                time.sleep(0.1)
-                self.test_process_control("next", None)
-
-    def deal_signal_test_up11(self, flag, para):
-        if self.current_test_step_dialog:
-            self.current_test_step_dialog.action = 'next'
-            self.current_test_step_dialog.close()
-            if flag == 'finish_all':
-                self.test_process_control('next', 'finish')
-            else:
-                self.test_cases_records[self.current_test_case]["current"] = \
-                    self.test_cases_records[self.current_test_case]["current"] - 11
-                time.sleep(0.1)
-                self.test_process_control("next", None)
-
-    def test_data_refresh(self, flag):
+    def test_data_refresh_jk(self, flag):
         self.current_test_step_dialog.action = 'next'
-        self.table = self.tableWidget_test_results
+        self.tabWidget.setCurrentIndex(0)
+        self.table = self.tableWidget_test_results_jk
+        rowCount = self.table.rowCount()
+        self.table.insertRow(rowCount)
+        current_row = rowCount
+        # the column number
+        newItem = QTableWidgetItem(str(current_row + 1))
+        newItem.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.table.setItem(current_row, 0, newItem)
+
+        mItem = self.current_test_step_dialog.test_result.test_item
+        newItem = QTableWidgetItem(mItem)
+        newItem.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.table.setItem(current_row, 1, newItem)
+
+        mItem = self.current_test_step_dialog.test_result.test_condition
+        newItem = QTableWidgetItem(mItem)
+        newItem.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.table.setItem(current_row, 2, newItem)
+
+        mItem = str(self.current_test_step_dialog.test_result.test_results)
+        newItem = QTableWidgetItem(mItem)
+        newItem.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.table.setItem(current_row, 3, newItem)
+
+        mItem = self.current_test_step_dialog.test_result.test_conclusion
+        newItem = QTableWidgetItem(mItem)
+        newItem.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.table.setItem(current_row, 4, newItem)
+        time.sleep(0.1)
+    def test_data_refresh_qwh(self, flag):
+        self.current_test_step_dialog.action = 'next'
+        self.tabWidget.setCurrentIndex(1)
+        self.table = self.tableWidget_test_results_qwh
         rowCount = self.table.rowCount()
         self.table.insertRow(rowCount)
         current_row = rowCount
@@ -456,6 +419,18 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
         self.test_time_update_obj._signal.connect(self.deal_signal_test_duration_caculate_emit_slot)
         if not self.test_time_update_obj.thread_status:
             self.test_time_update_obj.start()
+
+    def record_table_init(self):
+        table_names = ['tableWidget_test_results_jk', 'tableWidget_test_results_qwh',
+                       'tableWidget_test_results_sf']
+        for table in table_names:
+            self.table = getattr(self, table)
+            self.table.clear()
+            self.table.setColumnCount(5)
+            self.table.setRowCount(0)
+            self.table.setHorizontalHeaderLabels(
+                [ModuleConstants.TESTNUMBER, ModuleConstants.TESTTABLE_ITEM, ModuleConstants.TESTTABLE_COND,
+                 ModuleConstants.TESTTABLE_VALUE, ModuleConstants.TESTTABLE_CONCLU])
 
 
 class test_results:

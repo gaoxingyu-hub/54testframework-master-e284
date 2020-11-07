@@ -7,6 +7,7 @@ import argparse
 SETUP_DIR = frozen_dir.app_path()
 
 if __name__ == '__main__':
+    print('中国人')
 
 
     try:
