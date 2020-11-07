@@ -58,7 +58,7 @@ class ModuleConstants:
         ditong_50w_pannel = "Panne du module passe-bas 50W"
         gongfang_50w_pannel = "Panne du module d'amplificateur de puissance 50 W"
 
-        # TEST11.py
+        # TEST5.py
         diantaifa_30025 = "Mesure de la fonction basse puissance 30,025 MHz de la radio"
         frequence = "la fréquence:"
         fuzhi = "Amplitude"
@@ -139,7 +139,7 @@ class ModuleConstants:
         gongfang_50w_pannel = "50W功放模块故障"
 
 
-        # TEST11.py
+        # TEST5.py
         diantaifa_30025 = "测量电台小功率发30.025MHz功能"
         frequence = "频率:"
         fuzhi = "幅值"

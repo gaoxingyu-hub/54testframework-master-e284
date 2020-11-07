@@ -20,6 +20,7 @@ import frozen_dir
 from modules.mw1500_device.TEST1 import DialogTest1
 from modules.mw1500_device.TEST2 import DialogTest2
 from modules.mw1500_device.TEST3 import DialogTest3
+from modules.mw1500_device.TEST4 import DialogTest4
 import time
 from common.logConfig import Logger
 from common.th_thread_model import ThThreadTimerUpdateTestTime
@@ -248,6 +249,12 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))
+                        elif temp_test_process['module'] == 'DialogTest4':
+                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_sh)
+                            self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
+                            self.current_test_step_dialog.set_contents(temp_test_process['title'],
+                                                                       temp_test_process['contents'], os.path.join(
+                                    self.pic_file_path, temp_test_process['img']))
                         if temp_test_process['module'] == 'DialogTest11':
                             self.current_test_step_dialog.initUi(self.test_config)
                             self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_)
@@ -363,6 +370,38 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
         self.table.setItem(current_row, 4, newItem)
         time.sleep(0.1)
 
+    def test_data_refresh_sh(self, flag):
+        self.current_test_step_dialog.action = 'next'
+        self.tabWidget.setCurrentIndex(2)
+        self.table = self.tableWidget_test_results_sf
+        rowCount = self.table.rowCount()
+        self.table.insertRow(rowCount)
+        current_row = rowCount
+        # the column number
+        newItem = QTableWidgetItem(str(current_row + 1))
+        newItem.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.table.setItem(current_row, 0, newItem)
+
+        mItem = self.current_test_step_dialog.test_result.test_item
+        newItem = QTableWidgetItem(mItem)
+        newItem.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.table.setItem(current_row, 1, newItem)
+
+        mItem = self.current_test_step_dialog.test_result.test_condition
+        newItem = QTableWidgetItem(mItem)
+        newItem.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.table.setItem(current_row, 2, newItem)
+
+        mItem = str(self.current_test_step_dialog.test_result.test_results)
+        newItem = QTableWidgetItem(mItem)
+        newItem.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.table.setItem(current_row, 3, newItem)
+
+        mItem = self.current_test_step_dialog.test_result.test_conclusion
+        newItem = QTableWidgetItem(mItem)
+        newItem.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.table.setItem(current_row, 4, newItem)
+        time.sleep(0.1)
     def get_checked_test_cases(self):
         """
         get the tree widget checked test cases

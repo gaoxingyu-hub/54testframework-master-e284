@@ -26,15 +26,16 @@
 	            "case_name": "收发信机内部单元",
 	            "title": "收发信机内部单元测试",
 	            "steps":[
-	            	{"img":"1.jpg","title":"1.收发信机内部单元测试","contents":"设置被测设备上电2分钟，设置被测设备测试频率（发射频率1350MHz，接收频率1850MHz，通过目测监控界面进行比对，判断设备性能指标","module": "DialogTest1"},
-	            	{"img":"2.jpg","title":"2.","contents":"设备加电，打开被测设备电源开关，如图所示，将开关打到“MARCHE”位置；设置被测设备设备上电2分钟,设置被测设备设置基带自环，监控主界面显示误码率为零，使用勤务话手柄通话测试，按下PTT键，自己说话能听见自己的清晰声音，则EOW正常，否则，EOW或网络控制单元A8故障","module": "DialogTest2"},
-	                {"img":"3.jpg","title":"3.LNA和射频自环器测试策略","contents":"关闭设备电源，将开关打到“ARRET”位置，并断开机箱电源线","module": "DialogTest3"},
-	                {"img":"4.jpg","title":"4.LNA和射频自环器测试策略","contents":"使用十字型螺丝刀拧下机箱前面板边缘的12个螺钉","module": "DialogTest3"},
-	                {"img":"5.jpg","title":"5.LNA和射频自环器测试策略","contents":"拆除前面板,使用十字型螺丝刀拧下机箱后面板边缘的12个螺钉","module": "DialogTest3"},
-	                {"img":"6.jpg","title":"6.LNA和射频自环器测试策略","contents":"断开收发信机A5面板上电缆XS1，XS2，断开前面板电缆XS1,拧下固定螺钉","module": "DialogTest3"},
-	                {"img":"","title":"7.LNA和射频自环器测试策略","contents":"取出自环器模块","module": "DialogTest3"},
-	                {"img":"8.jpg","title":"8.LNA和射频自环器测试策略","contents":"打开被测设备电源开关，将开关打到“MARCHE”位置","module": "DialogTest3"}
-		      ],
+	            	{"img":"","title":"1.收发信机内部单元测试","contents":"检查主监控界面告警清单，如果发现发本振告警、收本振告警或收电平低的告警量，则收发信机故障","module": "DialogTest4"},
+	            	{"img":"1.jpg","title":"2.LNA和射频自环器测试策略","contents":"关闭设备电源，将开关打到“ARRET”位置，并断开机箱电源线","module": "DialogTest1"},
+	                {"img":"3.jpg","title":"3.LNA和射频自环器测试策略","contents":"使用十字型螺丝刀拧下机箱前面板边缘的12个螺钉，如图 37所示，螺钉如红色圆圈所标位置","module": "DialogTest1"},
+	                {"img":"4.jpg","title":"4.LNA和射频自环器测试策略","contents":"拆除前面板，自环器单元视图如图 38所示","module": "DialogTest1"},
+	                {"img":"5.jpg","title":"5.LNA和射频自环器测试策略","contents":"使用十字型螺丝刀拧下机箱后面板边缘的12个螺钉，如图 39所示，螺钉如红色圆圈所标位置","module": "DialogTest1"},
+					{"img":"","title":"6.LNA和射频自环器测试策略","contents":"断开收发信机A5面板上电缆XS1，XS2，断开前面板电缆XS1","module": "DialogTest1"},
+					{"img":"6.jpg","title":"7.LNA和射频自环器测试策略","contents":"拧下固定螺钉，如图 40图41所示","module": "DialogTest1"},
+					{"img":"","title":"8.LNA和射频自环器测试策略","contents":"取出自环器模块","module": "DialogTest1"},
+					{"img":"7.jpg","title":"9.LNA和射频自环器测试策略","contents":"按照图 42连接测试设备；打开被测设备电源开关，将开关打到“MARCHE”位置","module": "DialogTest1"}
+				],
 	            "test_para":["1350","1850","0","50","1300","1900","1"],
 				"test_para1":["1350","1450","1550","1650","1750","1850","1850","1750","1650","1550","1450","1350"]
 	           }
