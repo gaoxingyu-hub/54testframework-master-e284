@@ -21,19 +21,19 @@ from modules.mw1500_device.TEST1 import DialogTest1
 from modules.mw1500_device.TEST2 import DialogTest2
 from modules.mw1500_device.TEST3 import DialogTest3
 from modules.mw1500_device.TEST4 import DialogTest4
+from modules.mw1500_device.TEST4 import DialogTest4
 from modules.mw1500_device.TEST5 import DialogTest5
 from modules.mw1500_device.TEST6 import DialogTest6
 from modules.mw1500_device.TEST7 import DialogTest7
+from modules.mw1500_device.TEST8 import DialogTest8
 import time
 from common.logConfig import Logger
 from common.th_thread_model import ThThreadTimerUpdateTestTime
 from modules.mw1500_device.mw1500_constant import ModuleConstants
 from modules.mw1500_device.Ui_mw1500_device import Ui_Dialog
 from datetime import datetime
-if SystemLanguage.LANGUAGE == SystemLanguage.fr_FR:
-    from modules.high_freq_device.high_freq_constant import ModuleConstants
-else:
-    from modules.high_freq_device.high_freq_constant_fr import ModuleConstants
+from constant_trans import TransConstants
+from modules.mw1500_device.mw1500_constant import ModuleConstants
 
 
 #test
@@ -47,6 +47,7 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
     signalTitle = pyqtSignal(str)
     signalStatus = pyqtSignal(str)
     debug_model = True
+    to_other=False
     def __init__(self, parent=None):
         """
         Constructor
@@ -179,13 +180,14 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
         self.current_test_step = 1
         self.start_test_flag = True
         self.start_caculate_test_duration()
-        if self.selected_test_cases[0] == '监控测试策略':
+        if self.selected_test_cases[0] == TransConstants.jiankongcscl:
             self.test_process_control(ModuleConstants.PROCESS_CONTROL_NEXT)
         else:
-            if DialogTest2.to_other==True:
+
+            if DialogTest3.to_other==True:
                 self.test_process_control(ModuleConstants.PROCESS_CONTROL_NEXT)
             else:
-                QMessageBox.information(self,"提示","勤务话测试,如测试不正常，提示“监控单元故障”，更换监控单元", QMessageBox.Ok)
+                QMessageBox.information(self,ModuleConstants.tip,ModuleConstants.jiankongcscljkgz, QMessageBox.Ok)
         logger.info("ecom ns1 test process start")
 
     @pyqtSlot()
@@ -215,6 +217,7 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
         """
         Slot documentation goes here.
         """
+        DialogTest3.to_other=False
         self.signalTitle.emit("close")
         self.close()
         logger.info("ecom_ns_1 test process close")
@@ -243,34 +246,46 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
                                     self.pic_file_path, temp_test_process['img']))
                         elif temp_test_process['module'] == 'DialogTest2':
                             self.current_test_step_dialog.initUi(self.test_config)
-                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_jk)
+                            self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))
                         elif temp_test_process['module'] == 'DialogTest3':
-                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_qwh)
+                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_jk)
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))
                         elif temp_test_process['module'] == 'DialogTest4':
+                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_qwh)
+                            self.current_test_step_dialog.set_contents(temp_test_process['title'],
+                                                                       temp_test_process['contents'], os.path.join(
+                                    self.pic_file_path, temp_test_process['img']))
+                        elif temp_test_process['module'] == 'DialogTest5':
                             self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_sh)
                             self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))
-                        if temp_test_process['module'] == 'DialogTest5' or temp_test_process['module'] == 'DialogTest7':
+                        elif temp_test_process['module'] == 'DialogTest6':
                             self.current_test_step_dialog.initUi(self.test_config)
                             self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
                             self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_sh)
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))
-                        if temp_test_process['module'] == 'DialogTest6':
+                        elif temp_test_process['module'] == 'DialogTest7':
                             self.current_test_step_dialog.initUi(self.test_config)
                             self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))
+                        elif temp_test_process['module'] == 'DialogTest8':
+                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_sh)
+                            self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
+                            self.current_test_step_dialog.set_contents(temp_test_process['title'],
+                                                                       temp_test_process['contents'], os.path.join(
+                                    self.pic_file_path, temp_test_process['img']))
+
 
 
 
@@ -466,8 +481,8 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
             self.table.setColumnCount(5)
             self.table.setRowCount(0)
             self.table.setHorizontalHeaderLabels(
-                [ModuleConstants.TESTNUMBER, ModuleConstants.TESTTABLE_ITEM, ModuleConstants.TESTTABLE_COND,
-                 ModuleConstants.TESTTABLE_VALUE, ModuleConstants.TESTTABLE_CONCLU])
+                ['',TransConstants.TESTTABLE_ITEM, TransConstants.TESTTABLE_COND,
+                 TransConstants.TESTTABLE_VALUE,TransConstants.TESTTABLE_CONCLU])
 
 
 if __name__ == '__main__':

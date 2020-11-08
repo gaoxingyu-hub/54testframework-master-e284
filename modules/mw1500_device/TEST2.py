@@ -21,7 +21,7 @@ class DialogTest2(QDialog, Ui_Dialog):
     """
     signalFinish1 = pyqtSignal(str, object)
     signalTest = pyqtSignal(object)
-    to_other=False
+
     def __init__(self, parent=None):
         """
         Constructor
@@ -32,33 +32,18 @@ class DialogTest2(QDialog, Ui_Dialog):
         self.setupUi(self)
         self.demo=True
         self.action = 'finish_all'
-        self.test_result=test_results()
+
     def initUi(self, mConfig):
         self.lineEdit_1.setText(mConfig.test_case_detail[0]["test_para"][0])
         self.lineEdit_2.setText(mConfig.test_case_detail[0]["test_para"][1])
 
     @pyqtSlot()
-    def on_pushButton_1_clicked(self):
-        DialogTest2.to_other=True
-        self.test_result.test_item = ModuleConstants.t1
-        self.test_result.test_condition = ''
-        self.test_result.test_results = ''
-        self.test_result.test_conclusion = 'PASS'
-        QMessageBox.information(self, ModuleConstants.tip, ModuleConstants.t2, QMessageBox.Ok)
-        self.signalTest.emit('test')
+    def on_pushButton_next_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        self.signalFinish1.emit('next', None)
         self.close()
-
-
-    @pyqtSlot()
-    def on_pushButton_2_clicked(self):
-        self.test_result.test_item = ModuleConstants.t1
-        self.test_result.test_condition = ''
-        self.test_result.test_results = ''
-        self.test_result.test_conclusion = 'FAIL'
-        QMessageBox.information(self, ModuleConstants.tip, ModuleConstants.t3, QMessageBox.Ok)
-        self.signalTest.emit('test')
-        self.close()
-
 
 
     def set_contents(self, title, contents, img_file_path):
@@ -83,14 +68,6 @@ class DialogTest2(QDialog, Ui_Dialog):
         if self.action == 'finish_all':
             self.signalFinish1.emit('finish_all', None)
         event.accept()
-
-
-class test_results:
-    def __init__(self):
-        self.test_item = ''
-        self.test_condition = ''
-        self.test_results = ''
-        self.test_conclusion = ''
 
 
 

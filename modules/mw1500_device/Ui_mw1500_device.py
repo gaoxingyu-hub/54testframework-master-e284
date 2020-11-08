@@ -6,16 +6,153 @@
 #
 # WARNING! All changes made in this file will be lost!
 from PyQt5 import QtCore, QtGui, QtWidgets
-
 from constant_trans import TransConstants
+
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(1280, 1024)
+        Dialog.resize(980, 980)
         font = QtGui.QFont()
         font.setFamily("Microsoft YaHei")
         font.setPointSize(14)
         Dialog.setFont(font)
+        Dialog.setStyleSheet("QDialog{\n"
+                             "background-color:#E3EAF4;\n"
+                             "margin-top:10px;\n"
+                             "}\n"
+                             "\n"
+                             "QTextBrower{\n"
+                             "background-color:#E3EAF4;\n"
+                             "border-width:0;border-style:outset\n"
+                             "}\n"
+                             "\n"
+                             "QLineEdit{\n"
+                             "background-color:#E3EAF4;\n"
+                             "}\n"
+                             "\n"
+                             "QWidget{\n"
+                             "background-color:#E3EAF4;\n"
+                             "}\n"
+                             "\n"
+                             "QStackedWidget{\n"
+                             "background-color:#E3EAF4;\n"
+                             "}\n"
+                             "\n"
+                             "QLabel{\n"
+                             "font-size:14px;\n"
+                             "font-family:Microsoft YaHei;\n"
+                             "background-color:#E3EAF4;\n"
+                             "}\n"
+                             "\n"
+                             "QGroupBox{\n"
+                             "font-size:14px;\n"
+                             "font-family:Microsoft YaHei;\n"
+                             "border:1px solid rgb(0, 0, 0);\n"
+                             "background-color:#E3EAF4;\n"
+                             "}\n"
+                             "\n"
+                             "\n"
+                             "QToolBar{\n"
+                             "background-color:#D5D5D5;\n"
+                             "height:30px;\n"
+                             "border:None;\n"
+                             "padding:1px;\n"
+                             "}\n"
+                             "/****QTreeWidget****/\n"
+                             "QTreeWidget{\n"
+                             "background-color:#E3EAF4;\n"
+                             "padding-top:20px;\n"
+                             "padding-left:10px;\n"
+                             "margin-top:20px;\n"
+                             "}\n"
+                             "QTreeView::item{\n"
+                             "font: 14px;\n"
+                             "}\n"
+                             "QTreeView::item:selected{\n"
+                             "selection-color: #1F95FF;\n"
+                             "}\n"
+                             "QTreeView::item:hover{\n"
+                             "background-color:#D0DAE5;\n"
+                             "}\n"
+                             "\n"
+                             "QTreeView::branch:has-children:!has-siblings:closed,\n"
+                             "QTreeView::branch:closed:has-children:has-siblings {\n"
+                             "border-image: none;\n"
+                             "image: url(imgs/common/plus.png);\n"
+                             "}\n"
+                             "\n"
+                             "QTreeView::branch:open:has-children:!has-siblings,\n"
+                             "QTreeView::branch:open:has-children:has-siblings  {\n"
+                             "border-image: none;\n"
+                             "image: url(imgs/common/Minus.png);\n"
+                             "}\n"
+                             "\n"
+                             "QTreeView::branch:!has-children:!has-siblings:adjoins-item {\n"
+                             "    border-image: url(imgs/common/end.png);\n"
+                             "}\n"
+                             "QTableWidget{\n"
+                             "outline: none;\n"
+                             "selection-color:#666666;\n"
+                             "alternate-background-color:#F9FAFC;\n"
+                             "}\n"
+                             "QTableCornerButton::section{\n"
+                             "background: #EDF2F8;\n"
+                             "}\n"
+                             "QTableWidget::item{\n"
+                             "font-size:14px;\n"
+                             "line-height:30px;\n"
+                             "border:1px solid #D2D2D2;\n"
+                             "}\n"
+                             "\n"
+                             "QTableWidget::item:hover{\n"
+                             "background-color:#EAF7FF;\n"
+                             "}\n"
+                             "QHeaderView::section:vertical {\n"
+                             "color: #666666;\n"
+                             "text-align:center;\n"
+                             "font: 14px Arial;\n"
+                             "border:1px solid #D2D2D2;\n"
+                             "background: #F9FBFD;\n"
+                             "width: 40px;\n"
+                             "height:30px;\n"
+                             "alternate-background-color:#F9FAFC;\n"
+                             "}\n"
+                             "QHeaderView::section:horizontal {\n"
+                             "color: #666666;\n"
+                             "font: 14px Microsoft YaHei;\n"
+                             "padding: 0px 1px 0 1px;\n"
+                             "text-align:center;\n"
+                             "border:1px solid #D2D2D2;\n"
+                             "background: #EDF2F8;\n"
+                             "height: 30px;\n"
+                             "alternate-background-color:#F9FAFC;\n"
+                             "}\n"
+                             "QScrollBar:vertical{\n"
+                             "border: 5px solid #D5D5D5;\n"
+                             "}\n"
+                             "/****QPushButton****/\n"
+                             "QPushButton{\n"
+                             "width:32px;\n"
+                             "height:32px;\n"
+                             "background-color:#D0DBE5;\n"
+                             "color: #FFFFFF;\n"
+                             "font-size:14px;\n"
+                             "font-family:Microsoft YaHei;\n"
+                             "}\n"
+                             "QPushButton:hover{\n"
+                             "background-color:#2784D6;\n"
+                             "cursor:pointer;\n"
+                             "}\n"
+                             "QPushButton:pressed{\n"
+                             "background-color:#2784D6;\n"
+                             "}\n"
+                             "QTreeWidget::indicator:checked {\n"
+                             "    image: url(imgs/common/checked.png);\n"
+                             "}\n"
+                             "QTreeWidget::indicator:unchecked {\n"
+                             "    image: url(imgs/common/check.png);\n"
+                             "}\n"
+                             "")
         self.gridLayout_8 = QtWidgets.QGridLayout(Dialog)
         self.gridLayout_8.setObjectName("gridLayout_8")
         self.gridLayout = QtWidgets.QGridLayout()
@@ -235,28 +372,28 @@ class Ui_Dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.label_test_duration.setText(_translate("Dialog", "00:00:00"))
-        self.groupBox_test_modules.setTitle(_translate("Dialog", "测试项目"))
+        self.groupBox_test_modules.setTitle(_translate("Dialog", TransConstants.TESTTABLE_ITEM))
         self.treeWidget.headerItem().setText(0, _translate("Dialog", "1"))
         __sortingEnabled = self.treeWidget.isSortingEnabled()
         self.treeWidget.setSortingEnabled(False)
         self.treeWidget.topLevelItem(0).setText(0, _translate("Dialog", "mw1500"))
-        self.treeWidget.topLevelItem(0).child(0).setText(0, _translate("Dialog", "监控"))
-        self.treeWidget.topLevelItem(0).child(1).setText(0, _translate("Dialog", "勤务话"))
-        self.treeWidget.topLevelItem(0).child(2).setText(0, _translate("Dialog", "收发信机内部单元"))
+        self.treeWidget.topLevelItem(0).child(0).setText(0, _translate("Dialog", ""))
+        self.treeWidget.topLevelItem(0).child(1).setText(0, _translate("Dialog", ""))
+        self.treeWidget.topLevelItem(0).child(2).setText(0, _translate("Dialog", ""))
         self.treeWidget.setSortingEnabled(__sortingEnabled)
-        self.groupBox_test_resource.setTitle(_translate("Dialog", "测试资源"))
+        self.groupBox_test_resource.setTitle(_translate("Dialog",TransConstants.test_resource))
         item = self.tableWidget_test_resource.verticalHeaderItem(0)
         item.setText(_translate("Dialog", "1"))
         item = self.tableWidget_test_resource.verticalHeaderItem(1)
         item.setText(_translate("Dialog", "2"))
         item = self.tableWidget_test_resource.horizontalHeaderItem(1)
-        item.setText(_translate("Dialog", "名称"))
+        item.setText(_translate("Dialog", TransConstants.name))
         item = self.tableWidget_test_resource.horizontalHeaderItem(2)
-        item.setText(_translate("Dialog", "类型"))
+        item.setText(_translate("Dialog", TransConstants.type))
         item = self.tableWidget_test_resource.horizontalHeaderItem(3)
-        item.setText(_translate("Dialog", "编号/型号"))
+        item.setText(_translate("Dialog", TransConstants.id))
         item = self.tableWidget_test_resource.horizontalHeaderItem(4)
-        item.setText(_translate("Dialog", "备注"))
+        item.setText(_translate("Dialog", TransConstants.number))
         __sortingEnabled = self.tableWidget_test_resource.isSortingEnabled()
         self.tableWidget_test_resource.setSortingEnabled(False)
         item = self.tableWidget_test_resource.item(0, 1)
@@ -277,32 +414,32 @@ class Ui_Dialog(object):
         item.setText(_translate("Dialog", "2"))
         self.tableWidget_test_resource.setSortingEnabled(__sortingEnabled)
         item = self.tableWidget_test_results_jk.horizontalHeaderItem(1)
-        item.setText(_translate("Dialog", "测试项"))
+        item.setText(_translate("Dialog", TransConstants.TESTTABLE_ITEM))
         item = self.tableWidget_test_results_jk.horizontalHeaderItem(2)
-        item.setText(_translate("Dialog", "测试条件"))
+        item.setText(_translate("Dialog", TransConstants.TESTTABLE_COND))
         item = self.tableWidget_test_results_jk.horizontalHeaderItem(3)
-        item.setText(_translate("Dialog", "测试结果"))
+        item.setText(_translate("Dialog",TransConstants.TESTTABLE_VALUE))
         item = self.tableWidget_test_results_jk.horizontalHeaderItem(4)
-        item.setText(_translate("Dialog", "测试结论"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("Dialog", "监控测试策略"))
+        item.setText(_translate("Dialog", TransConstants.TESTTABLE_CONCLU))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("Dialog",TransConstants.jiankongcscl))
         item = self.tableWidget_test_results_qwh.horizontalHeaderItem(1)
-        item.setText(_translate("Dialog", "测试项"))
+        item.setText(_translate("Dialog", TransConstants.TESTTABLE_ITEM))
         item = self.tableWidget_test_results_qwh.horizontalHeaderItem(2)
-        item.setText(_translate("Dialog", "测试条件"))
+        item.setText(_translate("Dialog",TransConstants.test_condition ))
         item = self.tableWidget_test_results_qwh.horizontalHeaderItem(3)
-        item.setText(_translate("Dialog", "测试结果"))
+        item.setText(_translate("Dialog", TransConstants.test_value))
         item = self.tableWidget_test_results_qwh.horizontalHeaderItem(4)
-        item.setText(_translate("Dialog", "测试结论"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("Dialog", "勤务话测试"))
+        item.setText(_translate("Dialog", TransConstants.test_conclusion))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("Dialog",TransConstants.qinwuhuacs))
         item = self.tableWidget_test_results_sf.horizontalHeaderItem(1)
-        item.setText(_translate("Dialog", "测试项"))
+        item.setText(_translate("Dialog", TransConstants.TESTTABLE_ITEM))
         item = self.tableWidget_test_results_sf.horizontalHeaderItem(2)
-        item.setText(_translate("Dialog", "测试条件"))
+        item.setText(_translate("Dialog", TransConstants.test_condition))
         item = self.tableWidget_test_results_sf.horizontalHeaderItem(3)
-        item.setText(_translate("Dialog", "测试结果"))
+        item.setText(_translate("Dialog", TransConstants.test_value))
         item = self.tableWidget_test_results_sf.horizontalHeaderItem(4)
-        item.setText(_translate("Dialog", "测试结论"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("Dialog", "收发信机内部单元测试"))
+        item.setText(_translate("Dialog", TransConstants.test_conclusion))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("Dialog",TransConstants.shoufaxjnbdycs))
 
 import res.iconQrc_rc
 

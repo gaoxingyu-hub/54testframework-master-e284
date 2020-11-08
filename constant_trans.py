@@ -1,7 +1,7 @@
 from common.info import SystemLanguage
 
 
-class           TransConstants:
+class  TransConstants:
     if SystemLanguage.LANGUAGE == SystemLanguage.fr_FR:
         TESTNUMBER = ''
         TESTTABLE_ITEM = 'Elément de test'
@@ -107,8 +107,13 @@ class           TransConstants:
         main_tongxin_control = "Équipement de contrôle de transmission"
         main_router = "Routeur"
         main_test_project = "Projet du test"
-
         previous = "Précédente"
+        jiankongcscl = 'Stratégie de test de surveillance'
+        qinwuhuacs = 'Stratégie de test de surveillance'
+        shoufaxjnbdycs = 'Test d’unité intérieure du récepteur  et de l’émetteur'
+        #mw1500
+        fashe_frequency = 'fréquence d’émission'
+        jieshou_frequency = 'fréquence de réception'
     else:
         TESTNUMBER = ''
         TESTTABLE_ITEM = '测试项目'
@@ -212,5 +217,11 @@ class           TransConstants:
         main_tongxin_control = "通信控制设备"
         main_router = "路由器"
         main_test_project = "测试项目"
-
         previous = "上一步"
+        jiankongcscl='监控测试策略'
+        qinwuhuacs='勤务话测试'
+        shoufaxjnbdycs='收发信机内部单元测试'
+
+        #mw1500
+        fashe_frequency='发射频率'
+        jieshou_frequency='接收频率'

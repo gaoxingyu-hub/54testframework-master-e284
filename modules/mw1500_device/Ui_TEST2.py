@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'Ui_TEST1.UI'
+# Form implementation generated from reading ui file 'mwUi_TEST2.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.1
 #
@@ -64,13 +64,10 @@ class Ui_Dialog(object):
 "background-color:#E3EAF4;}")
         self.groupBox_2.setTitle("")
         self.groupBox_2.setObjectName("groupBox_2")
-        self.pushButton_2 = QtWidgets.QPushButton(self.groupBox)
-        self.pushButton_2.setGeometry(QtCore.QRect(550, 530, 85, 40))
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.pushButton_1 = QtWidgets.QPushButton(self.groupBox)
-        self.pushButton_1.setGeometry(QtCore.QRect(240, 530, 85, 40))
-        self.pushButton_1.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.pushButton_1.setObjectName("pushButton_1")
+        self.pushButton_next = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_next.setGeometry(QtCore.QRect(390, 530, 120, 40))
+        self.pushButton_next.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.pushButton_next.setObjectName("pushButton_next")
         self.label_img = QtWidgets.QLabel(self.groupBox)
         self.label_img.setGeometry(QtCore.QRect(10, 120, 831, 311))
         self.label_img.setText("")
@@ -116,13 +113,11 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.pushButton_2.setText(_translate("Dialog", "不正常"))
-        self.pushButton_1.setText(_translate("Dialog", "正常"))
-        self.label_1.setText(_translate("Dialog", "发射频率"))
+        self.pushButton_next.setText(_translate("Dialog",ModuleConstants.next))
+        self.label_1.setText(_translate("Dialog", ModuleConstants.fashe_frequency))
         self.comboBox_1.setItemText(0, _translate("Dialog", "MHz"))
-        self.label_2.setText(_translate("Dialog","接受频率"))
+        self.label_2.setText(_translate("Dialog", ModuleConstants.jieshou_frequency))
         self.comboBox_2.setItemText(0, _translate("Dialog", "MHz"))
-import res.iconQrc_rc
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
@@ -131,5 +126,3 @@ if __name__ == "__main__":
     ui.setupUi(Dialog)
     Dialog.show()
     sys.exit(app.exec_())
-
-

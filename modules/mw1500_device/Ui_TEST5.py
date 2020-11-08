@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'Ui_TEST11.ui'
+# Form implementation generated from reading ui file 'Ui_TEST4.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.1
 #
@@ -15,7 +15,7 @@ from modules.mw1500_device.mw1500_constant import ModuleConstants
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(600, 600)
+        Dialog.resize(871, 600)
         Dialog.setStyleSheet("QDialog{\n"
 "background-color:#E3EAF4;\n"
 "margin-top:10px;\n"
@@ -39,86 +39,42 @@ class Ui_Dialog(object):
 "font-family:Microsoft YaHei;\n"
 "}")
         self.groupBox = QtWidgets.QGroupBox(Dialog)
-        self.groupBox.setGeometry(QtCore.QRect(9, 9, 582, 582))
+        self.groupBox.setGeometry(QtCore.QRect(9, 9, 851, 582))
+        font = QtGui.QFont()
+        font.setFamily("Microsoft YaHei")
+        font.setPointSize(-1)
+        self.groupBox.setFont(font)
         self.groupBox.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.groupBox.setTitle("")
         self.groupBox.setAlignment(QtCore.Qt.AlignCenter)
         self.groupBox.setCheckable(False)
         self.groupBox.setObjectName("groupBox")
         self.textBrowser_contents = QtWidgets.QTextBrowser(self.groupBox)
-        self.textBrowser_contents.setGeometry(QtCore.QRect(11, 1, 560, 69))
+        self.textBrowser_contents.setGeometry(QtCore.QRect(11, 1, 831, 69))
         self.textBrowser_contents.setStyleSheet("QTextBrowser{\n"
 "border-width:0;\n"
 "border-style:outset;\n"
 "background-color:#E3EAF4;}")
         self.textBrowser_contents.setObjectName("textBrowser_contents")
         self.groupBox_2 = QtWidgets.QGroupBox(self.groupBox)
-        self.groupBox_2.setGeometry(QtCore.QRect(20, 110, 541, 261))
+        self.groupBox_2.setGeometry(QtCore.QRect(33, 300, 512, 60))
         self.groupBox_2.setStyleSheet("QGroupBox{\n"
 "border-width:0;\n"
 "border-style:outset;\n"
 "background-color:#E3EAF4;}")
         self.groupBox_2.setTitle("")
         self.groupBox_2.setObjectName("groupBox_2")
-        self.label_1 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_1.setGeometry(QtCore.QRect(100, 20, 260, 20))
-        self.label_1.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_1.setObjectName("label_1")
-        self.lineEdit_1 = QtWidgets.QLineEdit(self.groupBox_2)
-        self.lineEdit_1.setGeometry(QtCore.QRect(360, 20, 40, 20))
-        self.lineEdit_1.setObjectName("lineEdit_1")
-        self.label_2 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_2.setGeometry(QtCore.QRect(100, 60, 260, 20))
-        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_2.setObjectName("label_2")
-        self.label_3 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_3.setGeometry(QtCore.QRect(100, 100, 260, 20))
-        self.label_3.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_3.setObjectName("label_3")
-        self.lineEdit_3 = QtWidgets.QLineEdit(self.groupBox_2)
-        self.lineEdit_3.setGeometry(QtCore.QRect(360, 100, 40, 20))
-        self.lineEdit_3.setObjectName("lineEdit_3")
-        self.comboBox_3 = QtWidgets.QComboBox(self.groupBox_2)
-        self.comboBox_3.setGeometry(QtCore.QRect(400, 100, 50, 20))
-        self.comboBox_3.setObjectName("comboBox_3")
-        self.comboBox_3.addItem("")
-        self.label_5 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_5.setGeometry(QtCore.QRect(100, 180, 260, 20))
-        self.label_5.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_5.setObjectName("label_5")
-        self.lineEdit_4 = QtWidgets.QLineEdit(self.groupBox_2)
-        self.lineEdit_4.setGeometry(QtCore.QRect(360, 140, 40, 20))
-        self.lineEdit_4.setObjectName("lineEdit_4")
-        self.comboBox_5 = QtWidgets.QComboBox(self.groupBox_2)
-        self.comboBox_5.setGeometry(QtCore.QRect(400, 180, 50, 20))
-        self.comboBox_5.setObjectName("comboBox_5")
-        self.comboBox_5.addItem("")
-        self.label_4 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_4.setGeometry(QtCore.QRect(100, 140, 260, 16))
-        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_4.setObjectName("label_4")
-        self.lineEdit_5 = QtWidgets.QLineEdit(self.groupBox_2)
-        self.lineEdit_5.setGeometry(QtCore.QRect(360, 180, 40, 20))
-        self.lineEdit_5.setObjectName("lineEdit_5")
-        self.comboBox_4 = QtWidgets.QComboBox(self.groupBox_2)
-        self.comboBox_4.setGeometry(QtCore.QRect(400, 140, 50, 20))
-        self.comboBox_4.setObjectName("comboBox_4")
-        self.comboBox_4.addItem("")
-        self.lineEdit_2 = QtWidgets.QLineEdit(self.groupBox_2)
-        self.lineEdit_2.setGeometry(QtCore.QRect(360, 60, 40, 20))
-        self.lineEdit_2.setObjectName("lineEdit_2")
-        self.comboBox_1 = QtWidgets.QComboBox(self.groupBox_2)
-        self.comboBox_1.setGeometry(QtCore.QRect(400, 20, 50, 20))
-        self.comboBox_1.setObjectName("comboBox_1")
-        self.comboBox_1.addItem("")
-        self.comboBox_2 = QtWidgets.QComboBox(self.groupBox_2)
-        self.comboBox_2.setGeometry(QtCore.QRect(400, 60, 50, 20))
-        self.comboBox_2.setObjectName("comboBox_2")
-        self.comboBox_2.addItem("")
-        self.pushButton_next = QtWidgets.QPushButton(Dialog)
-        self.pushButton_next.setGeometry(QtCore.QRect(260, 550, 75, 30))
+        self.pushButton_next = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_next.setGeometry(QtCore.QRect(370, 520, 120, 40))
         self.pushButton_next.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.pushButton_next.setObjectName("pushButton_next")
+        self.comboBox = QtWidgets.QComboBox(self.groupBox)
+        self.comboBox.setGeometry(QtCore.QRect(360, 190, 121, 22))
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -126,20 +82,12 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.label_1.setText(_translate("Dialog", ModuleConstants.shuchu_frequence))
-        self.comboBox_1.setItemText(0, _translate("Dialog", "MHz"))
-        self.label_2.setText(_translate("Dialog", ModuleConstants.shuchu_dianping))
-        self.comboBox_2.setItemText(0, _translate("Dialog", "dBm"))
-        self.label_3.setText(_translate("Dialog", ModuleConstants.zhongxin_pinlv))
-        self.comboBox_3.setItemText(0, _translate("Dialog", "MHz"))
-        self.label_5.setText(_translate("Dialog", ModuleConstants.cankao_dianping))
-        self.comboBox_5.setItemText(0, _translate("Dialog", "dBm"))
-        self.label_4.setText(_translate("Dialog", ModuleConstants.daikuan))
-        self.comboBox_4.setItemText(0, _translate("Dialog", "MHz"))
-        self.pushButton_next.setText(_translate("Dialog", ModuleConstants.next))
-import res.iconQrc_rc
+        self.pushButton_next.setText(_translate("Dialog",ModuleConstants.next))
+        self.comboBox.setItemText(0, _translate("Dialog", "正常"))
+        self.comboBox.setItemText(1, _translate("Dialog", "发本振告警"))
 
-
+        self.comboBox.setItemText(2, _translate("Dialog", "收本振告警"))
+        self.comboBox.setItemText(3, _translate("Dialog", "收电平低的告警量"))
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
@@ -148,3 +96,4 @@ if __name__ == "__main__":
     ui.setupUi(Dialog)
     Dialog.show()
     sys.exit(app.exec_())
+

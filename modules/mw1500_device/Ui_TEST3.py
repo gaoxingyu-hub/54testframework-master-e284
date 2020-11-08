@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'Ui_TEST3.ui'
+# Form implementation generated from reading ui file 'mwUi_TEST4.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.1
 #
@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from modules.mw1500_device.mw1500_constant import ModuleConstants
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
@@ -55,25 +55,15 @@ class Ui_Dialog(object):
 "border-style:outset;\n"
 "background-color:#E3EAF4;}")
         self.textBrowser_contents.setObjectName("textBrowser_contents")
-        self.groupBox_2 = QtWidgets.QGroupBox(self.groupBox)
-        self.groupBox_2.setGeometry(QtCore.QRect(33, 300, 512, 60))
-        self.groupBox_2.setStyleSheet("QGroupBox{\n"
-"border-width:0;\n"
-"border-style:outset;\n"
-"background-color:#E3EAF4;}")
-        self.groupBox_2.setTitle("")
-        self.groupBox_2.setObjectName("groupBox_2")
-        self.pushButton_2 = QtWidgets.QPushButton(self.groupBox)
-        self.pushButton_2.setGeometry(QtCore.QRect(550, 530, 85, 40))
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.pushButton_1 = QtWidgets.QPushButton(self.groupBox)
-        self.pushButton_1.setGeometry(QtCore.QRect(240, 530, 85, 40))
-        self.pushButton_1.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.pushButton_1.setObjectName("pushButton_1")
-        self.label_img = QtWidgets.QLabel(self.groupBox)
-        self.label_img.setGeometry(QtCore.QRect(10, 120, 831, 311))
-        self.label_img.setText("")
-        self.label_img.setObjectName("label_img")
+        self.pushButton_next = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_next.setGeometry(QtCore.QRect(370, 520, 120, 40))
+        self.pushButton_next.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.pushButton_next.setObjectName("pushButton_next")
+        self.comboBox = QtWidgets.QComboBox(self.groupBox)
+        self.comboBox.setGeometry(QtCore.QRect(360, 190, 121, 22))
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -81,8 +71,12 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.pushButton_2.setText(_translate("Dialog", "不正常"))
-        self.pushButton_1.setText(_translate("Dialog", "正常"))
+        self.pushButton_next.setText(_translate("Dialog",ModuleConstants.next))
+        self.comboBox.setItemText(0, _translate("Dialog", ModuleConstants.ceshi_normal))
+        self.comboBox.setItemText(1, _translate("Dialog", ModuleConstants.ceshi_abnormal))
+import res.iconQrc_rc
+
+
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
@@ -91,3 +85,4 @@ if __name__ == "__main__":
     ui.setupUi(Dialog)
     Dialog.show()
     sys.exit(app.exec_())
+

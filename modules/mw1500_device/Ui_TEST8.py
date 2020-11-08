@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'Ui_TEST4.ui'
+# Form implementation generated from reading ui file 'Ui_TEST8.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.1
 #
@@ -55,25 +55,53 @@ class Ui_Dialog(object):
 "border-style:outset;\n"
 "background-color:#E3EAF4;}")
         self.textBrowser_contents.setObjectName("textBrowser_contents")
-        self.groupBox_2 = QtWidgets.QGroupBox(self.groupBox)
-        self.groupBox_2.setGeometry(QtCore.QRect(33, 300, 512, 60))
-        self.groupBox_2.setStyleSheet("QGroupBox{\n"
-"border-width:0;\n"
-"border-style:outset;\n"
-"background-color:#E3EAF4;}")
-        self.groupBox_2.setTitle("")
-        self.groupBox_2.setObjectName("groupBox_2")
         self.pushButton_next = QtWidgets.QPushButton(self.groupBox)
-        self.pushButton_next.setGeometry(QtCore.QRect(370, 520, 120, 40))
+        self.pushButton_next.setGeometry(QtCore.QRect(390, 530, 120, 40))
         self.pushButton_next.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.pushButton_next.setObjectName("pushButton_next")
+        self.label_1 = QtWidgets.QLabel(self.groupBox)
+        self.label_1.setGeometry(QtCore.QRect(70, 420, 260, 20))
+        font = QtGui.QFont()
+        font.setFamily("Microsoft YaHei")
+        font.setPointSize(-1)
+        self.label_1.setFont(font)
+        self.label_1.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_1.setObjectName("label_1")
+        self.lineEdit_1 = QtWidgets.QLineEdit(self.groupBox)
+        self.lineEdit_1.setGeometry(QtCore.QRect(330, 420, 40, 20))
+        self.lineEdit_1.setObjectName("lineEdit_1")
+        self.comboBox_1 = QtWidgets.QComboBox(self.groupBox)
+        self.comboBox_1.setGeometry(QtCore.QRect(370, 420, 45, 20))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(8)
+        self.comboBox_1.setFont(font)
+        self.comboBox_1.setObjectName("comboBox_1")
+        self.comboBox_1.addItem("")
+        self.label_2 = QtWidgets.QLabel(self.groupBox)
+        self.label_2.setGeometry(QtCore.QRect(430, 420, 260, 20))
+        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_2.setObjectName("label_2")
+        self.lineEdit_2 = QtWidgets.QLineEdit(self.groupBox)
+        self.lineEdit_2.setGeometry(QtCore.QRect(690, 420, 40, 20))
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.comboBox_2 = QtWidgets.QComboBox(self.groupBox)
+        self.comboBox_2.setGeometry(QtCore.QRect(730, 420, 45, 20))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(8)
+        self.comboBox_2.setFont(font)
+        self.comboBox_2.setObjectName("comboBox_2")
+        self.comboBox_2.addItem("")
         self.comboBox = QtWidgets.QComboBox(self.groupBox)
-        self.comboBox.setGeometry(QtCore.QRect(360, 190, 121, 22))
+        self.comboBox.setGeometry(QtCore.QRect(430, 470, 45, 22))
         self.comboBox.setObjectName("comboBox")
         self.comboBox.addItem("")
         self.comboBox.addItem("")
-        self.comboBox.addItem("")
-        self.comboBox.addItem("")
+        self.label_img = QtWidgets.QLabel(self.groupBox)
+        self.label_img.setGeometry(QtCore.QRect(10, 100, 811, 311))
+        self.label_img.setText("")
+        self.label_img.setObjectName("label_img")
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -82,11 +110,12 @@ class Ui_Dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.pushButton_next.setText(_translate("Dialog", "下一步"))
-        self.comboBox.setItemText(0, _translate("Dialog", "正常"))
-        self.comboBox.setItemText(1, _translate("Dialog", "发本振告警"))
-
-        self.comboBox.setItemText(2, _translate("Dialog", "收本振告警"))
-        self.comboBox.setItemText(3, _translate("Dialog", "收电平低的告警量"))
+        self.label_1.setText(_translate("Dialog", "起始频率"))
+        self.comboBox_1.setItemText(0, _translate("Dialog", "MHz"))
+        self.label_2.setText(_translate("Dialog", "终止频率"))
+        self.comboBox_2.setItemText(0, _translate("Dialog", "MHz"))
+        self.comboBox.setItemText(0, _translate("Dialog", "是"))
+        self.comboBox.setItemText(1, _translate("Dialog", "否"))
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
@@ -95,4 +124,3 @@ if __name__ == "__main__":
     ui.setupUi(Dialog)
     Dialog.show()
     sys.exit(app.exec_())
-

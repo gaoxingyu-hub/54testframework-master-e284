@@ -2,6 +2,7 @@ from common.info import SystemLanguage
 
 
 class ModuleConstants:
+
     TESTNUMBER=''
     TESTTABLE_ITEM = '测试项目'
     TESTTABLE_COND = '测试条件'
@@ -66,6 +67,7 @@ class ModuleConstants:
     BUTTON_CONTENTS_NEXT = '下一步'
     BUTTON_CONTENTS_FINISH = '测试结束'
 
+
     if SystemLanguage.LANGUAGE == SystemLanguage.fr_FR:
         tip = "rapide"
         t1 = "Le dispositif détecté surveille et reçoit les instructions du poste D 'essai"
@@ -93,7 +95,7 @@ class ModuleConstants:
         normal = "normal"
         send_frequence = "Fréquence d'émission"
         recivice_frequence = "Fréquence d'acceptation"
-        next = "Suivant"
+        next = "Étape suivante"
 
         # Ui_TEST11:
         shuchu_frequence = "Fréquence de sortie"
@@ -107,6 +109,17 @@ class ModuleConstants:
         zhongzhi_pinlv = "Fréquence d'arrêt"
         saomiao_bujin = "Étape de numérisation"
         shuchu_gonglv = "Puissance de sortie"
+
+        jiankongcscljkgz = 'Stratégie de test de surveillance,Si le test est anormal, il signale "l’unité de surveillance est en panne" , il faut la remplacer.'
+        fashe_frequency = 'fréquence d’émission'
+        jieshou_frequency = 'fréquence de réception'
+        ceshi_normal = 'test est normal'
+        ceshi_abnormal = 'test est anormal'
+        jiankong_normal = "l’unité de surveillance est normale"
+        jiankong_abnormal = "l’unité de surveillance est en panne"
+        qinwuhua_ce = 'Test de EOW'
+        qinwuhua_normal = 'EOW est normal'
+        qinwuhua_gz = 'EOW est en panne'
     else:
         # Test1.py
         tip = "提示"
@@ -149,4 +162,15 @@ class ModuleConstants:
         zhongzhi_pinlv = "终止频率"
         saomiao_bujin = "扫描步进"
         shuchu_gonglv = "输出功率"
+
+        jiankongcscljkgz = '监控测试策略,如测试不正常，提示“监控单元故障”，更换监控单元'
+        fashe_frequency = '发射频率'
+        jieshou_frequency = '接收频率'
+        ceshi_normal='测试正常'
+        ceshi_abnormal = '测试不正常'
+        jiankong_normal='监控单元正常'
+        jiankong_abnormal='监控单元故障'
+        qinwuhua_ce='勤务话测试'
+        qinwuhua_normal='勤务话正常'
+        qinwuhua_gz='勤务话故障'
 

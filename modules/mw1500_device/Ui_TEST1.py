@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'Ui_TEST2.ui'
+# Form implementation generated from reading ui file 'Ui_TEST1.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.1
 #
@@ -56,20 +56,12 @@ class Ui_Dialog(object):
 "border-style:outset;\n"
 "background-color:#E3EAF4;}")
         self.textBrowser_contents.setObjectName("textBrowser_contents")
-        self.groupBox_2 = QtWidgets.QGroupBox(self.groupBox)
-        self.groupBox_2.setGeometry(QtCore.QRect(33, 300, 512, 60))
-        self.groupBox_2.setStyleSheet("QGroupBox{\n"
-"border-width:0;\n"
-"border-style:outset;\n"
-"background-color:#E3EAF4;}")
-        self.groupBox_2.setTitle("")
-        self.groupBox_2.setObjectName("groupBox_2")
         self.pushButton_next = QtWidgets.QPushButton(self.groupBox)
-        self.pushButton_next.setGeometry(QtCore.QRect(390, 530, 85, 40))
+        self.pushButton_next.setGeometry(QtCore.QRect(390, 530, 120, 40))
         self.pushButton_next.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.pushButton_next.setObjectName("pushButton_next")
         self.label_img = QtWidgets.QLabel(self.groupBox)
-        self.label_img.setGeometry(QtCore.QRect(10, 120, 831, 311))
+        self.label_img.setGeometry(QtCore.QRect(10, 100, 811, 311))
         self.label_img.setText("")
         self.label_img.setObjectName("label_img")
 
