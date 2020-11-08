@@ -21,6 +21,9 @@ from modules.mw1500_device.TEST1 import DialogTest1
 from modules.mw1500_device.TEST2 import DialogTest2
 from modules.mw1500_device.TEST3 import DialogTest3
 from modules.mw1500_device.TEST4 import DialogTest4
+from modules.mw1500_device.TEST5 import DialogTest5
+from modules.mw1500_device.TEST6 import DialogTest6
+from modules.mw1500_device.TEST7 import DialogTest7
 import time
 from common.logConfig import Logger
 from common.th_thread_model import ThThreadTimerUpdateTestTime
@@ -255,25 +258,20 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))
-                        if temp_test_process['module'] == 'DialogTest11':
+                        if temp_test_process['module'] == 'DialogTest5' or temp_test_process['module'] == 'DialogTest7':
                             self.current_test_step_dialog.initUi(self.test_config)
-                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_)
+                            self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
+                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_sh)
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))
-                        if temp_test_process['module'] == 'DialogTest12':
+                        if temp_test_process['module'] == 'DialogTest6':
                             self.current_test_step_dialog.initUi(self.test_config)
                             self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))
-                        if temp_test_process['module'] == 'DialogTest13':
-                            self.current_test_step_dialog.initUi(self.test_config)
-                            self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
-                            self.current_test_step_dialog.signalTest.connect(self.test_data_refresh)
-                            self.current_test_step_dialog.set_contents(temp_test_process['title'],
-                                                                       temp_test_process['contents'], os.path.join(
-                                    self.pic_file_path, temp_test_process['img']))
+
 
 
                         self.current_test_step_dialog.exec_()
@@ -470,14 +468,6 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
             self.table.setHorizontalHeaderLabels(
                 [ModuleConstants.TESTNUMBER, ModuleConstants.TESTTABLE_ITEM, ModuleConstants.TESTTABLE_COND,
                  ModuleConstants.TESTTABLE_VALUE, ModuleConstants.TESTTABLE_CONCLU])
-
-
-class test_results:
-    def __init__(self):
-        self.test_item = ''
-        self.test_condition = ''
-        self.test_results = ''
-        self.test_conclusion = ''
 
 
 if __name__ == '__main__':
