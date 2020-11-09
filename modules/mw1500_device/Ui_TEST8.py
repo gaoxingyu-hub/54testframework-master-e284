@@ -9,6 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from modules.mw1500_device.mw1500_constant import ModuleConstants
 
 
 class Ui_Dialog(object):
@@ -94,7 +95,7 @@ class Ui_Dialog(object):
         self.comboBox_2.setObjectName("comboBox_2")
         self.comboBox_2.addItem("")
         self.comboBox = QtWidgets.QComboBox(self.groupBox)
-        self.comboBox.setGeometry(QtCore.QRect(430, 470, 45, 22))
+        self.comboBox.setGeometry(QtCore.QRect(390, 470, 121, 22))
         self.comboBox.setObjectName("comboBox")
         self.comboBox.addItem("")
         self.comboBox.addItem("")
@@ -109,13 +110,13 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.pushButton_next.setText(_translate("Dialog", "下一步"))
-        self.label_1.setText(_translate("Dialog", "起始频率"))
+        self.pushButton_next.setText(_translate("Dialog",ModuleConstants.next))
+        self.label_1.setText(_translate("Dialog",ModuleConstants.qishi_pinlv))
         self.comboBox_1.setItemText(0, _translate("Dialog", "MHz"))
-        self.label_2.setText(_translate("Dialog", "终止频率"))
+        self.label_2.setText(_translate("Dialog",ModuleConstants.zhongzhi_pinlv))
         self.comboBox_2.setItemText(0, _translate("Dialog", "MHz"))
-        self.comboBox.setItemText(0, _translate("Dialog", "是"))
-        self.comboBox.setItemText(1, _translate("Dialog", "否"))
+        self.comboBox.setItemText(0, _translate("Dialog", ModuleConstants.ceshi_normal))
+        self.comboBox.setItemText(1, _translate("Dialog",ModuleConstants.ceshi_abnormal))
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)

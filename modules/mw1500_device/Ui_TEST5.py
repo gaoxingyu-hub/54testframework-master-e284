@@ -83,11 +83,11 @@ class Ui_Dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.pushButton_next.setText(_translate("Dialog",ModuleConstants.next))
-        self.comboBox.setItemText(0, _translate("Dialog", "正常"))
-        self.comboBox.setItemText(1, _translate("Dialog", "发本振告警"))
+        self.comboBox.setItemText(0, _translate("Dialog", ModuleConstants.ceshi_normal))
+        self.comboBox.setItemText(1, _translate("Dialog",ModuleConstants.fabenzhen_gj))
 
-        self.comboBox.setItemText(2, _translate("Dialog", "收本振告警"))
-        self.comboBox.setItemText(3, _translate("Dialog", "收电平低的告警量"))
+        self.comboBox.setItemText(2, _translate("Dialog", ModuleConstants.shoubenzhen_gj))
+        self.comboBox.setItemText(3, _translate("Dialog", ModuleConstants.shoudianpingdi_gj))
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)

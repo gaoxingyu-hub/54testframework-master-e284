@@ -54,16 +54,17 @@ class DialogTest5(QDialog, Ui_Dialog):
         Slot documentation goes here.
         """
         # TODO: not implemented yet
-        if str(self.comboBox.currentText())=='正常':
-            self.test_result.test_item ="收发信机内部单元测试 "
+        if str(self.comboBox.currentText())==ModuleConstants.ceshi_normal:
+            self.test_result.test_item =ModuleConstants.shoufaxinji_nbdycs
             self.test_result.test_condition = ''
             self.test_result.test_results = str(self.comboBox.currentText())
             self.test_result.test_conclusion='PASS'
         else:
-            self.test_result.test_item = "收发信机内部单元测试 "
+            self.test_result.test_item = ModuleConstants.shoufaxinji_nbdycs
             self.test_result.test_condition = ''
             self.test_result.test_results = str(self.comboBox.currentText())
             self.test_result.test_conclusion = 'FAIL'
+            QMessageBox.warning(self, ModuleConstants.warning, ModuleConstants.shoudianpingdi_gj, QMessageBox.Ok)
 
         self.signalTest.emit("test")
         self.signalFinish1.emit('next',None)
