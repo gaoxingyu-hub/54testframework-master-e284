@@ -18,7 +18,7 @@ class ModuleConstants:
         CONTENTS_YES = "Oui"
         CONTENTS_NO = "'Non"
         UDP_SEND_CONTENTS = "test"
-        BUTTON_CONTENTS_NEXT = "Étape suivante"
+        next= "Étape suivante"
         BUTTON_CONTENTS_FINISH = "Fin de test"
         QMESSAGEBOX_CONTENTS_TEST_ABNORMAL = 'Panne'
         VHF_radio_PowerSource= "VHF Radio Supply"
@@ -81,6 +81,7 @@ class ModuleConstants:
         tiaozhi_xinhao = "le signal de modulation est"
         xinhao_fudu = "et l'amplitude du signal est"
         pinpian = "l'écart de fréquence est"
+        shiliangxinhaofashengqi ='Générateur de signaux vectoriels Keysight'
 
     else:
         QMESSAGEBOX_WARN = "警告"
@@ -98,7 +99,7 @@ class ModuleConstants:
         CONTENTS_YES = "是"
         CONTENTS_NO = "否"
         UDP_SEND_CONTENTS = "test"
-        BUTTON_CONTENTS_NEXT = "下一步"
+        next = "下一步"
         BUTTON_CONTENTS_FINISH = "测试结束"
         QMESSAGEBOX_CONTENTS_TEST_ABNORMAL = '故障'
         VHF_radio_PowerSource = "VHF电台电源"
@@ -162,6 +163,8 @@ class ModuleConstants:
         tiaozhi_xinhao = "调制信号"
         xinhao_fudu = "信号幅度"
         pinpian = "频偏"
+
+        shiliangxinhaofashengqi='矢量信号发生器'
 
 
 

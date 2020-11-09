@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'Ui_TEST1.ui'
+# Form implementation generated from reading ui file 'Ui_test1.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.1
 #
@@ -9,8 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from constant_trans import TransConstants
-
+from modules.VHF_radio.VHF_radio_CONSTANT import ModuleConstants
 
 
 class Ui_Dialog(object):
@@ -51,7 +50,7 @@ class Ui_Dialog(object):
         self.groupBox.setCheckable(False)
         self.groupBox.setObjectName("groupBox")
         self.textBrowser_contents = QtWidgets.QTextBrowser(self.groupBox)
-        self.textBrowser_contents.setGeometry(QtCore.QRect(11, 1, 560, 69))
+        self.textBrowser_contents.setGeometry(QtCore.QRect(11, 1, 560, 171))
         self.textBrowser_contents.setStyleSheet("QTextBrowser{\n"
 "border-width:0;\n"
 "border-style:outset;\n"
@@ -70,7 +69,7 @@ class Ui_Dialog(object):
         self.pushButton_next.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.pushButton_next.setObjectName("pushButton_next")
         self.label_img = QtWidgets.QLabel(self.groupBox)
-        self.label_img.setGeometry(QtCore.QRect(19, 100, 541, 291))
+        self.label_img.setGeometry(QtCore.QRect(20, 200, 541, 291))
         self.label_img.setText("")
         self.label_img.setObjectName("label_img")
 
@@ -80,7 +79,7 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.pushButton_next.setText(_translate("Dialog", TransConstants.next))
+        self.pushButton_next.setText(_translate("Dialog",ModuleConstants.next))
 import res.iconQrc_rc
 
 
@@ -92,3 +91,4 @@ if __name__ == "__main__":
     ui.setupUi(Dialog)
     Dialog.show()
     sys.exit(app.exec_())
+
