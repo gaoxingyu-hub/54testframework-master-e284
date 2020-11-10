@@ -22,53 +22,43 @@
                 {"state":"7.4","img":"","title":"7.4.听手柄能否输出清晰单音","contents":"手柄式送受话器能否输出清晰的单音","module": "DialogTest7point2"},
                 {"state":"7.5","img":"7.5.jpg","title":"7.5.观察面板收发指示灯的变化","contents":"电台面板R/E收发指示灯是否橙黄色点亮","module": "DialogTest7point5"},
                 {"state":"9","img":"","title":"9.测量电台小功率发55MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：小功率FP，定明CLAIR，工作频率55MHz。按下手柄式送受话器PTT按键,显示测量是否合格，备注:程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为55MHz±500Hz、幅值为27dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest9"},
-                {"state":"10-1","img":"","title":"10-1.测量结果合格","contents":"55MHz小功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10_1"},
-                {"state":"10-2","img":"","title":"10-2.测量结果不合格","contents":"55MHz小功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10_2"},
-                {"state":"11","img":"","title":"11.测量电台小功率发30.025MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：小功率FP，定明CLAIR，工作频率30.025MHz。按下手柄式送受话器PTT按键，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为30.025MHz±500Hz、幅值为27dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest11"},
-                {"state":"10.1","img":"","title":"10.1.测量通信主机小功率发55MHz功能是否正常","contents":"将连接车载适配器S-RF接口的电缆重新连接到通信主机ANT接口。按下手柄式送受话器PTT按键，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为55MHz±500Hz、幅值为27dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest9"},
+                {"state":"10-1","img":"","title":"10-1.如测量结果合格","contents":"55MHz小功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10_1"},
+                {"state":"10-2","img":"","title":"10-2.如测量结果不合格","contents":"55MHz小功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10_2"},
+                {"state":"11","img":"","title":"11.测量电台小功率发30.025MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：小功率FP，定明CLAIR，工作频率30.025MHz。按下手柄式送受话器PTT按键，然后点击【下一步】，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为30.025MHz±500Hz、幅值为27dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest11"},
+                {"state":"10.1","img":"","title":"10.1.测试通信主机小功率发55MHz功能是否正常","contents":"将连接车载适配器S-RF接口的电缆重新连接到通信主机ANT接口。按下手柄式送受话器PTT按键，然后点击【下一步】，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为55MHz±500Hz、幅值为27dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest9"},
                 {"state":"10.2-1","img":"","title":"10.2-1.测量结果合格","contents":"55MHz小功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point2_1"},
                 {"state":"10.2-2","img":"","title":"10.2-2.测量结果不合格","contents":"55MHz小功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point2_2"},
-                {"state":"10.3","img":"","title":"10.3测量通信主机小功率发30.025MHz功能是否正常.","contents":"操作通信主机面板，设置通信主机工作状态为：小功率FP，定明CLAIR，工作频率30.025MHz。按下手柄式送受话器PTT按键，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为30.025MHz±500Hz、幅值为27dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest9"},
-                {"state":"10.4-1","img":"","title":"10.4-1.测量结果合格","contents":"30.025MHz小功率测量值合格。请释放手柄式送受话器PTT按键（电台转为接收状态）","module": "DialogTest10point2_1"},
-                {"state":"10.4-2","img":"","title":"10.4-2.测量结果不合格","contents":"30.025MHz小功率测量值不合格。请释放手柄式送受话器PTT按键（电台转为接收状态）","module": "DialogTest10point2_2"},
-                {"state":"10.5","img":"","title":"10.5.测量通信主机小功率发87.975MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：小功率FP，定明CLAIR，工作频率87.975MHz。按下手柄式送受话器PTT按键，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为87.975MHz±500Hz、幅值为27dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest9"},
-                {"state":"10.6-1","img":"","title":"10.6-1.测量结果合格","contents":"87.975MHz小功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point2_1"},
-                {"state":"10.6-2","img":"","title":"10.6-2.测量结果不合格","contents":"87.975MHz小功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point6_2"},
-        
-                {"state":"12-1","img":"","title":"12-1.测量结果合格","contents":"30.025MHz小功率测量值合格。请释放手柄式送受话器PTT按键（电台转为接收状态）","module": "DialogTest12_1"},
-                {"state":"12-2","img":"","title":"12-2.测量结果不合格","contents":"30.025MHz小功率测量值不合格。请释放手柄式送受话器PTT按键（电台转为接收状态）","module": "DialogTest12_2"},
-                {"state":"13","img":"","title":"13.测量电台小功率发87.975MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：小功率FP，定明CLAIR，工作频率87.975MHz。按下手柄式送受话器PTT按键，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为87.975MHz±500Hz、幅值为27dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest9"},
+                {"state":"10.3","img":"","title":"10.3测量通信主机小功率发30.025MHz功能是否正常.","contents":"操作通信主机面板，设置通信主机工作状态为：小功率FP，定明CLAIR，工作频率30.025MHz。按下手柄式送受话器PTT按键，然后点击【下一步】，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为30.025MHz±500Hz、幅值为27dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest9"},
+                {"state":"10.4-1","img":"","title":"10.4-1.如测量结果合格","contents":"30.025MHz小功率测量值合格。请释放手柄式送受话器PTT按键（电台转为接收状态）","module": "DialogTest10point2_1"},
+                {"state":"10.4-2","img":"","title":"10.4-2.如测量结果不合格","contents":"30.025MHz小功率测量值不合格。请释放手柄式送受话器PTT按键（电台转为接收状态）","module": "DialogTest10point2_2"},
+                {"state":"10.5","img":"","title":"10.5.测量通信主机小功率发87.975MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：小功率FP，定明CLAIR，工作频率87.975MHz。按下手柄式送受话器PTT按键，然后点击【下一步】，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为87.975MHz±500Hz、幅值为27dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest9"},
+                {"state":"10.6-1","img":"","title":"10.6-1.如测量结果合格","contents":"87.975MHz小功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point2_1"},
+                {"state":"10.6-2","img":"","title":"10.6-2.如测量结果不合格","contents":"87.975MHz小功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point6_2"},
+                {"state":"12-1","img":"","title":"12-1.如测量结果合格","contents":"30.025MHz小功率测量值合格。请释放手柄式送受话器PTT按键（电台转为接收状态）","module": "DialogTest12_1"},
+                {"state":"12-2","img":"","title":"12-2.如测量结果不合格","contents":"30.025MHz小功率测量值不合格。请释放手柄式送受话器PTT按键（电台转为接收状态）","module": "DialogTest12_2"},
+                {"state":"13","img":"","title":"13.测量电台小功率发87.975MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：小功率FP，定明CLAIR，工作频率87.975MHz。按下手柄式送受话器PTT按键，然后点击【下一步】，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为87.975MHz±500Hz、幅值为27dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest9"},
+                {"state":"14-1","img":"","title":"14-1.如测量结果合格","contents":"87.975MHz小功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10_1"},
+                {"state":"14-2","img":"","title":"14-2.如测量结果不合格","contents":"87.975MHz小功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point6_2"},
+                {"state":"15","img":"","title":"15.测量通信主机中功率发87.975MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：中功率MP，定明CLAIR，工作频率87.975MHz。按下手柄式送受话器PTT按键，然后点击【下一步】，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为87.975MHz±500Hz、幅值为37dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest9"},
+                {"state":"16-1","img":"","title":"16-1如测量结果合格","contents":"87.975MHz中功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10_1"},
+                {"state":"16-2","img":"","title":"16-2如测量结果不合格","contents":"87.975MHz中功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point2_2"},
+                {"state":"17","img":"","title":"17.测量VHF电台中功率发55MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：中功率MP，定明CLAIR，工作频率55MHz。按下手柄式送受话器PTT按键，然后点击【下一步】,备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为55MHz±500Hz、幅值为37dBm±1dBm(需加上40dB固定衰减)","module": "DialogTest17"},
+                {"state":"18-1","img":"","title":"18-1如测量结果合格","contents":"87.975MHz小功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10_1"},
+                {"state":"18-2","img":"","title":"18-2如测量结果不合格","contents":"87.975MHz小功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point2_2"},
+                {"state":"19","img":"","title":"19.测量VHF电台中功率发30.025MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：中功率MP，定明CLAIR，工作频率30.025MHz。按下手柄式送受话器PTT按键，然后点击【下一步】,备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为30.025MHz±500Hz、幅值为37dBm±1dBm(需加上40dB固定衰减)","module": "DialogTest9"},
+                {"state":"20-1","img":"","title":"20-1.如测量结果合格","contents":"30.025MHz中功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest20_1"},
+                {"state":"20-2","img":"","title":"20-2.如测量结果不合格","contents":"30.025MHz中功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point6_2"},
                
-                {"state":"14-1","img":"","title":"14-1.测量结果合格","contents":"87.975MHz小功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10_1"},
-                {"state":"14-2","img":"","title":"14-2.测量结果不合格","contents":"87.975MHz小功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point6_2"},
-               
-                {"state":"15","img":"","title":"15.测量通信主机中功率发87.975MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：中功率MP，定明CLAIR，工作频率87.975MHz。按下手柄式送受话器PTT按键，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为87.975MHz±500Hz、幅值为37dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest9"},
-               
-                {"state":"16-1","img":"","title":"16-1测量结果合格","contents":"87.975MHz中功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10_1"},
-                {"state":"16-2","img":"","title":"16-2测量结果不合格","contents":"87.975MHz中功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point2_2"},
-               
-                 {"state":"17","img":"","title":"17.测量VHF电台中功率发55MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：中功率MP，定明CLAIR，工作频率55MHz。按下手柄式送受话器PTT按键，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为55MHz±500Hz、幅值为37dBm±1dBm(需加上40dB固定衰减)","module": "DialogTest17"},
-               
-                {"state":"18-1","img":"","title":"18-1测量结果合格","contents":"87.975MHz小功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10_1"},
-                {"state":"18-2","img":"","title":"18-2测量结果不合格","contents":"87.975MHz小功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point2_2"},
-               
-                {"state":"19","img":"","title":"19.测量VHF电台中功率发30.025MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：中功率MP，定明CLAIR，工作频率30.025MHz。按下手柄式送受话器PTT按键，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为30.025MHz±500Hz、幅值为37dBm±1dBm(需加上40dB固定衰减)","module": "DialogTest9"},
-               
-                {"state":"20-1","img":"","title":"20-1.测量结果合格","contents":"30.025MHz中功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest20_1"},
-                {"state":"20-2","img":"","title":"20-2.测量结果不合格","contents":"30.025MHz中功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point6_2"},
-               
-                {"state":"21","img":"","title":"21.测量VHF电台大功率发30.025MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：大功率HP，定明CLAIR，工作频率30.025MHz。按下手柄式送受话器PTT按键，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为30.025MHz±500Hz、幅值为47dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest9"},
-               
-                {"state":"22-1","img":"","title":"22-1.测量结果合格","contents":"30.025MHz大功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10_1"},
-                {"state":"22-2","img":"","title":"22-2.测量结果不合格","contents":"30.025MHz大功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point6_2"},
+                {"state":"21","img":"","title":"21.测量VHF电台大功率发30.025MHz功能是否正常","contents":"操作通信主机面板，设置通信主机工作状态为：大功率HP，定明CLAIR，工作频率30.025MHz。按下手柄式送受话器PTT按键，然后点击【下一步】，备注：程序设置功率计，测量信号的频率和幅值，正常情况下频率范围为30.025MHz±500Hz、幅值为47dBm±1dBm(需加上30dB固定衰减)","module": "DialogTest9"},
+                {"state":"22-1","img":"","title":"22-1.如测量结果合格","contents":"30.025MHz大功率测量值合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10_1"},
+                {"state":"22-2","img":"","title":"22-2.如测量结果不合格","contents":"30.025MHz大功率测量值不合格。请释放手柄式送受话器PTT按键(电台转为接收状态)","module": "DialogTest10point6_2"},
               
-                {"state":"23","img":"","title":"23.设置VHF电台工作模式","contents":"操作通信主机面板，设置通信主机工作状态为：小功率FP，跳密S.F。将天线连接到车载适配器S-RF端口处","module": "DialogTest1"},
-                {"state":"24","img":"","title":"24.打开陪测电台并设置工作模式","contents":"打开陪测VHF电台电源开关，等待设备完成启动。设置陪测VHF电台工作状态为：小功率FP，跳密S.F，将陪测电台信道参数设置成与被测电台保持一致","module": "DialogTest1"},
+                {"state":"23","img":"","title":"23.设置VHF电台工作模式","contents":"操作通信主机面板，设置通信主机工作状态为：小功率FP，跳密S.F。将天线连接到车载适配器S-RF端口处，然后点击【下一步】","module": "DialogTest1"},
+                {"state":"24","img":"","title":"24.打开陪测电台并设置工作模式","contents":"打开陪测VHF电台电源开关，等待设备完成启动。设置陪测VHF电台工作状态为：小功率FP，跳密S.F，将陪测电台信道参数设置成与被测电台保持一致，然后点击【下一步】","module": "DialogTest1"},
                 {"state":"25","img":"","title":"25.操作两部电台之间进行语音通话","contents":"按下被测电台手柄式送受话器PTT按键，并对着话筒讲话。陪测电台是否能够收听到话音","module": "DialogTest25"},
-                
-                 {"state":"26","img":"","title":"26.操作被测电台通话时是否能够听到侧音","contents":"操作被测电台通话时是否能够听到侧音","module": "DialogTest7point5"},
-                 {"state":"27","img":"","title":"27.操作两部电台之间进行语音通话","contents":"按下陪测电台手柄式送受话器PTT按键，并对着话筒讲话。被测电台是否能够收听到话音","module": "DialogTest2"},
-                 {"state":"28","img":"","title":"28.给出判定结果","contents":"话音收发功能正常。测试结束","module": "DialogTest28"}
+                {"state":"26","img":"","title":"26.操作被测电台通话时是否能够听到侧音","contents":"对着话筒讲话时，是否能够听到侧音","module": "DialogTest7point5"},
+                {"state":"27","img":"","title":"27.操作两部电台之间进行语音通话","contents":"按下陪测电台手柄式送受话器PTT按键，并对着话筒讲话。被测电台是否能够收听到话音","module": "DialogTest2"},
+                {"state":"28","img":"","title":"28.给出判定结果","contents":"话音收发功能正常。测试结束","module": "DialogTest28"}
             ],
             "test_para":["55","1","5.6","-113","-67"]
         }
