@@ -64,7 +64,7 @@ class DialogTest5(QDialog, Ui_Dialog):
             self.test_result.test_condition = ''
             self.test_result.test_results = str(self.comboBox.currentText())
             self.test_result.test_conclusion = 'FAIL'
-            QMessageBox.warning(self, ModuleConstants.warning, ModuleConstants.shoudianpingdi_gj, QMessageBox.Ok)
+            QMessageBox.information(self, ModuleConstants.tip, ModuleConstants.shoudianpingdi_gj, QMessageBox.Ok)
 
         self.signalTest.emit("test")
         self.signalFinish1.emit('next',None)

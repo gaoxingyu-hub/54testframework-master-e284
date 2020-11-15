@@ -21,45 +21,45 @@ class ModuleConstants:
         next= "Étape suivante"
         BUTTON_CONTENTS_FINISH = "Fin de test"
         QMESSAGEBOX_CONTENTS_TEST_ABNORMAL = 'Panne'
-        VHF_radio_PowerSource= "VHF Radio Supply"
+        VHF_radio_PowerSource= "courant de la radio VHF"
         Synthesize_Service_module="Module de services intégrés"
 
         VHF_radio = "la radio VHF"
-        VHF_PWOER_PANNEL = "Panne de courant de la radio VHF"
-        system_load = "Chargement du système"
-        ssm_pannel = "Panne du module métier intégré"
+        VHF_POWER_PANNEL ="Panne de courant de la radio VHF"
+        system_load = "Le système est-il chargé avec succès"
+        ssm_pannel = "Panne du module d’intégration des services"
         tip = "rapide"
-        mianban_caozuo = "Fonctionnement du panneau"
-        two_radio_yuyin = "Appel vocal entre deux stations de radio"
+        mianban_caozuo = "Vérifiez si le fonctionnement du panneau est normal"
+        two_radio_yuyin = "Exécutez l'appel vocal entre deux stations de radio"
 
         # TEST7.py
-        test_shoubing_qingxi = "Poignée de test claire ton unique"
-        shoubing_yes = "La poignée peut produire une seule tonalité claire"
-        shoubing_no = "La poignée ne peut pas produire une seule tonalité claire"
+        test_shoubing_qingxi = "Écoutez si le combiné peut produire une tonalité unique claire"
+        shoubing_yes = "Oui"
+        shoubing_no = "Non"
 
         # TEST7point2.py
-        chezaitonglu_pannel = "Échec du chemin de réception de l'adaptateur de voiture"
-        tiaoxie_pannel = "Panne du module de réglage"
+        chezaitonglu_pannel = "La connexion de réception de l'adaptateur à bord est défectueuse"
+        tiaoxie_pannel = "Panne du module de syntonisation"
 
         # TEST7point5.py
-        test_shoufa_light = "Modifications des indicateurs de réception et d'envoi du panneau de test"
+        test_shoufa_light = "Observez les changements des voyants de réception et d'émission sur le panneau"
         audio_module_pannel = "Panne du module audio"
-        test_tested_radio = "Tester la station sous test"
+        test_tested_radio = "Si la tonalité latérale peut être entendue lors de l'utilisation de la radio testée"
         zhongpin_module_pannel = "Panne du module IF"
         tested_radio_ceyin = "Tonalité latérale de la radio testée"
 
         # TEST10point2_1
-        chezai_small_pannel = "Échec du chemin de transmission de faible puissance de l'adaptateur de voiture"
+        chezai_small_pannel = "la connexion d'émission à faible puissance de l'adaptateur à bord est défectueuse"
         ditong_5w_pannel = "Panne du filtre passe-bas 5W"
 
         # TEST10point6_2.py
-        pinhe_5w_pannel = 'Panne de fréquence et de module, panne de module d amplificateur de puissance 5W'
-        gongfang_5w_pannel = "Panne du module d'amplificateur de puissance 5 W"
-        ditong_50w_pannel = "Panne du module passe-bas 50W"
+        pinhe_5w_pannel =" le module de synthétiseur de fréquence est déterminé défectueux, le module d'amplification de puissance 5W est déterminé défectueux"
+        gongfang_5w_pannel = "le module d'amplification de puissance 5W est déterminé défectueux"
+        ditong_50w_pannel = " il est déterminé que le module passe-bas de 50 W est défectueux"
         gongfang_50w_pannel = "Panne du module d'amplificateur de puissance 50 W"
 
         # TEST5.py
-        diantaifa_30025 = "Mesure de la fonction basse puissance 30,025 MHz de la radio"
+        diantaifa_30025 = "Mesurez si la fonction d'émission à faible puissance de 55 MHz de la radio est normale"
         frequence = "la fréquence:"
         fuzhi = "Amplitude"
         diantaifa_30025_pass = "Mesure de la fonction basse puissance 30,025 MHz de la station radio"
@@ -82,7 +82,16 @@ class ModuleConstants:
         xinhao_fudu = "et l'amplitude du signal est"
         pinpian = "l'écart de fréquence est"
         shiliangxinhaofashengqi ='Générateur de signaux vectoriels Keysight'
-
+        warning='Alerte'
+        #
+        test_radio_xiaoXGLF55MHz = "Mesurez si la fonction d'émission de faible puissance de 55 MHz de la radio est normale"
+        test_radio_xiaoXGLF87MHz = "Mesurez si la fonction d'émission à faible puissance de 87.975 MHz de la radio est normale"
+        test_radio_zhongZGLF30MHz = "Mesurez si la fonction d'émission à moyenne puissance de 30.025 MHz de la radio VHF est normale"
+        test_radio_daDGLF30MHz = "Mesurez si la fonction d'émission à haute puissance de 30.025 MHz de la radio VHF est normale"
+        test_tongxinzhuji_XGLF = "Vérifiez si l'émission à faible puissance de l'unité principale de transmission est normale"
+        test_tongxinzhuji_XGLF_30 = "Mesurez si l' émission à faible puissance de 30.025MHz de l'unité principale de transmission est normale'"
+        test_tongxinzhuji_XGLF_87 = "'Mesurez si l'émission à faible puissance de 87.975MHz de l'unité principale de transmission est normale'"
+        test_tongxinzhuji_ZGLF_87 = "Mesurez si l'émission à moyenne puissance de 87.975MHz de l'unité principale de transmission est normale."
     else:
         QMESSAGEBOX_WARN = "警告"
         QMESSAGEBOX_INFO = '提示'
@@ -103,29 +112,29 @@ class ModuleConstants:
         BUTTON_CONTENTS_FINISH = "测试结束"
         QMESSAGEBOX_CONTENTS_TEST_ABNORMAL = '故障'
         VHF_radio_PowerSource = "VHF电台电源"
-        Synthesize_Service_module = "综合业务模件"
+        Synthesize_Service_module = "综合业务模块"
 
         VHF_radio = "VHF电台"
         VHF_POWER_PANNEL = "VHF电台电源故障"
-        system_load = "系统加载"
-        ssm_pannel = "综合业务模件故障"
+        system_load = "系统是否加载成功"
+        ssm_pannel = "综合业务模块故障"
         tip = "提示"
-        mianban_caozuo = "面板操作"
-        two_radio_yuyin = "两部电台的语音通话"
+        mianban_caozuo = "观察面板操作是否正常"
+        two_radio_yuyin = "操作两部电台之间进行语音通话"
 
         # TEST7.py
-        test_shoubing_qingxi = "测试手柄清晰单音"
-        shoubing_yes = "手柄能输出清晰单音"
-        shoubing_no = "手柄不能输出清晰单音"
+        test_shoubing_qingxi = "听手柄能否输出清晰单音"
+        shoubing_yes = "是"
+        shoubing_no = "否"
 
         # TEST7point2.py
         chezaitonglu_pannel = "车载适配器收通路故障"
-        tiaoxie_pannel = "调谐模件故障"
+        tiaoxie_pannel = "调谐模块故障"
 
         # TEST7point5.py
-        test_shoufa_light = "测试面板收发指示灯的变化"
+        test_shoufa_light = "观察面板收发指示灯的变化"
         audio_module_pannel = "音频模块故障"
-        test_tested_radio = "测试被测电台"
+        test_tested_radio = "操作被测电台通话时是否能够听到侧音"
         zhongpin_module_pannel = "中频模块故障"
         tested_radio_ceyin = "被测电台通话时的侧音"
 
@@ -134,14 +143,14 @@ class ModuleConstants:
         ditong_5w_pannel = "5W低通滤波器故障"
 
         # TEST10point6_2.py
-        pinhe_5w_pannel = '频和模块故障,5W功放模块故障'
-        gongfang_5w_pannel = "5W功放模块故障"
-        ditong_50w_pannel = "50W低通模块故障"
+        pinhe_5w_pannel = '判定频和模块故障,判定5W功放模块故障'
+        gongfang_5w_pannel = "判定5W功放模块故障"
+        ditong_50w_pannel = "判定50W低通模块故障"
         gongfang_50w_pannel = "50W功放模块故障"
 
 
         # TEST5.py
-        diantaifa_30025 = "测量电台小功率发30.025MHz功能"
+        diantaifa_30025 = "测量电台小功率发30.025MHz功能是否正常"
         frequence = "频率:"
         fuzhi = "幅值"
         diantaifa_30025_pass = "测量电台小功率发30.025MHz功能合格"
@@ -165,6 +174,16 @@ class ModuleConstants:
         pinpian = "频偏"
 
         shiliangxinhaofashengqi='矢量信号发生器'
+        warning='警告'
+        #
+        test_radio_xiaoXGLF55MHz="测量电台小功率发55MHz功能是否正常"
+        test_radio_xiaoXGLF87MHz = "测量电台小功率发87.975MHz功能是否正常"
+        test_radio_zhongZGLF30MHz = "测量VHF电台中功率发30.025MHz功能是否正常"
+        test_radio_daDGLF30MHz = "测量VHF电台大功率发30.025MHz功能是否正常"
+        test_tongxinzhuji_XGLF='测试通信主机小功率发是否正常'
+        test_tongxinzhuji_XGLF_30 = '测量通信主机小功率发30.025MHz是否正常'
+        test_tongxinzhuji_XGLF_87 = '测量通信主机小功率发87.975MHz是否正常'
+        test_tongxinzhuji_ZGLF_87 = '测量通信主机中功率发87.975MHz是否正常'
 
 
 

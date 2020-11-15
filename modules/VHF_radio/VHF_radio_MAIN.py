@@ -222,10 +222,9 @@ class VHFradioMain(QDialog, Ui_Dialog):
                         temp_test_process = self.test_config.test_case_detail[x]["steps"][step["current"] - 1]
                         self.current_test_case = case
                         self.current_test_step_dialog = globals()[temp_test_process['module']]()
+                        print(self.current_test_step_dialog)
                         if temp_test_process['module']=='DialogTest1' or temp_test_process['module'] == "DialogTest7point1":
                             self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
-                            print( os.path.join(
-                                    self.pic_file_path, temp_test_process['img']))
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))

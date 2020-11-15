@@ -62,13 +62,11 @@ class DialogTest7point2(QDialog, Ui_Dialog):
             self.test_result.test_condition=DialogTest6.test_condition
             self.test_result.test_results = ModuleConstants.shoubing_no
             self.test_result.test_conclusion = 'FAIL'
-            QMessageBox.information(self, ModuleConstants.tip, ModuleConstants.shoubing_no, QMessageBox.Ok)
         elif self.state=='7.4':
             self.test_result.test_item = ModuleConstants.test_shoubing_qingxi
             self.test_result.test_condition = DialogTest6.test_condition
             self.test_result.test_results = ModuleConstants.shoubing_no
             self.test_result.test_conclusion = 'FAIL'
-            QMessageBox.information(self, ModuleConstants.tip, ModuleConstants.shoubing_no, QMessageBox.Ok)
         self.signalTest.emit('test')
         self.signalFinish1.emit('next',None)
         self.close()

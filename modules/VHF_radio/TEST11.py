@@ -50,7 +50,6 @@ class DialogTest11(QDialog, Ui_Dialog):
             self.test_result.test_condition = ''
             self.test_result.test_results = ModuleConstants.frequence +':' + str(mTemp[0]) + 'MHz,' + ModuleConstants.fuzhi + ':' + str(mTemp[1]) + 'dBm'
             self.test_result.test_conclusion = 'PASS'
-            QMessageBox.information(self, ModuleConstants.tip, ModuleConstants.diantaifa_30025_pass, QMessageBox.Ok)
             self.signalTest.emit('test')
             self.signalFinish1.emit('next', None)
         else:

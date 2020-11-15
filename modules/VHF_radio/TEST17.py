@@ -49,18 +49,16 @@ class DialogTest17(QDialog, Ui_Dialog):
             DialogTest17.flag=1
             self.test_result.test_item = ModuleConstants.diantai_zhong + "55MHz" + ModuleConstants.gongneng_ 
             self.test_result.test_condition = ''
-            self.test_result.test_results = ModuleConstants.frequence + str(mTemp[0]) + 'MHz,' + ModuleConstants.fuzhi + str(mTemp[1]) + 'dBm'
+            self.test_result.test_results = ModuleConstants.frequence + ":"+str(mTemp[0]) + 'MHz,' + ModuleConstants.fuzhi+":" + str(mTemp[1]) + 'dBm'
             self.test_result.test_conclusion = 'PASS'
-            QMessageBox.information(self, ModuleConstants.tip, ModuleConstants.diantai_zhong + "55MHz" + ModuleConstants.gongneng, QMessageBox.Ok)
             self.signalTest.emit('test')
             self.signalFinish1.emit('next', None)
         else:
             DialogTest17.flag=0
             self.test_result.test_item = ModuleConstants.diantai_zhong + "55MHz" + ModuleConstants.gongneng_ 
             self.test_result.test_condition = ''
-            self.test_result.test_results = ModuleConstants.frequence + str(mTemp[0]) + 'MHz,' + ModuleConstants.fuzhi + str(mTemp[1]) + 'dBm'
+            self.test_result.test_results = ModuleConstants.frequence +":"+ str(mTemp[0]) + 'MHz,' + ModuleConstants.fuzhi +":"+ str(mTemp[1]) + 'dBm'
             self.test_result.test_conclusion = 'FAIL'
-            QMessageBox.information(self, ModuleConstants.tip, ModuleConstants.diantai_zhong + "55MHz" + ModuleConstants.gongneng_pannel, QMessageBox.Ok)
             self.signalTest.emit('test')
             self.signalFinish2.emit('next', None)
 

@@ -30,6 +30,9 @@ class DialogTest8(QDialog, Ui_Dialog):
         self.setupUi(self)
         self.action = 'finish_all'
         self.test_result = test_results()
+    def initUi(self, mConfig):
+        self.lineEdit_1.setText(mConfig.test_case_detail[2]["test_para"][2])
+        self.lineEdit_2.setText(mConfig.test_case_detail[2]["test_para"][3])
     def set_contents(self, title, contents, img_file_path):
         """
         set gui display information
@@ -57,21 +60,22 @@ class DialogTest8(QDialog, Ui_Dialog):
         """
         Slot documentation goes here.
         """
-        if str(self.comboBox.currentText())=='是':
-            self.test_result.test_item ='双工器测试'
+        if str(self.comboBox.currentText())==ModuleConstants.ceshi_normal:
+            self.test_result.test_item=ModuleConstants.shuanggongqi_cs
             self.test_result.test_condition = ''
             self.test_result.test_results = str(self.comboBox.currentText())
             self.test_result.test_conclusion = 'PASS'
             QMessageBox.information(self, ModuleConstants.tip,str(self.comboBox.currentText()), QMessageBox.Ok)
+            self.signalTest.emit('test')
+            self.signalFinish1.emit('next', None)
 
         else:
-            self.test_result.test_item ='双工器测试'
+            self.test_result.test_item =ModuleConstants.shuanggongqi_cs
             self.test_result.test_condition = ''
             self.test_result.test_results = str(self.comboBox.currentText())
             self.test_result.test_conclusion = 'FAIL'
-            QMessageBox.information(self, ModuleConstants.tip, '如果没出现则双工器故障', QMessageBox.Ok)
-        self.signalTest.emit('test')
-        self.signalFinish1.emit('next',None)
+            QMessageBox.information(self, ModuleConstants.tip,ModuleConstants.shuanggingqi_gz, QMessageBox.Ok)
+            self.signalTest.emit('test')
         self.close()
 
 class test_results:

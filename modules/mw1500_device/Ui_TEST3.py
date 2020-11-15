@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'mwUi_TEST4.ui'
+# Form implementation generated from reading ui file 'Ui_TEST3.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.1
 #
@@ -10,6 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from modules.mw1500_device.mw1500_constant import ModuleConstants
+
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
@@ -49,7 +50,7 @@ class Ui_Dialog(object):
         self.groupBox.setCheckable(False)
         self.groupBox.setObjectName("groupBox")
         self.textBrowser_contents = QtWidgets.QTextBrowser(self.groupBox)
-        self.textBrowser_contents.setGeometry(QtCore.QRect(11, 1, 831, 69))
+        self.textBrowser_contents.setGeometry(QtCore.QRect(11, 1, 831, 131))
         self.textBrowser_contents.setStyleSheet("QTextBrowser{\n"
 "border-width:0;\n"
 "border-style:outset;\n"
@@ -60,7 +61,7 @@ class Ui_Dialog(object):
         self.pushButton_next.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.pushButton_next.setObjectName("pushButton_next")
         self.comboBox = QtWidgets.QComboBox(self.groupBox)
-        self.comboBox.setGeometry(QtCore.QRect(360, 190, 121, 22))
+        self.comboBox.setGeometry(QtCore.QRect(310, 210, 200, 22))
         self.comboBox.setObjectName("comboBox")
         self.comboBox.addItem("")
         self.comboBox.addItem("")
@@ -71,6 +72,9 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        self.pushButton_next.setText(_translate("Dialog", "下一步"))
+        self.comboBox.setItemText(0, _translate("Dialog", "测试正常"))
+        self.comboBox.setItemText(1, _translate("Dialog", "测试不正常"))
         self.pushButton_next.setText(_translate("Dialog",ModuleConstants.next))
         self.comboBox.setItemText(0, _translate("Dialog", ModuleConstants.ceshi_normal))
         self.comboBox.setItemText(1, _translate("Dialog", ModuleConstants.ceshi_abnormal))
@@ -85,4 +89,3 @@ if __name__ == "__main__":
     ui.setupUi(Dialog)
     Dialog.show()
     sys.exit(app.exec_())
-

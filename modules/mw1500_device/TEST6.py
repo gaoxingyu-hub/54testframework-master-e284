@@ -80,7 +80,7 @@ class DialogTest6(QDialog, Ui_Dialog):
                         ',' + str(self.label_4.text()) + ':' + str(self.lineEdit_4.text()) + str(self.comboBox_4.currentText()) + \
                         ',' + str(self.label_5.text()) + ':' + str(self.lineEdit_5.text()) + str(self.comboBox_5.currentText())
                     self.test_result.test_conclusion = 'FAIL'
-                    QMessageBox.warning(self, ModuleConstants.warning,ModuleConstants.zihuanqi_gz,QMessageBox.Ok)
+                    QMessageBox.information(self, ModuleConstants.tip,ModuleConstants.zihuanqi_gz,QMessageBox.Ok)
                     self.signalTest.emit('test')
                     break
                 else:
@@ -98,7 +98,7 @@ class DialogTest6(QDialog, Ui_Dialog):
         if not self.demo:
             pass
         else:
-            temp=float(30+ np.random.random(1))
+            temp=float(-30+ np.random.random(1))
         return temp
 
     @pyqtSlot()

@@ -49,11 +49,12 @@ class DialogTest2(QDialog, Ui_Dialog):
     @pyqtSlot()
     def on_pushButton_2_clicked(self):
         if self.state=='2':
-            self.test_result.test_item=ModuleConstants.VHF_radio
-            self.test_result.test_condition=''
-            self.test_result.test_results=ModuleConstants.VHF_PWOER_PANNEL
-            self.test_result.test_conclusion='FAIL'
-            QMessageBox.information(self, TransConstants.tip_info, ModuleConstants.VHF_PWOER_PANNEL, QMessageBox.Ok)
+            print('2')
+            self.test_result.test_item = ModuleConstants.VHF_radio_PowerSource
+            self.test_result.test_condition = ''
+            self.test_result.test_results=ModuleConstants.VHF_POWER_PANNEL
+            self.test_result.test_conclusion = 'FAIL'
+            QMessageBox.information(self, ModuleConstants.tip, ModuleConstants.VHF_POWER_PANNEL,QMessageBox.Ok)
         elif self.state == '3':
             self.test_result.test_item = ModuleConstants.system_load
             self.test_result.test_condition = ''

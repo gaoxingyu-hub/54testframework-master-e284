@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'Ui_TEST4.ui'
+# Form implementation generated from reading ui file 'Ui_TEST5.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.1
 #
@@ -50,26 +50,18 @@ class Ui_Dialog(object):
         self.groupBox.setCheckable(False)
         self.groupBox.setObjectName("groupBox")
         self.textBrowser_contents = QtWidgets.QTextBrowser(self.groupBox)
-        self.textBrowser_contents.setGeometry(QtCore.QRect(11, 1, 831, 69))
+        self.textBrowser_contents.setGeometry(QtCore.QRect(11, 1, 831, 131))
         self.textBrowser_contents.setStyleSheet("QTextBrowser{\n"
 "border-width:0;\n"
 "border-style:outset;\n"
 "background-color:#E3EAF4;}")
         self.textBrowser_contents.setObjectName("textBrowser_contents")
-        self.groupBox_2 = QtWidgets.QGroupBox(self.groupBox)
-        self.groupBox_2.setGeometry(QtCore.QRect(33, 300, 512, 60))
-        self.groupBox_2.setStyleSheet("QGroupBox{\n"
-"border-width:0;\n"
-"border-style:outset;\n"
-"background-color:#E3EAF4;}")
-        self.groupBox_2.setTitle("")
-        self.groupBox_2.setObjectName("groupBox_2")
         self.pushButton_next = QtWidgets.QPushButton(self.groupBox)
         self.pushButton_next.setGeometry(QtCore.QRect(370, 520, 120, 40))
         self.pushButton_next.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.pushButton_next.setObjectName("pushButton_next")
         self.comboBox = QtWidgets.QComboBox(self.groupBox)
-        self.comboBox.setGeometry(QtCore.QRect(360, 190, 121, 22))
+        self.comboBox.setGeometry(QtCore.QRect(280, 200, 300, 22))
         self.comboBox.setObjectName("comboBox")
         self.comboBox.addItem("")
         self.comboBox.addItem("")
@@ -96,4 +88,3 @@ if __name__ == "__main__":
     ui.setupUi(Dialog)
     Dialog.show()
     sys.exit(app.exec_())
-

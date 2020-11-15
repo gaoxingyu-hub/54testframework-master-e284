@@ -23,6 +23,7 @@ class DialogTest22_2(QDialog, Ui_Dialog):
     signalFinish1=pyqtSignal(str,object)
     signalTest=pyqtSignal(object)
 
+
     def __init__(self, parent=None):
         """
         Constructor
@@ -33,6 +34,7 @@ class DialogTest22_2(QDialog, Ui_Dialog):
         super(DialogTest22_2, self).__init__(parent)
         self.setupUi(self)
         self.action = 'finish_all'
+        self.test_result = test_results()
     @pyqtSlot()
     def on_pushButton_1_clicked(self):
         self.signalFinish1.emit('next',None)
@@ -41,12 +43,11 @@ class DialogTest22_2(QDialog, Ui_Dialog):
 
     @pyqtSlot()
     def on_pushButton_2_clicked(self):
-        self.test_result = test_results()
         self.test_result.test_item = ""
         self.test_result.test_condition = ''
-        self.test_result.test_results = ModuleConstants.ditong_50w_pannel
+        self.test_result.test_results = ModuleConstants.gongfang_50w_pannel
         self.test_result.test_conclusion = 'FAIL'
-        QMessageBox.information(self, ModuleConstants.tip, ModuleConstants.ditong_50w_pannel, QMessageBox.Ok)
+        QMessageBox.information(self, ModuleConstants.tip, ModuleConstants.gongfang_50w_pannel, QMessageBox.Ok)
         self.signalTest.emit('test')
         self.close()
     def set_contents(self, title, contents,img_file_path ):

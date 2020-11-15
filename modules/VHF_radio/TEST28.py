@@ -39,10 +39,3 @@ class DialogTest28(QDialog, Ui_Dialog):
         Slot documentation goes here.
         """
         self.close()
-if __name__ == '__main__':
-    import sys
-    from PyQt5.QtWidgets import QApplication
-    app = QApplication(sys.argv)
-    d28=DialogTest28()
-    d28.show()
-    sys.exit(app.exec_())

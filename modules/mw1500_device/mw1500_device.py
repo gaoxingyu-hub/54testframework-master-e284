@@ -280,6 +280,7 @@ class MW1500_DEVICE(QDialog, Ui_Dialog):
                                                                        temp_test_process['contents'], os.path.join(
                                     self.pic_file_path, temp_test_process['img']))
                         elif temp_test_process['module'] == 'DialogTest8':
+                            self.current_test_step_dialog.initUi(self.test_config)
                             self.current_test_step_dialog.signalTest.connect(self.test_data_refresh_sh)
                             self.current_test_step_dialog.signalFinish1.connect(self.deal_signal_test_next1)
                             self.current_test_step_dialog.set_contents(temp_test_process['title'],

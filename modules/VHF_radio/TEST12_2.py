@@ -47,9 +47,9 @@ class DialogTest12_2(QDialog, Ui_Dialog):
         self.test_result = test_results()
         self.test_result.test_item = ""
         self.test_result.test_condition = ''
-        self.test_result.test_results = '5W低通滤波器故障'
+        self.test_result.test_results = ModuleConstants.ditong_5w_pannel
         self.test_result.test_conclusion = 'FAIL'
-        QMessageBox.information(self, "提示", "5W低通滤波器故障", QMessageBox.Ok)
+        QMessageBox.warning(self,ModuleConstants.warning,ModuleConstants.ditong_5w_pannel, QMessageBox.Ok)
         self.signalTest.emit('test')
         self.signalPrint.emit('print')
         self.close()
